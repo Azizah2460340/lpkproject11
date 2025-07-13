@@ -54,7 +54,7 @@ def show_alkohol():
     """)
 def show_amina():
     st.title("🧪 Detail Senyawa: Amina")
-        st.markdown("""
+    
         ### 📘 Informasi Umum
         - **Tatanama IUPAC:** Metilamina, Dimetilamina, dll.
         - **Rumus Umum:** R-NH₂ (amina primer)
