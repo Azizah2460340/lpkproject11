@@ -43,7 +43,7 @@ def chatbot_response(user_input):
     else:
         return "Maaf, saya tidak mengerti pertanyaan Anda. Silakan tanyakan tentang senyawa organik atau fitur aplikasi ini."
 
-# Fungsi untuk menghitung rating
+# Fungsi untuk menghitung rating rata-rata
 def calculate_average_rating(compound_name):
     reviews = compounds[compound_name].get("reviews", [])
     if not reviews:
@@ -53,6 +53,18 @@ def calculate_average_rating(compound_name):
 # Layout utama
 def main():
     st.set_page_config(page_title="O-Kimiaku", page_icon="🧪", layout="wide")
+    
+    # Custom CSS for background
+    st.markdown(
+        """
+        <style>
+        .reportview-container {
+            background: url('https://your-chemistry-background-image-url.com') no-repeat center center fixed; 
+            background-size: cover;
+        }
+        </style>
+        """, unsafe_allow_html=True
+    )
     
     # Inisialisasi session state untuk halaman aktif
     if 'current_page' not in st.session_state:
@@ -65,16 +77,12 @@ def main():
         # Membuat navigasi tanpa radio button
         if st.button("Beranda", use_container_width=True):
             st.session_state.current_page = "Beranda"
-        if st.button("Rating", use_container_width=True):
-            st.session_state.current_page = "Rating"
         if st.button("ChatBot", use_container_width=True):
             st.session_state.current_page = "ChatBot"
     
     # Render halaman berdasarkan state
     if st.session_state.current_page == "Beranda":
         show_home()
-    elif st.session_state.current_page == "Rating":
-        show_ratings()
     elif st.session_state.current_page == "ChatBot":
         show_chatbot()
 
@@ -86,16 +94,15 @@ def show_home():
         st.image("https://placehold.co/300x200?text=O-Kimiaku+Logo", width=200)
     
     with col2:
-        st.title("SELAMAT DATANG DI O-KIMIAKU ")
-        st.write(""
+        st.title("O-Kimiaku - Explorer Senyawa Organik")
+        st.write("""
         Aplikasi ini membantu Anda mempelajari sifat-sifat senyawa organik seperti:
         - Titik didih dan titik leleh
         - Kepolaran
         - Rumus kimia
         - Fakta menarik
         - Ikatan kimia
-        - Tata nama
-        "")
+        """)
     
     # Bagian senyawa organik yang bisa diklik
     st.subheader("Senyawa Organik Tersedia")
@@ -111,6 +118,9 @@ def show_home():
                 
                 if st.button(f"Lihat detail {compound_name}", key=f"btn_{compound_name}"):
                     show_compound_detail(compound_name)
+
+    # Pindahkan rating ke akhir
+    show_ratings()
 
 # Fungsi untuk menampilkan detail senyawa
 def show_compound_detail(compound_name):
@@ -142,14 +152,13 @@ def show_compound_detail(compound_name):
 
 # Halaman Rating
 def show_ratings():
-    st.title("Rating Senyawa")
+    st.subheader("Rating Senyawa")
     
     # Pilih senyawa
     compound_name = st.selectbox("Pilih Senyawa:", list(compounds.keys()))
     
     # Tampilkan rating saat ini
     avg_rating = calculate_average_rating(compound_name)
-    st.subheader(f"Rating untuk {compound_name}")
     st.write(f"⭐ Rating Rata-rata: {avg_rating:.1f}/5 dari {len(compounds[compound_name].get('reviews', []))} ulasan")
     
     # Form rating sederhana
@@ -162,10 +171,6 @@ def show_ratings():
             "review": ""
         })
         st.success(f"Terima kasih! Anda memberi rating {rating} bintang untuk {compound_name}")
-    
-    if st.button("Kembali ke Beranda"):
-        st.session_state.current_page = "Beranda"
-        st.experimental_rerun()
 
 # Halaman ChatBot
 def show_chatbot():
