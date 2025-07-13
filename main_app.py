@@ -26,38 +26,6 @@ def show_home():
     """)
 
     st.subheader("🔍 Jelajahi Senyawa:")
-        # Tampilkan 2 senyawa dalam satu baris
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.markdown("### 🧪 Alkohol")
-        alkohol_img = Image.open("alkohol.jpg")
-        if st.button("Lihat Detail Alkohol"):
-            st.session_state.page = 'alkohol'
-        st.image(alkohol_img, caption="Alkohol", use_column_width=True)
-
-    with col2:
-        st.markdown("### 🧪 Amina")
-        amina_img = Image.open("amina.jpg")
-        if st.button("Lihat Detail Amina"):
-            st.session_state.page = 'amina'
-        st.image(amina_img, caption="Amina", use_column_width=True)
-        
-# Routing halaman
-page = st.session_state.page
-if page == 'home':
-    show_home()
-elif page == 'alkohol':
-    show_alkohol()
-elif page == 'amina':
-    show_amina()
-elif page == 'chatbot':
-    show_chatbot()
-elif page == 'about':
-    show_about()
-elif page == 'rating':
-    show_rating()
-
     # Tampilkan 2 senyawa dalam satu baris
     col1, col2 = st.columns(2)
 
