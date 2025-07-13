@@ -1,5 +1,4 @@
 import streamlit as st
-import random
 import time
 
 # Data senyawa organik
@@ -104,7 +103,7 @@ def show_home():
     cols = st.columns(2)
     for i, (compound_name, compound_info) in enumerate(compounds.items()):
         with cols[i % 2]:
-            with st.container(border=True):
+            with st.container():
                 st.subheader(compound_name)
                 st.write(f"*Rumus Kimia:* {compound_info['rumus_kimia']}")
                 st.write(f"*Titik Didih:* {compound_info['titik_didih']}")
@@ -114,7 +113,6 @@ def show_home():
 
 # Fungsi untuk menampilkan detail senyawa
 def show_compound_detail(compound_name):
-    st.session_state.current_page = "CompoundDetail"
     compound_info = compounds[compound_name]
     
     st.title(compound_name)
@@ -139,7 +137,7 @@ def show_compound_detail(compound_name):
     
     if st.button("Kembali ke Beranda"):
         st.session_state.current_page = "Beranda"
-        st.rerun()
+        st.experimental_rerun()
 
 # Halaman Rating
 def show_ratings():
@@ -158,9 +156,6 @@ def show_ratings():
     rating = st.slider("Pilih rating (1-5 bintang):", 1, 5, 3)
     
     if st.button("Submit Rating"):
-        if "reviews" not in compounds[compound_name]:
-            compounds[compound_name]["reviews"] = []
-        
         compounds[compound_name]["reviews"].append({
             "rating": rating,
             "review": ""
@@ -169,7 +164,7 @@ def show_ratings():
     
     if st.button("Kembali ke Beranda"):
         st.session_state.current_page = "Beranda"
-        st.rerun()
+        st.experimental_rerun()
 
 # Halaman ChatBot
 def show_chatbot():
@@ -201,6 +196,7 @@ def show_chatbot():
     
     if st.button("Kembali ke Beranda"):
         st.session_state.current_page = "Beranda"
-        st.rerun()
+        st.experimental_rerun()
 
+if __name__ == "__main__":
     main()
