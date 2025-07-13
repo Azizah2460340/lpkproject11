@@ -25,19 +25,13 @@ def show_home():
     Klik gambar senyawa untuk mengetahui detailnya lebih lanjut!
     """)
 
-    st.subheader("🔍 Jelajahi Senyawa:")
-    # Tampilkan 2 senyawa dalam satu baris
-    col1, col2 = st.columns(2)
+    st.subheader("🔍 Pilih Senyawa:")
 
-    with col1:
-        st.markdown("### 🧪 Alkohol")
-        if st.button("Lihat Detail Alkohol"):
-            st.session_state.page = 'alkohol'
+    if st.button("🧪 Alkohol"):
+        st.session_state.page = 'alkohol'
 
-    with col2:
-        st.markdown("### 🧪 Amina")
-        if st.button("Lihat Detail Amina"):
-            st.session_state.page = 'amina'
+    if st.button("🧬 Amina"):
+        st.session_state.page = 'amina'
 
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
