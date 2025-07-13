@@ -54,14 +54,6 @@ def show_alkohol():
     """)
 def show_amina():
     st.title("🧪 Detail Senyawa: Amina")
-
-    col1, col2 = st.columns([1, 2])
-
-    with col1:
-        amina_img = Image.open("amina.jpg")
-        st.image(amina_img, caption="Struktur Amina", use_column_width=True)
-
-    with col2:
         st.markdown("""
         ### 📘 Informasi Umum
         - **Tatanama IUPAC:** Metilamina, Dimetilamina, dll.
