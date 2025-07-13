@@ -87,7 +87,9 @@ def show_home():
     
     with col2:
         st.title("SELAMAT DATANG DI O-KIMIAKU ")
-        st.write(""" Aplikasi ini membantu Anda mempelajari sifat-sifat senyawa organik seperti:
+        st.write(""" 
+        
+        Aplikasi ini membantu Anda mempelajari sifat-sifat senyawa organik seperti:
         - Titik didih dan titik leleh
         - Kepolaran
         - Rumus kimia
