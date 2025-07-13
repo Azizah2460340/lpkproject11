@@ -46,28 +46,6 @@ def show_alkohol():
 
     🔗 [Tonton Penjelasan Alkohol di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)
     """)
-def show_amina():
-    st.title("🧪 Detail Senyawa: Amina")
-    
-        ### 📘 Informasi Umum
-        - **Tatanama IUPAC:** Metilamina, Dimetilamina, dll.
-        - **Rumus Umum:** R-NH₂ (amina primer)
-        - **Jenis Ikatan:** Kovalen Polar
-        - **Kelas:** Amina primer, sekunder, tersier
-
-        ### 🌡️ Sifat Fisik
-        - **Bau:** Menyengat seperti ikan busuk
-        - **Kelarutan:** Larut dalam air (jika berat molekul rendah)
-
-        ### ⚛️ Kepolaran
-        - Amina bersifat **polar** dan dapat membentuk ikatan hidrogen.
-
-        ### 🤓 Fun Fact
-        - Amina banyak ditemukan pada obat-obatan, pestisida, dan bahan biologis!
-
-        ### 🎥 Video Pembelajaran
-        🔗 [Tonton Penjelasan Amina di YouTube](https://www.youtube.com/watch?v=dFOVrxzS5pk)
-        """)
 
 def show_chatbot():
     st.title("💬 Chatbot O-KIMIAKU")
