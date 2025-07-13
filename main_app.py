@@ -31,17 +31,13 @@ def show_home():
 
     with col1:
         st.markdown("### 🧪 Alkohol")
-        alkohol_img = Image.open("alkohol.jpg")
         if st.button("Lihat Detail Alkohol"):
             st.session_state.page = 'alkohol'
-        st.image(alkohol_img, caption="Alkohol", use_column_width=True)
 
     with col2:
         st.markdown("### 🧪 Amina")
-        amina_img = Image.open("amina.jpg")
         if st.button("Lihat Detail Amina"):
             st.session_state.page = 'amina'
-        st.image(amina_img, caption="Amina", use_column_width=True)
 
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
