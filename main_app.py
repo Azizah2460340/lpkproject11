@@ -27,6 +27,86 @@ def show_home():
 
     st.subheader("🔍 Jelajahi Senyawa:")
 
+# Ambil query param agar klik link bisa ganti halaman
+query_params = st.experimental_get_query_params()
+if 'page' in query_params:
+    st.session_state.page = query_params['page'][0]
+
+    cards_html = """
+    <style>
+    .card-container {
+      display: flex;
+      gap: 20px;
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+    .card {
+      position: relative;
+      width: 300px;
+      height: 180px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: white;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(70%);
+      transition: filter 0.3s ease;
+    }
+    .card:hover img {
+      filter: brightness(100%);
+    }
+    .card-title {
+      position: absolute;
+      bottom: 15px;
+      left: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    </style>
+
+    <div class="card-container">
+      <a href="?page=alkohol" class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Ethanol-2D-flat.svg/320px-Ethanol-2D-flat.svg.png" alt="Alkohol">
+        <div class="card-title">Alkohol</div>
+      </a>
+      <a href="?page=amina" class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Amines-structure-1.svg/320px-Amines-structure-1.svg.png" alt="Amina">
+        <div class="card-title">Amina</div>
+      </a>
+      <!-- Tambah kartu lain di sini -->
+    </div>
+    """
+
+    st.markdown(cards_html, unsafe_allow_html=True)
+
+# Routing halaman
+page = st.session_state.page
+if page == 'home':
+    show_home()
+elif page == 'alkohol':
+    show_alkohol()
+elif page == 'amina':
+    show_amina()
+elif page == 'chatbot':
+    show_chatbot()
+elif page == 'about':
+    show_about()
+elif page == 'rating':
+    show_rating()
+
     # Tampilkan 2 senyawa dalam satu baris
     col1, col2 = st.columns(2)
 
