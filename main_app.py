@@ -2,6 +2,13 @@ import streamlit as st
 from PIL import Image
 import time
 
+# Konfigurasi halaman
+st.set_page_config(
+    page_title="O-Kimiaku",
+    page_icon="🧪",
+    layout="wide",
+    initial_sidebar_state="expanded"
+    
 # ------------- FUNGSI --------------
 def show_home():
     st.title("Selamat Datang di O-KIMIAKU 👩‍🔬🧪")
