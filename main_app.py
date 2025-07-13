@@ -203,5 +203,4 @@ def show_chatbot():
         st.session_state.current_page = "Beranda"
         st.rerun()
 
-if _name_ == "_main_":
     main()
