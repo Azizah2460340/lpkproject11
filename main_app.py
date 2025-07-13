@@ -71,9 +71,9 @@ def show_about():
 def show_rating():
     st.title("Sebelum Keluar, Beri Rating Aplikasi Ini ⭐")
     sentiment_mapping = ["one", "two", "three", "four", "five"]
-selected = st.feedback("stars")
-if selected is not None:
-    st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
+    selected = st.feedback("stars")
+    if selected is not None:
+       st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
 
 # ------------- UI & PAGE CONTROL --------------
 if 'page' not in st.session_state:
