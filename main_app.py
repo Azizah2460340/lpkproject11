@@ -43,7 +43,7 @@ def chatbot_response(user_input):
     else:
         return "Maaf, saya tidak mengerti pertanyaan Anda. Silakan tanyakan tentang senyawa organik atau fitur aplikasi ini."
 
-# Fungsi untuk menghitung rating rata-rata
+# Fungsi untuk menghitung rating
 def calculate_average_rating(compound_name):
     reviews = compounds[compound_name].get("reviews", [])
     if not reviews:
@@ -86,7 +86,7 @@ def show_home():
         st.image("https://placehold.co/300x200?text=O-Kimiaku+Logo", width=200)
     
     with col2:
-        st.title("O-Kimiaku - Explorer Senyawa Organik")
+        st.title("SELAMAT DATANG DI O-KIMIAKU ")
         st.write("""
         Aplikasi ini membantu Anda mempelajari sifat-sifat senyawa organik seperti:
         - Titik didih dan titik leleh
