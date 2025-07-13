@@ -25,16 +25,24 @@ def show_home():
     Klik gambar senyawa untuk mengetahui detailnya lebih lanjut!
     """)
 
-    # Contoh Senyawa: Alkohol
-    st.subheader("🔍 Jelajahi Senyawa: Alkohol")
-    col1, col2 = st.columns([1, 2])
+    st.subheader("🔍 Jelajahi Senyawa:")
+
+    # Tampilkan 2 senyawa dalam satu baris
+    col1, col2 = st.columns(2)
+
     with col1:
-        alkohol_img = Image.open("alkohol.jpg")  # Ganti dengan path gambar lokal kamu
-        if st.button("Klik untuk lihat detail Alkohol"):
+        st.markdown("### 🧪 Alkohol")
+        alkohol_img = Image.open("alkohol.jpg")
+        if st.button("Lihat Detail Alkohol"):
             st.session_state.page = 'alkohol'
-        st.image(alkohol_img, caption="Senyawa Alkohol", use_column_width=True)
+        st.image(alkohol_img, caption="Alkohol", use_column_width=True)
+
     with col2:
-        st.write("Alkohol adalah senyawa organik dengan gugus -OH (hidroksil)...")
+        st.markdown("### 🧪 Amina")
+        amina_img = Image.open("amina.jpg")
+        if st.button("Lihat Detail Amina"):
+            st.session_state.page = 'amina'
+        st.image(amina_img, caption="Amina", use_column_width=True)
 
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
@@ -49,6 +57,36 @@ def show_alkohol():
 
     🔗 [Tonton Penjelasan Alkohol di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)
     """)
+def show_amina():
+    st.title("🧪 Detail Senyawa: Amina")
+
+    col1, col2 = st.columns([1, 2])
+
+    with col1:
+        amina_img = Image.open("amina.jpg")
+        st.image(amina_img, caption="Struktur Amina", use_column_width=True)
+
+    with col2:
+        st.markdown("""
+        ### 📘 Informasi Umum
+        - **Tatanama IUPAC:** Metilamina, Dimetilamina, dll.
+        - **Rumus Umum:** R-NH₂ (amina primer)
+        - **Jenis Ikatan:** Kovalen Polar
+        - **Kelas:** Amina primer, sekunder, tersier
+
+        ### 🌡️ Sifat Fisik
+        - **Bau:** Menyengat seperti ikan busuk
+        - **Kelarutan:** Larut dalam air (jika berat molekul rendah)
+
+        ### ⚛️ Kepolaran
+        - Amina bersifat **polar** dan dapat membentuk ikatan hidrogen.
+
+        ### 🤓 Fun Fact
+        - Amina banyak ditemukan pada obat-obatan, pestisida, dan bahan biologis!
+
+        ### 🎥 Video Pembelajaran
+        🔗 [Tonton Penjelasan Amina di YouTube](https://www.youtube.com/watch?v=dFOVrxzS5pk)
+        """)
 
 def show_chatbot():
     st.title("💬 Chatbot O-KIMIAKU")
@@ -110,3 +148,5 @@ elif st.session_state.page == 'chatbot':
     show_chatbot()
 elif st.session_state.page == 'rating':
     show_rating()
+elif st.session_state.page == 'amina':
+    show_amina()
