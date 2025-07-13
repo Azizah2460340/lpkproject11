@@ -51,7 +51,7 @@ def show_alkohol():
     """)
 
 def show_chatbot():
-    st.sidebar.title("💬 Chatbot O-KIMIAKU")
+    st.title("💬 Chatbot O-KIMIAKU")
     question = st.sidebar.text_input("Tanya tentang senyawa (mis. alkohol):")
     if question:
         if "alkohol" in question.lower():
@@ -84,12 +84,21 @@ if 'page' not in st.session_state:
     st.session_state.page = 'home'
 
 # Sidebar Navigasi
-st.sidebar.title("Navigasi")
-page = st.sidebar.radio("Pilih Halaman:", ("Beranda", "About Us", "Keluar"))
+# Sidebar Navigasi TANPA LINGKARAN
+st.sidebar.title("📚 Navigasi")
 
-# Chatbot Sidebar
-show_chatbot()
+if st.sidebar.button("🏠 Beranda"):
+    st.session_state.page = 'home'
 
+if st.sidebar.button("👥 About Us"):
+    st.session_state.page = 'about'
+
+if st.sidebar.button("💬Chatbot"):
+    st.session_state.page = 'chatbot'
+    
+if st.sidebar.button(" ⭐Rating"):
+    st.session_state.page = 'rating'
+    
 # Routing
 if st.session_state.page == 'alkohol':
     show_alkohol()
@@ -97,6 +106,8 @@ elif page == "Beranda":
     show_home()
 elif page == "About Us":
     show_about()
+elif page == "Chatbot":
+    show_chatbot()
 elif page == "Keluar":
     show_rating()
 
