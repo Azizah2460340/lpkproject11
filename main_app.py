@@ -52,12 +52,13 @@ def show_alkohol():
 
 def show_chatbot():
     st.title("💬 Chatbot O-KIMIAKU")
-    question = st.sidebar.text_input("Tanya tentang senyawa (mis. alkohol):")
+
+    question = st.text_input("Tanya tentang senyawa kimia (contoh: alkohol):")
     if question:
         if "alkohol" in question.lower():
-            st.sidebar.write("Alkohol memiliki gugus hidroksil (-OH) dan bersifat polar.")
+            st.success("✅ Alkohol memiliki gugus hidroksil (-OH), bersifat polar, dan digunakan sebagai pelarut.")
         else:
-            st.sidebar.write("Maaf, informasi senyawa belum tersedia.")
+            st.warning("❗ Maaf, informasi senyawa tersebut belum tersedia.")
 
 def show_about():
     st.title("Tentang Kami 👨‍💻")
@@ -83,7 +84,6 @@ def show_rating():
 if 'page' not in st.session_state:
     st.session_state.page = 'home'
 
-# Sidebar Navigasi
 # Sidebar Navigasi TANPA LINGKARAN
 st.sidebar.title("📚 Navigasi")
 
@@ -100,14 +100,13 @@ if st.sidebar.button(" ⭐Rating"):
     st.session_state.page = 'rating'
     
 # Routing
-if st.session_state.page == 'alkohol':
-    show_alkohol()
-elif page == "Beranda":
+if st.session_state.page == 'home':
     show_home()
-elif page == "About Us":
+elif st.session_state.page == 'alkohol':
+    show_alkohol()
+elif st.session_state.page == 'about':
     show_about()
-elif page == "Chatbot":
+elif st.session_state.page == 'chatbot':
     show_chatbot()
-elif page == "Keluar":
+elif st.session_state.page == 'rating':
     show_rating()
-
