@@ -61,10 +61,16 @@ def show_about():
     st.title("Tentang Kami 👨‍💻")
     st.markdown("""
     **Developer:**  
-    - Nama: [Nama Kamu]  
-    - Email: nama@email.com  
-    - Universitas: Universitas Kimia Hebat
-
+    KELOMPOK 11 KELAS 1C
+    1. Nama:  Azizah Putri Azzahra 
+       NIM : 2460340 
+    2. Nama:  NAdifah
+       NIM : 2460340 
+    2. Nama:  NAdifah
+       NIM : 2460340 
+    2. Nama:  NAdifah
+       NIM : 2460340 
+       
     Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang interaktif dan menyenangkan.
     """)
 
