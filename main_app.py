@@ -32,7 +32,21 @@ def show_home():
 
     if st.button("🧬 Amina"):
         st.session_state.page = 'amina'
+        
+    if st.button("🧬 Aldehida"):
+        st.session_state.page = 'aldehida'
+        
+    if st.button("🧬 Nitro"):
+        st.session_state.page = 'nitro'
 
+    if st.button("🧬 Alkana"):
+        st.session_state.page = 'alkana'
+        
+        if st.button("🧬 Alkena"):
+        st.session_state.page = 'alkena'
+        
+        if st.button("🧬 Alkuna"):
+        st.session_state.page = 'alkuna'
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
 
