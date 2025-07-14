@@ -47,6 +47,7 @@ def show_home():
         
         if st.button("🧬 Alkuna"):
         st.session_state.page = 'alkuna'
+        
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
 
