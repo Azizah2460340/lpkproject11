@@ -46,6 +46,18 @@ def show_alkohol():
 
     🔗 [Tonton Penjelasan Alkohol di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)
     """)
+def show_amina():
+    st.title("Detail Senyawa: Amina")
+    st.markdown("""
+    **Tatanama:** Anilin  
+    **Gugus Fungsi:** –NH₂  
+    **Titik Didih:** ~184°C  
+    **Titik Leleh:** –75°C  
+    **Kepolaran:** Polar  
+    **Fun Fact:** Amina banyak ditemukan dalam alkaloid seperti nikotin dan morfin.
+
+    🔗 [Tonton Penjelasan Amina di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
+    """)
 def show_ester():
     st.title("Detail Senyawa: Ester")
 
