@@ -50,12 +50,35 @@ def show_alkohol():
 def show_chatbot():
     st.title("💬 Chatbot O-KIMIAKU")
 
-    question = st.text_input("Tanya tentang senyawa kimia (contoh: alkohol):")
+    question = st.text_input("Tanya tentang senyawa kimia (contoh: Apa itu alkohol?):")
+
     if question:
-        if "alkohol" in question.lower():
-            st.success("✅ Alkohol memiliki gugus hidroksil (-OH), bersifat polar, dan digunakan sebagai pelarut.")
+        q = question.lower()
+
+        if "alkohol" in q:
+            st.info("**Jawaban tentang Alkohol:**")
+            st.success("""
+            ✅ Alkohol memiliki gugus hidroksil (-OH), bersifat polar, dan digunakan sebagai pelarut.  
+            **Tatanama:** Etanol (Ethanol)  
+            **Rumus Kimia:** C₂H₅OH  
+            **Titik Didih:** 78.37°C  
+            **Titik Leleh:** -114.1°C  
+            **Kepolaran:** Polar  
+            **Fun Fact:** Etanol dapat digunakan sebagai bahan bakar ramah lingkungan!
+            """)
+        elif "amina" in q:
+            st.info("**Jawaban tentang Amina:**")
+            st.success("""
+            ✅ Amina adalah senyawa yang mengandung gugus -NH₂ (amino).  
+            **Tatanama:** Metilamina (Methylamine)  
+            **Rumus Kimia:** CH₃NH₂  
+            **Titik Didih:** -6.3°C  
+            **Titik Leleh:** -93.5°C  
+            **Kepolaran:** Polar  
+            **Fun Fact:** Amina digunakan dalam produksi obat dan pewarna!
+            """)
         else:
-            st.warning("❗ Maaf, informasi senyawa tersebut belum tersedia.")
+            st.warning("❗ Maaf, informasi senyawa tersebut belum tersedia. Coba kata kunci: alkohol atau amina.")
 
 def show_about():
     st.title("Tentang Kami 👨‍💻")
