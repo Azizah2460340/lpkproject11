@@ -549,9 +549,11 @@ elif st.session_state.page == 'alkil halida':
     show_alkil_halida()
 elif st.session_state.page == 'eter':
     show_eter()
-elif st.session_state.page == 'aldehid':
-    show_aldehid()
 elif st.session_state.page == 'amida':
     show_amida()
 elif st.session_state.page == 'nitril':
     show_nitril()
+elif st.session_state.page == 'aldehida':
+    show_aldehida()
+elif st.session_state.page == 'nitro':
+    show_nitro()
