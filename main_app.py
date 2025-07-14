@@ -491,8 +491,7 @@ KELOMPOK SEBELAS KELAS C
 3. Nama: Nadifah (2460342)  
 4. Nama: Nadifah (2460343)  
    
-Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang interaktif dan menyenangkan.
-""")
+Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang interaktif. """)
 
 def show_rating():
     st.title("Sebelum Keluar, Beri Rating Aplikasi Ini ⭐")
