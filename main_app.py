@@ -484,15 +484,15 @@ def show_chatbot():
 def show_about():
     st.title("Tentang Kami 👨‍💻")
     st.markdown("""
-    **Developer:**  
-    KELOMPOK 11 KELAS 1C
-    1. Nama:  Azizah Putri Azzahra (2460340)
-    2. Nama:  Nadifah (2460340)
-    3. Nama:  NAdifah (2460340)
-    4. Nama:  NAdifah (2460340)
-       
-    Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang interaktif dan menyenangkan.
-    """)
+**Developer:**  
+KELOMPOK 11 KELAS 1C  
+1. Nama: Azizah Putri Azzahra (2460340)  
+2. Nama: Nadifah (2460341)  
+3. Nama: Nadifah (2460342)  
+4. Nama: Nadifah (2460343)  
+   
+Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang interaktif dan menyenangkan.
+""")
 
 def show_rating():
     st.title("Sebelum Keluar, Beri Rating Aplikasi Ini ⭐")
