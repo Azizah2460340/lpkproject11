@@ -252,7 +252,8 @@ def show_nitro():
     **Fun Fact:** Senyawa nitro jarang ditemukan di alam, kebanyakan dibuat secara sintetik.
 
     🔗 [Tonton Penjelasan Nitro di YouTube](https://www.youtube.com/watch?v=tvES
-
+     """)
+    
 def show_chatbot():
     st.title("💬 Chatbot O-KIMIAKU")
 
