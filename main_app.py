@@ -514,10 +514,10 @@ def show_about():
     st.markdown("""
 **Developer:**  
 KELOMPOK 11 KELAS 1C 
-1. Nama: Azizah Putri Azzahra (2460340)  
-2. Nama: Nadifah (2460341)  
-3. Nama: Nadifah (2460342)  
-4. Nama: Nadifah (2460343)  
+1. Nama : Azizah Putri Azzahra (2460340)  
+2. Nama : Nadifah Adya Anggita (2460
+3. Nama : Raudhatul Dahlia (2460493)
+4. Nama : Zahira Dwi Safitri (2460542) 
    
 Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang interaktif.
 """)
@@ -542,10 +542,10 @@ if st.sidebar.button("🏠 Beranda"):
 if st.sidebar.button("👥 About Us"):
     st.session_state.page = 'about'
 
-if st.sidebar.button("💬Chatbot"):
+if st.sidebar.button("💬 Chatbot"):
     st.session_state.page = 'chatbot'
     
-if st.sidebar.button(" ⭐Rating"):
+if st.sidebar.button(" ⭐ Rating"):
     st.session_state.page = 'rating'
     
 # Routing
