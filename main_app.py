@@ -374,7 +374,7 @@ def show_chatbot():
             elif "video" in q:
                 st.success("https://www.youtube.com/watch?v=tvES-hSZKDY")
 
-        # tiol`           
+        # tiol          
         elif "tiol" in q:
             if "kepolaran" in q:
                 st.success("Tiol sedikit polar.")
@@ -485,7 +485,7 @@ def show_about():
     st.title("Tentang Kami 👨‍💻")
     st.markdown("""
 **Developer:**  
-KELOMPOK SEBELAS KELAS C 
+KELOMPOK 11 KELAS 1C 
 1. Nama: Azizah Putri Azzahra (2460340)  
 2. Nama: Nadifah (2460341)  
 3. Nama: Nadifah (2460342)  
@@ -534,7 +534,7 @@ elif st.session_state.page == 'rating':
 elif st.session_state.page == 'amina':
     show_amina()
 elif st.session_state.page == 'alkil halida':
-    show_alkilhalida()
+    show_alkil_halida()
 elif st.session_state.page == 'eter':
     show_eter()
 elif st.session_state.page == 'aldehid':
