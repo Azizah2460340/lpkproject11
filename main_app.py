@@ -50,35 +50,43 @@ def show_alkohol():
 def show_chatbot():
     st.title("💬 Chatbot O-KIMIAKU")
 
-    question = st.text_input("Tanya tentang senyawa kimia (contoh: Apa itu alkohol?):")
+    question = st.text_input("Tanyakan sesuatu tentang alkohol atau amina:")
 
     if question:
         q = question.lower()
 
+        # Alkohol
         if "alkohol" in q:
-            st.info("**Jawaban tentang Alkohol:**")
-            st.success("""
-            ✅ Alkohol memiliki gugus hidroksil (-OH), bersifat polar, dan digunakan sebagai pelarut.  
-            **Tatanama:** Etanol (Ethanol)  
-            **Rumus Kimia:** C₂H₅OH  
-            **Titik Didih:** 78.37°C  
-            **Titik Leleh:** -114.1°C  
-            **Kepolaran:** Polar  
-            **Fun Fact:** Etanol dapat digunakan sebagai bahan bakar ramah lingkungan!
-            """)
+            if "kepolaran" in q:
+                st.success("Alkohol bersifat polar karena memiliki gugus -OH.")
+            elif "rumus" in q:
+                st.success("Rumus kimia alkohol (etanol) adalah C₂H₅OH.")
+            elif "titik didih" in q:
+                st.success("Titik didih alkohol adalah 78.37°C.")
+            elif "titik leleh" in q or "titik meleh" in q:
+                st.success("Titik leleh alkohol adalah -114.1°C.")
+            elif "fun fact" in q or "fakta" in q:
+                st.success("Etanol bisa digunakan sebagai bahan bakar ramah lingkungan!")
+            else:
+                st.info("Alkohol adalah senyawa dengan gugus -OH dan bersifat polar.")
+
+        # Amina
         elif "amina" in q:
-            st.info("**Jawaban tentang Amina:**")
-            st.success("""
-            ✅ Amina adalah senyawa yang mengandung gugus -NH₂ (amino).  
-            **Tatanama:** Metilamina (Methylamine)  
-            **Rumus Kimia:** CH₃NH₂  
-            **Titik Didih:** -6.3°C  
-            **Titik Leleh:** -93.5°C  
-            **Kepolaran:** Polar  
-            **Fun Fact:** Amina digunakan dalam produksi obat dan pewarna!
-            """)
+            if "kepolaran" in q:
+                st.success("Amina bersifat polar karena mengandung gugus -NH₂.")
+            elif "rumus" in q:
+                st.success("Rumus kimia amina (metilamina) adalah CH₃NH₂.")
+            elif "titik didih" in q:
+                st.success("Titik didih amina adalah -6.3°C.")
+            elif "titik leleh" in q or "titik meleh" in q:
+                st.success("Titik leleh amina adalah -93.5°C.")
+            elif "fun fact" in q or "fakta" in q:
+                st.success("Amina digunakan dalam produksi obat dan pewarna.")
+            else:
+                st.info("Amina adalah senyawa dengan gugus -NH₂ yang bersifat polar.")
+        
         else:
-            st.warning("❗ Maaf, informasi senyawa tersebut belum tersedia. Coba kata kunci: alkohol atau amina.")
+            st.warning("Maaf, saya hanya tahu tentang alkohol dan amina untuk saat ini.")
 
 def show_about():
     st.title("Tentang Kami 👨‍💻")
