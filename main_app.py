@@ -42,10 +42,10 @@ def show_home():
     if st.button("🧬 Alkana"):
         st.session_state.page = 'alkana'
         
-        if st.button("🧬 Alkena"):
+    if st.button("🧬 Alkena"):
         st.session_state.page = 'alkena'
         
-        if st.button("🧬 Alkuna"):
+    if st.button("🧬 Alkuna"):
         st.session_state.page = 'alkuna'
         
 def show_alkohol():
