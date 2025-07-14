@@ -485,7 +485,7 @@ def show_about():
     st.title("Tentang Kami 👨‍💻")
     st.markdown("""
 **Developer:**  
-KELOMPOK 11 KELAS 1C  
+KELOMPOK SEBELAS KELAS C 
 1. Nama: Azizah Putri Azzahra (2460340)  
 2. Nama: Nadifah (2460341)  
 3. Nama: Nadifah (2460342)  
