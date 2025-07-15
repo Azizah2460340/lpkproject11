@@ -77,9 +77,10 @@ import streamlit as st
 
 def show_alkana():
     st.title("Detail Senyawa: Alkana")
+
     st.markdown("""
     **Deskripsi:** Alkana adalah senyawa hidrokarbon jenuh yang hanya mengandung ikatan tunggal (σ) antar atom karbon (C–C) dan antara karbon dengan hidrogen (C–H). Rumus umumnya adalah CₙH₂ₙ₊₂. Alkana termasuk senyawa nonpolar dan merupakan komponen utama dalam gas alam dan minyak bumi.
-    
+
     **Titik Didih:**
     - Titik didih alkana meningkat seiring bertambahnya jumlah atom karbon.
     - Bentuk rantai lurus memiliki titik didih lebih tinggi dibanding bentuk bercabang.
@@ -87,244 +88,321 @@ def show_alkana():
         - Metana (CH₄): −161,5 °C
         - Etana (C₂H₆): −88,6 °C
         - Butana (C₄H₁₀): −0,5 °C
-    
+
     **Kepolaran:** Nonpolar, tidak larut dalam air.
-    
+
     **Ikatan Kimia:** Hanya memiliki ikatan tunggal kovalen (σ).
-    
+
     **Tata Nama (IUPAC):** Berdasarkan jumlah atom karbon dan akhiran -ana.
     """)
 
 def show_alkena():
     st.title("Detail Senyawa: Alkena")
+
     st.markdown("""
     **Deskripsi:** Alkena adalah senyawa hidrokarbon tak jenuh yang memiliki setidaknya satu ikatan rangkap dua (C=C) antar atom karbon. Rumus umumnya CₙH₂ₙ.
+
     **Titik Didih:**
     - Titik didih alkena meningkat seiring bertambahnya jumlah atom karbon.
     - Contoh:
         - Etena (C₂H₄): −103,7 °C
         - Propena (C₃H₆): −47,6 °C
+
     **Kepolaran:** Secara umum nonpolar, sedikit lebih polar dari alkana.
+
     **Ikatan Kimia:** Memiliki 1 ikatan sigma (σ) dan 1 ikatan pi (π).
+
     **Tata Nama (IUPAC):** Berdasarkan rantai terpanjang yang mengandung ikatan rangkap dua dan akhiran -ena.
     """)
 
 def show_alkuna():
     st.title("Detail Senyawa: Alkuna")
+
     st.markdown("""
     **Deskripsi:** Alkuna adalah senyawa hidrokarbon tak jenuh yang memiliki setidaknya satu ikatan rangkap tiga (C≡C) antar atom karbon. Rumus umumnya CₙH₂ₙ₋₂.
+
     **Titik Didih:**
     - Titik didih alkuna meningkat seiring jumlah atom karbon.
     - Contoh:
         - Etuna (asetilena, C₂H₂): −84 °C
         - Butuna (C₄H₆): sekitar 0–4 °C
+
     **Kepolaran:** Sebagian besar alkuna adalah nonpolar.
+
     **Ikatan Kimia:** Memiliki 1 ikatan sigma (σ) dan 2 ikatan pi (π).
+
     **Tata Nama (IUPAC):** Berdasarkan rantai terpanjang yang mengandung ikatan rangkap tiga dan akhiran -una.
     """)
 
-def show_alkohol():
+def show_alcohol():
     st.title("Detail Senyawa: Alkohol")
+
     st.markdown("""
-    **Deskripsi:** Alkohol adalah senyawa organik yang memiliki gugus hidroksil (–OH) yang terikat pada atom karbon jenuh (sp³). Rumus umum: R–OH.\
-    
+    **Deskripsi:** Alkohol adalah senyawa organik yang memiliki gugus hidroksil (–OH) yang terikat pada atom karbon jenuh (sp³). Rumus umum: R–OH.
+
     **Titik Didih:**
     - Tinggi dibanding alkana/alkena/alkuna dengan jumlah karbon yang sama.
     - Contoh:
         - Metanol (CH₃OH): 64,7 °C
         - Etanol (CH₃CH₂OH): 78,4 °C
         - 1-Butanol: 117,7 °C
+
     **Kepolaran:** Polar, dapat larut dalam air.
+
     **Ikatan Kimia:** Gugus –OH terdiri dari ikatan kovalen polar O–H dan C–O.
+
     **Tata Nama (IUPAC):** Berdasarkan rantai utama yang mengandung gugus –OH dan akhiran -ol.
     """)
 
 def show_fenol():
     st.title("Detail Senyawa: Fenol")
+
     st.markdown("""
     **Deskripsi:** Fenol (C₆H₅OH) adalah senyawa aromatik yang terdiri dari cincin benzena yang terikat pada gugus hidroksil (-OH).
+
     **Titik Didih:**
     - Titik didih fenol: 181,7 °C
     - Titik leleh: 40,9 °C
+
     **Kepolaran:** Polar, karena mengandung gugus hidroksil (-OH).
+
     **Ikatan Kimia:** Ikatan kovalen antara atom karbon dan hidrogen dalam cincin benzena.
+
     **Tata Nama (IUPAC):** Nama umum: Fenol, Nama IUPAC: Benzenol.
     """)
 
 def show_aldehid():
     st.title("Detail Senyawa: Aldehid")
+
     st.markdown("""
     **Deskripsi:** Aldehid adalah senyawa organik yang memiliki gugus karbonil (C=O) di ujung rantai karbon, dengan rumus umum R–CHO.
+
     **Titik Didih:**
     - Titik didih lebih tinggi daripada alkana/eter, tapi lebih rendah dari alkohol.
     - Contoh:
         - Formaldehida (HCHO): −19 °C
         - Asetaldehida (CH₃CHO): 20,2 °C
         - Butanal: 75 °C
+
     **Kepolaran:** Sangat polar, larut dalam air.
+
     **Ikatan Kimia:** Gugus karbonil terdiri dari satu ikatan sigma (σ) dan satu ikatan pi (π).
+
     **Tata Nama (IUPAC):** Berdasarkan rantai utama yang mengandung gugus –CHO dan akhiran -al.
     """)
 
 def show_keton():
     st.title("Detail Senyawa: Keton")
+
     st.markdown("""
     **Deskripsi:** Keton adalah senyawa organik yang memiliki gugus karbonil (C=O) di tengah rantai karbon, dengan rumus umum R–CO–R′.
+
     **Titik Didih:**
     - Titik didih lebih tinggi dari alkana/eter, tetapi lebih rendah dari alkohol.
     - Contoh:
         - Aseton (CH₃COCH₃): 56,5 °C
         - 2-Butanon (CH₃COCH₂CH₃): 79,6 °C
+
     **Kepolaran:** Polar, larut dalam air untuk rantai pendek.
+
     **Ikatan Kimia:** Gugus karbonil mengandung 1 ikatan sigma (σ) dan 1 ikatan pi (π).
+
     **Tata Nama (IUPAC):** Berdasarkan rantai utama yang mengandung gugus karbonil dan akhiran -on.
     """)
 
 def show_amina():
     st.title("Detail Senyawa: Amina")
+
     st.markdown("""
     **Deskripsi:** Amina adalah senyawa organik turunan amonia (NH₃) di mana satu atau lebih atom hidrogen diganti dengan gugus alkil atau aril.
+
     **Titik Didih:**
     - Amina primer dan sekunder dapat membentuk ikatan hidrogen, sehingga titik didihnya lebih tinggi dari senyawa nonpolar.
     - Contoh:
         - Metilamina (CH₃NH₂): −6.3 °C
         - Dimetilamina (CH₃)₂NH: 7 °C
         - Trimetilamina (CH₃)₃N: 3.5 °C
+
     **Kepolaran:** Polar, larut dalam air untuk rantai pendek.
+
     **Ikatan Kimia:** Amina memiliki ikatan sigma (σ) antara nitrogen dan karbon/hidrogen.
+
     **Tata Nama (IUPAC):** Berdasarkan nama gugus alkil + amina.
     """)
 
 def show_asam_karboksilat():
     st.title("Detail Senyawa: Asam Karboksilat")
+
     st.markdown("""
     **Deskripsi:** Asam karboksilat adalah senyawa organik yang memiliki gugus karboksil (–COOH). Rumus umum: R–COOH.
+
     **Titik Didih:**
     - Sangat tinggi dibanding alkohol, karena asam karboksilat membentuk ikatan hidrogen ganda (dimer) yang kuat.
     - Contoh:
         - Asam format (HCOOH): 100,8 °C
         - Asam asetat (CH₃COOH): 118,1 °C
         - Asam butirat (CH₃CH₂CH₂COOH): 163,7 °C
+
     **Kepolaran:** Sangat polar, sangat larut dalam air.
+
     **Ikatan Kimia:** Mengandung ikatan sigma (σ) dan pi (π) pada C=O.
+
     **Tata Nama (IUPAC):** Berdasarkan rantai utama yang mengandung gugus –COOH dan akhiran -oat untuk garam/ester.
     """)
 
 def show_amida():
     st.title("Detail Senyawa: Amida")
+
     st.markdown("""
     **Deskripsi:** Amida adalah turunan dari asam karboksilat di mana gugus –OH pada gugus karboksil (–COOH) digantikan oleh gugus amina.
+
     **Titik Didih:**
     - Titik didih tinggi, karena dapat membentuk ikatan hidrogen yang kuat.
     - Contoh:
         - Metanamida (formamida, HCONH₂): 210 °C
         - Etanamida (asetamida, CH₃CONH₂): 222 °C
+
     **Kepolaran:** Sangat polar, larut dalam air.
+
     **Ikatan Kimia:** Memiliki ikatan sigma dan pi dalam gugus karbonil (C=O).
+
     **Tata Nama (IUPAC):** Berdasarkan nama asam karboksilat asalnya, dengan akhiran -amida.
     """)
 
 def show_protein():
     st.title("Detail Senyawa: Protein")
+
     st.markdown("""
     **Deskripsi:** Protein adalah polimer alami yang tersusun dari rantai panjang asam amino yang terhubung oleh ikatan peptida.
+
     **Titik Didih:** Tidak relevan untuk protein besar, karena panas menyebabkan denaturasi.
+
     **Kepolaran:** Amfipatik, mengandung bagian polar dan nonpolar.
+
     **Ikatan Kimia:** Ikatan peptida (amida) antara gugus –COOH dan –NH₂ antar asam amino.
+
     **Tata Nama:** Tidak dinamai secara IUPAC, nama protein berdasarkan fungsi, struktur, atau asal biologis.
     """)
 
 def show_karbohidrat():
     st.title("Detail Senyawa: Karbohidrat")
+
     st.markdown("""
     **Deskripsi:** Karbohidrat adalah senyawa organik yang terdiri dari unsur C, H, dan O, dengan rumus umum (CH₂O)n.
+
     **Titik Didih:** Tidak memiliki titik didih pasti, karena terurai sebelum menguap.
+
     **Kepolaran:** Sangat polar, larut dalam air.
+
     **Ikatan Kimia:** Tersusun dari ikatan glikosidik (C–O–C) antara gugus –OH dari dua monosakarida.
+
     **Tata Nama:** Monosakarida dinamai berdasarkan jumlah atom karbon + tipe gugus karbonil.
     """)
 
 def show_lemak_minyak():
     st.title("Detail Senyawa: Lemak dan Minyak")
+
     st.markdown("""
     **Deskripsi:** Lemak dan minyak adalah ester dari gliserol dan asam lemak (trigliserida).
+
     **Titik Didih:** Sangat tinggi (300 °C ke atas), tetapi mudah rusak saat dipanaskan berlebih.
+
     **Kepolaran:** Nonpolar, tidak larut dalam air.
+
     **Ikatan Kimia:** Ikatan ester (–COO–) antara gliserol dan asam lemak.
+
     **Tata Nama:** Asam lemak dinamai seperti asam karboksilat panjang.
     """)
 
 def show_benzena():
     st.title("Detail Senyawa: Benzena")
+
     st.markdown("""
     **Deskripsi:** Benzena adalah senyawa hidrokarbon aromatik paling sederhana dengan rumus C₆H₆.
+
     **Titik Didih:** Titik didih benzena: 80,1 °C.
+
     **Kepolaran:** Nonpolar secara keseluruhan.
+
     **Ikatan Kimia:** Setiap atom C terhubung dengan dua C lain dan satu H, membentuk ikatan sigma (σ).
+
     **Tata Nama (IUPAC):** Dinamai benzena jika murni.
     """)
 
 def show_alkil_halida():
     st.title("Detail Senyawa: Alkil Halida")
+
     st.markdown("""
     **Deskripsi:** Alkil halida atau haloalkana adalah senyawa organik yang terbentuk dari alkana dengan menggantikan satu atau lebih atom H dengan atom halogen.
+
     **Titik Didih:** Titik didih lebih tinggi dari alkana dengan jumlah karbon setara.
+
     **Kepolaran:** Polar, larut dalam pelarut organik.
+
     **Ikatan Kimia:** Mengandung ikatan sigma (σ) polar antara C–X.
+
     **Tata Nama (IUPAC):** Berdasarkan rantai utama dari alkana dan posisi halogen.
     """)
 
 def show_nitro():
     st.title("Detail Senyawa: Nitro")
-    
+
     st.markdown("""
     **Deskripsi:** Senyawa nitro adalah senyawa organik yang mengandung gugus nitro (–NO₂).
+
     **Titik Didih:** Umumnya memiliki titik didih tinggi.
-    **Kepolaran:** Sangat polar, larut dalam pelarut polar aprotik (Pelarut aprotik adalah pelarut yang tidak memiliki atom hidrogen yang dapat membentuk ikatan hidrogen, khususnya tidak memiliki gugus –OH atau –NH yang dapat menyumbangkan proton (H⁺)).
+
+    **Kepolaran:** Sangat polar, larut dalam pelarut polar aprotik.
+
     **Ikatan Kimia:** Gugus nitro memiliki 1 ikatan sigma dan 1 ikatan pi antara N=O.
+
     **Tata Nama (IUPAC):** Gugus –NO₂ dinamai sebagai “nitro-” dan dianggap substituen.
     """)
 
 def show_nitril():
     st.title("Detail Senyawa: Nitril")
-    
+
     st.markdown("""
     **Deskripsi:** Nitril adalah senyawa organik yang mengandung gugus –C≡N (gugus sianida).
+
     **Titik Didih:** Nitril memiliki titik didih sedang hingga tinggi.
+
     **Kepolaran:** Sangat polar, larut dalam pelarut polar.
+
     **Ikatan Kimia:** Mengandung ikatan rangkap tiga antara karbon dan nitrogen.
+
     **Tata Nama (IUPAC):** Menggunakan akhiran -nitril.
     """)
 
 def show_ester():
     st.title("Detail Senyawa: Ester")
+
     st.markdown("""
     **Deskripsi:** Ester adalah senyawa turunan asam karboksilat di mana gugus –OH diganti dengan gugus alkoksi (–OR).
+
     **Titik Didih:** Titik didih lebih rendah daripada asam karboksilat dan alkohol.
+
     **Kepolaran:** Agak polar, larut dalam pelarut organik.
+
     **Ikatan Kimia:** Mengandung 1 ikatan σ dan 1 ikatan π dalam gugus karbonil (C=O).
+
     **Tata Nama (IUPAC):** Nama alkil dari bagian alkohol + nama rantai asam dengan akhiran -oat.
     """)
 
 def show_asam_halida():
     st.title("Detail Senyawa: Asam Halida")
+
     st.markdown("""
     **Deskripsi:** Asam halida adalah turunan dari asam karboksilat di mana gugus –OH diganti oleh halogen.
+
     **Titik Didih:** Titik didih lebih rendah daripada asam karboksilat.
+
     **Kepolaran:** Sangat polar, tidak larut dalam air.
+
     **Ikatan Kimia:** Mengandung 1 ikatan σ dan 1 ikatan π dalam gugus karbonil (C=O).
+
     **Tata Nama (IUPAC):** Nama berasal dari nama asam karboksilat induk, ubah akhiran -oat menjadi -oyl halida.
     """)
-
-def show_amina():
-    st.title("Detail Senyawa: Amina")
-    st.markdown("""
-    **Tatanama:** Anilin  
-    **Gugus Fungsi:** –NH₂  
-    **Titik Didih:** ~184°C  
-    **Titik Leleh:** –75°C  
-    **Kepolaran:** Polar  
-    **Fun Fact:** Amina banyak ditemukan dalam alkaloid seperti nikotin dan morfin.
 
 def show_chatbot():
     st.title("💬 Chatbot O-KIMIAKU")
