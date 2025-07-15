@@ -836,19 +836,6 @@ def show_chatbot():
                 st.success("🔗 [Tonton Penjelasan Lemak dan Minyak di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
             else:
                 st.info("Lemak dan minyak adalah bagian dari kelompok lipid.")
-        if "benzena" in q:
-            if "kepolaran" in q:
-                st.success("Benzena bersifat nonpolar dan tidak larut dalam air.")
-            elif "rumus" in q or "gugus" in q:
-                st.success("Rumus benzena: C₆H₆.")
-            elif "titik" in q:
-                st.success("Titik didih benzena: 80,1 °C.")
-            elif "fakta" in q:
-                st.success("Benzena adalah senyawa hidrokarbon aromatik paling sederhana.")
-            elif "video" in q:
-                st.success("🔗 [Tonton Penjelasan Benzena di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
-            else:
-                st.info("Benzena adalah senyawa aromatik dengan struktur cincin.")
         if "alkil halida" in q:
             if "kepolaran" in q:
                 st.success("Alkil halida bersifat polar karena perbedaan elektronegativitas antara C dan halogen.")
@@ -914,6 +901,97 @@ def show_chatbot():
                 st.success("🔗 [Tonton Penjelasan Asam Halida di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
             else:
                 st.info("Asam halida adalah turunan dari asam karboksilat.")
+        if "alkohol" in q:
+            if "kepolaran" in q:
+                st.success("Alkohol bersifat polar karena adanya gugus hidroksil (–OH).")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Rumus umum alkohol: R–OH.")
+            elif "titik" in q:
+                st.success("Titik didih alkohol lebih tinggi dibandingkan alkana dan alkena.")
+            elif "fakta" in q:
+                st.success("Alkohol dapat larut dalam air karena membentuk ikatan hidrogen.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Alkohol di YouTube](https://www.youtube.com/watch?v=example)")
+            else:
+                st.info("Alkohol adalah senyawa organik yang memiliki gugus hidroksil (–OH).")
+        if "fenol" in q:
+            if "kepolaran" in q:
+                st.success("Fenol adalah senyawa polar karena adanya gugus hidroksil (–OH).")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Rumus fenol: C₆H₅OH.")
+            elif "titik" in q:
+                st.success("Titik didih fenol lebih tinggi dari benzena karena ikatan hidrogen.")
+            elif "fakta" in q:
+                st.success("Fenol bersifat korosif dan memiliki bau khas tajam.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Fenol di YouTube](https://www.youtube.com/watch?v=example)")
+            else:
+                st.info("Fenol adalah senyawa aromatik yang terdiri dari cincin benzena dan gugus hidroksil.")        
+          if "alkana" in q:
+            if "kepolaran" in q:
+                st.success("Alkana adalah senyawa nonpolar karena distribusi elektron seimbang.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Rumus umum alkana: CnH₂n+2.")
+            elif "titik" in q:
+                st.success("Titik didih alkana meningkat seiring bertambahnya jumlah atom karbon.")
+            elif "fakta" in q:
+                st.success("Alkana merupakan komponen utama dalam gas alam dan minyak bumi.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Alkana di YouTube](https://www.youtube.com/watch?v=example)")
+            else:
+                st.info("Alkana adalah senyawa hidrokarbon jenuh yang hanya mengandung ikatan tunggal.")
+        if "alkena" in q:
+            if "kepolaran" in q:
+                st.success("Alkena umumnya nonpolar, tetapi sedikit lebih polar dari alkana.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Rumus umum alkena: CnH₂n.")
+            elif "titik" in q:
+                st.success("Titik didih alkena sedikit lebih rendah dibandingkan alkana dengan jumlah C yang sama.")
+            elif "fakta" in q:
+                st.success("Alkena lebih reaktif dibanding alkana karena adanya ikatan rangkap.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Alkena di YouTube](https://www.youtube.com/watch?v=example)")
+            else:
+                st.info("Alkena adalah senyawa hidrokarbon tak jenuh dengan setidaknya satu ikatan rangkap dua.")
+        if "alkuna" in q:
+            if "kepolaran" in q:
+                st.success("Sebagian besar alkuna adalah nonpolar.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Rumus umum alkuna: CnH₂n−2.")
+            elif "titik" in q:
+                st.success("Titik didih alkuna meningkat seiring jumlah atom karbon.")
+            elif "fakta" in q:
+                st.success("Alkuna sangat reaktif dan dapat mengalami reaksi adisi.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Alkuna di YouTube](https://www.youtube.com/watch?v=example)")
+            else:
+                st.info("Alkuna adalah senyawa hidrokarbon tak jenuh dengan setidaknya satu ikatan rangkap tiga.")
+        if "aldehid" in q:
+            if "kepolaran" in q:
+                st.success("Aldehid sangat polar karena gugus karbonil (C=O).")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Rumus umum aldehid: R–CHO.")
+            elif "titik" in q:
+                st.success("Titik didih aldehid lebih tinggi dari alkana, tetapi lebih rendah dari alkohol.")
+            elif "fakta" in q:
+                st.success("Aldehid banyak ditemukan dalam zat aroma dan sintesis organik.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Aldehid di YouTube](https://www.youtube.com/watch?v=example)")
+            else:
+                st.info("Aldehid adalah senyawa organik dengan gugus karbonil di ujung rantai.")
+        if "eter" in q:
+            if "kepolaran" in q:
+                st.success("Eter umumnya nonpolar, tetapi dapat sedikit polar tergantung pada struktur.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Rumus umum eter: R–O–R′, di mana R dan R′ adalah gugus alkil.")
+            elif "titik" in q:
+                st.success("Titik didih eter lebih rendah dibandingkan alkohol, tetapi lebih tinggi dari alkana.")
+            elif "fakta" in q:
+                st.success("Eter sering digunakan sebagai pelarut dalam reaksi kimia.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Eter di YouTube](https://www.youtube.com/watch?v=example)")
+            else:
+                st.info("Eter adalah senyawa organik yang mengandung gugus eter (–O–) antara dua gugus alkil.")    
         else:
             st.warning("Maaf, senyawa tersebut belum tersedia atau belum dikenali.")
 
