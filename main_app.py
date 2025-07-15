@@ -595,4 +595,31 @@ elif st.session_state.page == 'nitril':
 elif st.session_state.page == 'aldehida':
     show_aldehida()
 elif st.session_state.page == 'nitro':
+    show_nitril()
+elif st.session_state.page == 'keton':
+    show_keton()
+elif st.session_state.page == 'asam halida':
     show_nitro()
+elif st.session_state.page == 'ester':
+    show_ester()
+elif st.session_state.page == 'tiol':
+    show_tiol()
+elif st.session_state.page == 'alkana':
+    show_alkana()
+elif st.session_state.page == 'alkena':
+    show_alkena()
+elif st.session_state.page == 'alkuna':
+    show_alkuna()
+elif st.session_state.page == 'fenol':
+    show_fenol()
+elif st.session_state.page == 'benzena':
+    show_benzena()
+
+
+
+
+
+
+
+
+
