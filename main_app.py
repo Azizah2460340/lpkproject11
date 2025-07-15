@@ -103,6 +103,11 @@ def show_alkana():
     - CH₃–CH₃ → Etana
     - CH₃–CH₂–CH₃ → Propana
     - CH₃–CH(CH₃)–CH₃ → 2-Metilpropana (bentuk bercabang)
+
+     **Video Penjelasan:**
+    - [Video 1](https://youtu.be/NWkgH-ZdRS4?si=wJ05w-xF-mvW4rhT)
+    - [Video 2](https://youtu.be/ljW7asUnIdg?si=XUnDIIk2iedjBHr5)
+    - [Video 3](https://youtu.be/U2HNbktxDPY?si=gc2DDhRqgS_4lkPu)
     """)
 
 def show_alkena():
@@ -131,6 +136,12 @@ def show_alkena():
     - CH₂=CH₂ → Etena
     - CH₂=CH–CH₃ → Propena
     - CH₃–CH=CH–CH₃ → But-2-ena (atau but-1-ena tergantung posisi ikatan)
+    
+    **Video Penjelasan:**
+    - [Video 1](https://youtu.be/0PaL8klVuVk?si=uffV4qvXCCU3dECi)
+    - [Video 2](https://youtu.be/q3DhWJGolc4?si=PaTK0I6EXThce20i)
+    - [Video 3](https://youtu.be/dJmVLfJtqtw?si=Eu1-KVcokh717JkY)
+    - [Video 4](https://youtu.be/Utu6uZG_Glk?si=0xjgh6JQT0QjoURW)
     """)
 
 def show_alkuna():
@@ -159,6 +170,10 @@ def show_alkuna():
     - CH≡CH → Etuna (asetilena)
     - CH≡C–CH₃ → Propuna
     - CH₃–C≡C–CH₃ → But-2-una
+
+     **Video Penjelasan:**
+    - [Video 1](https://youtu.be/pbDiXi3ny1E?si=sWfZ3UswqewTWuzm)
+    - [Video 2](https://youtu.be/mGQprCdRZ4s?si=h5ST0P2OYVC0oYWs)
     """)
 
 def show_alkohol():
@@ -190,6 +205,10 @@ def show_alkohol():
     - CH₃CH₂OH → Etanol
     - CH₃CH(OH)CH₃ → 2-Propanol
     - HO–CH₂–CH₂–OH → 1,2-Etanadiol (etilen glikol)
+
+     **Video Penjelasan:**
+    - [Video](https://youtu.be/1nfKdKFOxgw?si=FNi98kksQ-_FV0ki)
+    - [Video](https://youtu.be/-GvgmYqdpHA?si=cn2Y7ulIVFOAKKSM)
     """)
     
 def show_protein():
@@ -221,6 +240,11 @@ def show_protein():
         - Insulin → hormon pengatur gula darah
         - Hemoglobin → pengangkut oksigen
         - Amilase → enzim pemecah pati
+
+    **Video Penjelasan:**
+    - [Video 1](https://youtu.be/3kybW5T76Ek?si=dbybMp0ObIBrrqit)
+    - [Video 2](https://youtu.be/DnTwLYWG1fQ?si=9tF5RLdkrA__M3bl)
+    - [Video 3](https://youtu.be/tLdCWZvODXg?si=PeFbccfuF7hYveUV)
     """)
 
 def show_fenol():
@@ -244,6 +268,13 @@ def show_fenol():
     - Jika fenol memiliki substituen, penamaannya mengikuti posisi pada cincin, misalnya:
         - o-Kresol (2-metilfenol) → gugus metil di posisi orto
         - p-Nitrofenol (4-nitrobenzenol) → gugus nitro di posisi para
+
+    **Video Penjelasan:**
+    - [Video 1](https://youtu.be/euFL7iukzms?si=wzLy8DIb3YFjw3N6)
+    - [Video 2](https://youtu.be/oXw9Pg6ekwc?si=0ry7qAdmJ9GOVk5b)
+    - [Video 3](https://youtu.be/A8GQHwidRSI?si=_noRE0NT56t0GTFC)
+    - [Video 4](https://youtu.be/-xGXGGM909M?si=RrCRHm2SlgTrIM00)
+    - [Video 5](https://youtu.be/uQ7IcLkO9uE?si=Ar3XpPtTHi8hTaBD)
     """)
 def show_eter():
     st.title("Detail Senyawa: Eter")
@@ -275,6 +306,9 @@ def show_eter():
     - CH₃OCH₃ → Dimetil eter
     - C₂H₅OCH₃ → Eter metil etil
     - C₃H₇OCH₂CH₃ → Eter etil propil
+
+    **Video Penjelasan:**
+    - [Video](https://youtu.be/YGLRGqprGcQ?si=iDnthU2BN_Ugqvh2)
     """)
 
 def show_aldehida():
@@ -304,6 +338,12 @@ def show_aldehida():
     - HCHO → Metanal (formaldehida)
     - CH₃CHO → Etanal (asetaldehida)
     - CH₃CH₂CH₂CHO → Butanal
+
+     **Video Penjelasan:**
+    - [Video 1](https://youtu.be/I8i8jr3lieo?si=rbVQW0x8nC8Lj8y7)
+    - [Video 2](https://youtu.be/KbF0gH4BURY?si=ZvG64m-NHkVHnT0p)
+    - [Video 3](https://youtu.be/p3jf_RKbdcI?si=WgZKm_4gXnY3SXQl)
+    - [Video 4](https://youtu.be/-_nL-qb0xN4?si=vkFi5jboEEU5u5ov)
     """)
 
 def show_keton():
@@ -333,6 +373,12 @@ def show_keton():
         - CH₃COCH₃ → Propanon (aseton)
         - CH₃CH₂COCH₃ → Butanon
         - CH₃COCH₂CH₂CH₃ → Pentan-2-on
+
+         **Video Penjelasan:**
+    - [Video 1](https://youtu.be/I8i8jr3lieo?si=rbVQW0x8nC8Lj8y7)
+    - [Video 2](https://youtu.be/KbF0gH4BURY?si=ZvG64m-NHkVHnT0p)
+    - [Video 3](https://youtu.be/p3jf_RKbdcI?si=WgZKm_4gXnY3SXQl)
+    - [Video 4](https://youtu.be/-_nL-qb0xN4?si=vkFi5jboEEU5u5ov)
     """)
 
 def show_amina():
@@ -366,6 +412,9 @@ def show_amina():
             - (CH₃)₂NH → Dimetilamina
         - Untuk yang lebih kompleks → dianggap substituen: “amino-”
             - NH₂CH₂CH₃ → 2-Aminoetana
+
+     **Video Penjelasan:**
+    - [Video](https://youtu.be/0aDWKCzWHuw?si=PEakWNqHfsdPiKK7)      
     """)
     
 def show_lemak_dan_minyak():
@@ -405,6 +454,11 @@ def show_lemak_dan_minyak():
         - Contoh:
             - Tristearin → dari 3 asam stearat + gliserol
             - Triolein → dari 3 asam oleat + gliserol
+
+    **Video Penjelasan:**
+    - [Video 1](https://youtu.be/PRyOFFzh9pc?si=PbSculDk-wzSFw4X)
+    - [Video 2](https://youtu.be/RVcw6IdUJLo?si=1KdUGjLdsnToKNul)
+    - [Video 3](https://youtu.be/aUdP3JJhBRA?si=AA331_st2qhTQi15)
     """)
 
 def show_benzena():
@@ -434,6 +488,11 @@ def show_benzena():
         - C₆H₅OH → hidroksibenzena (fenol)
         - C₆H₅NO₂ → nitrobenzena
     - Jika ada dua substituen: orto (1,2), meta (1,3), para (1,4) digunakan untuk posisi relatifnya.
+
+    **Video Penjelasan:**
+    - [Video 1](https://youtu.be/1aluQZqkqNE?si=c6fzD0HlqDrRDzgc)
+    - [Video 2](https://youtu.be/YMHdLlx6WIw?si=3fy86L1X57yMDUiW)
+    - [Playlist](https://youtube.com/playlist?list=PLWB5gICYvKUXBVat1VVyDzNhhCcz1Y4Wt&si=Cd5F1txXJxLR8Zg3)
     """)
 
 def show_asam_karboksilat():
@@ -468,6 +527,9 @@ def show_asam_karboksilat():
     - HCOOH → Asam metanoat (asam format)
     - CH₃COOH → Asam etanoat (asam asetat)
     - CH₃CH₂CH₂COOH → Asam butanoat (asam butirat)
+
+    **Video Penjelasan:**
+    - [Video](https://youtu.be/6xoYyrJkboI?si=D78Rh0NJCbmykDyg)
     """)
     
 def show_amida():
@@ -504,6 +566,10 @@ def show_amida():
     - HCONH₂ → Metanamida (formamida)
     - CH₃CONHCH₃ → N-Metiletanamida
     - CH₃CON(CH₃)₂ → N,N-Dimetiletanamida
+
+     **Video Penjelasan:**
+    - [Video 1](https://youtu.be/Lz78W5L6bR4?si=eJtoQx5LpYcMfwYv)
+    - [Video 2](https://youtu.be/CYYGb1tCTAs?si=upVbkqTxI-3nPTGi)
     """)
 def show_alkil_halida():
     st.title("Detail Senyawa: Alkil Halida")
@@ -542,6 +608,9 @@ def show_alkil_halida():
     - CH₃CH₂Br → Bromometana
     - CH₃CH(Cl)CH₃ → 2-Kloropropana
     - CH₃CHBrCH₂CH₃ → 2-Bromobutana
+
+    **Video Penjelasan:**
+    - [Video](https://youtu.be/zxUFOd1shr0?si=5IPjGEpazI6zGcDd)
     """)
 def show_nitro():
     st.title("Detail Senyawa: Nitro")
@@ -577,6 +646,10 @@ def show_nitro():
     - CH₃CH₂NO₂ → Nitroetana
     - C₆H₅NO₂ → Nitrobenzena
     - C₆H₄(NO₂)₂ → 1,3-Dinitrobenzena (atau meta-dinitrobenzena)
+
+    **Video Penjelasan:**
+    - [Video 1](https://youtu.be/LbL3qLDL1ww?si=BXQwimr12FWda-Up)
+    - [Video 2](https://youtu.be/LbL3qLDL1ww?si=SyugwAr2P8SWabpU)
     """)
 
 def show_nitril():
@@ -613,6 +686,9 @@ def show_nitril():
     - C₆H₅–C≡N → Benzenakarbonitril (nama umum: benzonitril)
     - CH₂=CH–C≡N → Akrilonitril
     - NC–CH₂–CH₂–COOH → Asam sianopropanoat
+
+    **Video Penjelasan:**
+    - [Video](https://youtu.be/JktYNjqt4wU?si=nc-IBD-rUnUPYFXU)
     """)
 
 def show_ester():
@@ -650,6 +726,9 @@ def show_ester():
     - CH₃COOCH₂CH₃ → Etil etanoat
     - CH₃CH₂COOCH₃ → Metil propanoat
     - CH₃CH₂COOCH₂CH₃ → Etil propanoat
+
+**Video Penjelasan:**
+    - [Video](https://youtu.be/6BO-ZWmLLSU?si=fMfpCo91cfeRrnOq)
     """)
 
 def show_asam_halida():
@@ -685,6 +764,9 @@ def show_asam_halida():
     - CH₃COCl → Etanoil klorida (asetil klorida)
     - C₂H₅COBr → Propanoil bromida
     - C₆H₅COCl → Benzoil klorida
+
+    **Video Penjelasan:**
+    - [Video](https://youtu.be/w3j3gNN4gSs?si=L7pmPIGBTUhbvh_D)
     """)
     
 def show_karbohidrat():
@@ -718,6 +800,10 @@ def show_karbohidrat():
         - Glukosa + fruktosa → sukrosa
         - Glukosa + glukosa → maltosa
         - Polimer glukosa → amilosa (dalam pati), selulosa, glikogen
+
+    **Video Penjelasan:**
+    - [Playlist](https://youtube.com/playlist?list=PLWB5gICYvKUXj77oa7c6FOtQMAXtmXSVc&si=Y_aCjbigtRXHNUdJ)
+    - [Video](https://youtu.be/xynTeSAl4Ts?si=EcQIPYeB5Y5k11Mf)
     """)
 
 def show_chatbot():
