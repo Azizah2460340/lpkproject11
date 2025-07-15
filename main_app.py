@@ -927,7 +927,7 @@ def show_chatbot():
                 st.success("🔗 [Tonton Penjelasan Fenol di YouTube](https://www.youtube.com/watch?v=example)")
             else:
                 st.info("Fenol adalah senyawa aromatik yang terdiri dari cincin benzena dan gugus hidroksil.")        
-          if "alkana" in q:
+        if "alkana" in q:
             if "kepolaran" in q:
                 st.success("Alkana adalah senyawa nonpolar karena distribusi elektron seimbang.")
             elif "rumus" in q or "gugus" in q:
