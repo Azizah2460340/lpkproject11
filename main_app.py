@@ -215,7 +215,7 @@ def show_fenol():
         - p-Nitrofenol (4-nitrobenzenol) → gugus nitro di posisi para
     """)
 
-def show_aldehid():
+def show_aldehida():
     st.title("Detail Senyawa: Aldehid")
 
     st.markdown("""
