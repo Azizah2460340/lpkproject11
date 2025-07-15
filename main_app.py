@@ -68,8 +68,6 @@ def show_home():
             st.session_state.page = 'asam_halida'
         if st.button("🧬 Asam Karboksilat"):
             st.session_state.page = 'asam_karboksilat'
-        if st.button("🧬 Alkil Halida"):
-            st.session_state.page = 'alkil_halida'
 
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
