@@ -122,7 +122,8 @@ def show_alkuna():
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
     st.markdown("""
-    **Deskripsi:** Alkohol adalah senyawa organik yang memiliki gugus hidroksil (–OH) yang terikat pada atom karbon jenuh (sp³). Rumus umum: R–OH.
+    **Deskripsi:** Alkohol adalah senyawa organik yang memiliki gugus hidroksil (–OH) yang terikat pada atom karbon jenuh (sp³). Rumus umum: R–OH.\
+    
     **Titik Didih:**
     - Tinggi dibanding alkana/alkena/alkuna dengan jumlah karbon yang sama.
     - Contoh:
