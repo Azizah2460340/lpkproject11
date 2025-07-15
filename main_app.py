@@ -435,10 +435,10 @@ def show_amida():
         2. Jika gugus N disubstitusi (pada amida sekunder/tersier), gugus tambahan diberi awalan N-.
 
     **Contoh:**
-        - CH₃CONH₂ → Etanamida (asetamida)
-        - HCONH₂ → Metanamida (formamida)
-        - CH₃CONHCH₃ → N-Metiletanamida
-        - CH₃CON(CH₃)₂ → N,N-Dimetiletanamida
+    - CH₃CONH₂ → Etanamida (asetamida)
+    - HCONH₂ → Metanamida (formamida)
+    - CH₃CONHCH₃ → N-Metiletanamida
+    - CH₃CON(CH₃)₂ → N,N-Dimetiletanamida
     """)
 
 def show_alkil_halida():
