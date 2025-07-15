@@ -191,6 +191,7 @@ def show_alkohol():
     - CH₃CH(OH)CH₃ → 2-Propanol
     - HO–CH₂–CH₂–OH → 1,2-Etanadiol (etilen glikol)
     """)
+    
 def show_protein():
     st.title("Detail Senyawa: Protein")
 
