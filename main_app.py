@@ -32,12 +32,12 @@ def show_home():
     with cols[0]:
         if st.button("🧪 Alkohol"):
             st.session_state.page = 'alkohol'
-        if st.button("🧬 Amina"):
-            st.session_state.page = 'amina'
         if st.button("🧬 Benzena"):
             st.session_state.page = 'benzena'
         if st.button("🧬 Fenol"):
             st.session_state.page = 'fenol'
+        if st.button("🧬 Amina"):
+            st.session_state.page = 'amina'
     with cols[1]:
         if st.button("🧬 Amida"):
             st.session_state.page = 'amida'
