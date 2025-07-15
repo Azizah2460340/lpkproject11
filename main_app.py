@@ -34,8 +34,10 @@ def show_home():
             st.session_state.page = 'alkohol'
         if st.button("🧬 Amina"):
             st.session_state.page = 'amina'
-        if st.button("🧬 Asam Karboksilat"):
-            st.session_state.page = 'asam_karboksilat'
+        if st.button("🧬 Benzena"):
+            st.session_state.page = 'benzena'
+        if st.button("🧬 Fenol"):
+            st.session_state.page = 'fenol'
     with cols[1]:
         if st.button("🧬 Amida"):
             st.session_state.page = 'amida'
@@ -55,6 +57,8 @@ def show_home():
             st.session_state.page = 'alkuna'
         if st.button("🧬 Asam Halida"):
             st.session_state.page = 'Asam halida'
+        if st.button("🧬 Asam Karboksilat"):
+            st.session_state.page = 'asam_karboksilat'
 
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
