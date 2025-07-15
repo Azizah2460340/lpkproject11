@@ -505,10 +505,10 @@ def show_alkil_halida():
         3. Gunakan awalan fluoro-, kloro-, bromo-, iodo- sesuai halogennya.
 
     **Contoh:**
-        - CH₃Cl → Klorometana
-        - CH₃CH₂Br → Bromometana
-        - CH₃CH(Cl)CH₃ → 2-Kloropropana
-        - CH₃CHBrCH₂CH₃ → 2-Bromobutana
+    - CH₃Cl → Klorometana
+    - CH₃CH₂Br → Bromometana
+    - CH₃CH(Cl)CH₃ → 2-Kloropropana
+    - CH₃CHBrCH₂CH₃ → 2-Bromobutana
     """)
 
 def show_nitro():
@@ -541,10 +541,10 @@ def show_nitro():
     - Letaknya ditunjukkan dengan nomor posisi pada rantai utama atau cincin aromatik.
 
     **Contoh:**
-        - CH₃NO₂ → Nitrometana
-        - CH₃CH₂NO₂ → Nitroetana
-        - C₆H₅NO₂ → Nitrobenzena
-        - C₆H₄(NO₂)₂ → 1,3-Dinitrobenzena (atau meta-dinitrobenzena)
+    - CH₃NO₂ → Nitrometana
+    - CH₃CH₂NO₂ → Nitroetana
+    - C₆H₅NO₂ → Nitrobenzena
+    - C₆H₄(NO₂)₂ → 1,3-Dinitrobenzena (atau meta-dinitrobenzena)
     """)
 
 def show_nitril():
@@ -577,10 +577,10 @@ def show_nitril():
     - Jika gugus –CN sebagai substituen → disebut “siano-”.
 
     **Contoh:**
-        - CH₃–C≡N → Etanonitril (nama umum: asetonitril)
-        - C₆H₅–C≡N → Benzenakarbonitril (nama umum: benzonitril)
-        - CH₂=CH–C≡N → Akrilonitril
-        - NC–CH₂–CH₂–COOH → Asam sianopropanoat
+    - CH₃–C≡N → Etanonitril (nama umum: asetonitril)
+    - C₆H₅–C≡N → Benzenakarbonitril (nama umum: benzonitril)
+    - CH₂=CH–C≡N → Akrilonitril
+    - NC–CH₂–CH₂–COOH → Asam sianopropanoat
     """)
 
 def show_ester():
@@ -614,10 +614,10 @@ def show_ester():
         2. Nama rantai asam dengan akhiran diganti menjadi -oat
 
     **Contoh:**
-        - CH₃COOCH₃ → Metil etanoat
-        - CH₃COOCH₂CH₃ → Etil etanoat
-        - CH₃CH₂COOCH₃ → Metil propanoat
-        - CH₃CH₂COOCH₂CH₃ → Etil propanoat
+    - CH₃COOCH₃ → Metil etanoat
+    - CH₃COOCH₂CH₃ → Etil etanoat
+    - CH₃CH₂COOCH₃ → Metil propanoat
+    - CH₃CH₂COOCH₂CH₃ → Etil propanoat
     """)
 
 def show_asam_halida():
@@ -650,9 +650,9 @@ def show_asam_halida():
     - Gunakan nama halogen sebagai akhiran.
 
     **Contoh:**
-        - CH₃COCl → Etanoil klorida (asetil klorida)
-        - C₂H₅COBr → Propanoil bromida
-        - C₆H₅COCl → Benzoil klorida
+    - CH₃COCl → Etanoil klorida (asetil klorida)
+    - C₂H₅COBr → Propanoil bromida
+    - C₆H₅COCl → Benzoil klorida
     """)
 
 def show_chatbot():
