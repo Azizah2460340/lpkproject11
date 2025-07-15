@@ -979,7 +979,7 @@ elif st.session_state.page == 'nitro':
 elif st.session_state.page == 'keton':
     show_keton()
 elif st.session_state.page == 'asam halida':
-    show_nitro()
+    show_asam_halida()
 elif st.session_state.page == 'ester':
     show_ester()
 elif st.session_state.page == 'tiol':
