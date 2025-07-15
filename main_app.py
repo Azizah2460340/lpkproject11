@@ -79,6 +79,7 @@ def show_alkana():
     st.title("Detail Senyawa: Alkana")
     st.markdown("""
     **Deskripsi:** Alkana adalah senyawa hidrokarbon jenuh yang hanya mengandung ikatan tunggal (σ) antar atom karbon (C–C) dan antara karbon dengan hidrogen (C–H). Rumus umumnya adalah CₙH₂ₙ₊₂. Alkana termasuk senyawa nonpolar dan merupakan komponen utama dalam gas alam dan minyak bumi.
+    
     **Titik Didih:**
     - Titik didih alkana meningkat seiring bertambahnya jumlah atom karbon.
     - Bentuk rantai lurus memiliki titik didih lebih tinggi dibanding bentuk bercabang.
@@ -86,8 +87,11 @@ def show_alkana():
         - Metana (CH₄): −161,5 °C
         - Etana (C₂H₆): −88,6 °C
         - Butana (C₄H₁₀): −0,5 °C
+    
     **Kepolaran:** Nonpolar, tidak larut dalam air.
+    
     **Ikatan Kimia:** Hanya memiliki ikatan tunggal kovalen (σ).
+    
     **Tata Nama (IUPAC):** Berdasarkan jumlah atom karbon dan akhiran -ana.
     """)
 
