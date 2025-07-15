@@ -405,6 +405,41 @@ def show_benzena():
         - C₆H₅NO₂ → nitrobenzena
     - Jika ada dua substituen: orto (1,2), meta (1,3), para (1,4) digunakan untuk posisi relatifnya.
     """)
+def show_amida():
+    st.title("Detail Senyawa: Amida")
+
+    st.markdown("""
+    **Deskripsi:** Amida adalah turunan dari asam karboksilat di mana gugus –OH pada gugus karboksil (–COOH) digantikan oleh gugus amina (–NH₂, –NHR, atau –NR₂). Rumus umum: R–CONH₂ untuk amida primer. Amida banyak ditemukan dalam protein (ikatan peptida adalah amida).
+
+    **Titik Didih:**
+    - Titik didih tinggi, karena dapat membentuk ikatan hidrogen yang kuat (terutama amida primer dan sekunder).
+    - Titik didih amida biasanya lebih tinggi dari asam karboksilat dengan massa molekul setara.
+    - Contoh:
+        - Metanamida (formamida, HCONH₂): 210 °C
+        - Etanamida (asetamida, CH₃CONH₂): 222 °C
+
+    **Kepolaran:** 
+    - Sangat polar, karena adanya gugus karbonil (C=O) dan gugus amino (–NH₂) yang keduanya bersifat polar.
+    - Larut dalam air (terutama amida rantai pendek) karena mampu membentuk ikatan hidrogen dengan air.
+
+    **Ikatan Kimia:**
+    - Memiliki:
+        - Ikatan sigma dan pi dalam gugus karbonil (C=O)
+        - Ikatan sigma antara C–N dan N–H
+    - Atom karbon dalam gugus –CONH₂ bersifat sp² hibridisasi, struktur planar.
+    - Ikatan C–N dalam amida memiliki karakter ganda sebagian (resonansi) → membuatnya stabil dan kurang reaktif dibanding amina biasa.
+
+    **Tata Nama (IUPAC):**
+    - Penamaan amida:
+        1. Nama berasal dari asam karboksilat asalnya, dengan akhiran -amida.
+        2. Jika gugus N disubstitusi (pada amida sekunder/tersier), gugus tambahan diberi awalan N-.
+
+    **Contoh:**
+        - CH₃CONH₂ → Etanamida (asetamida)
+        - HCONH₂ → Metanamida (formamida)
+        - CH₃CONHCH₃ → N-Metiletanamida
+        - CH₃CON(CH₃)₂ → N,N-Dimetiletanamida
+    """)
 
 def show_alkil_halida():
     st.title("Detail Senyawa: Alkil Halida")
