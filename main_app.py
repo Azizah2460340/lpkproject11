@@ -12,7 +12,7 @@ st.set_page_config(
     
 # ------------- FUNGSI --------------
 def show_home():
-    st.title("Selamat Datang di O-KIMIAKU 👩‍🔬🧪")
+    st.title("Selamat Datang di O-KimiaKu 👩‍🔬🧪")
 
     st.markdown("""
     **O-KIMIAKU** adalah aplikasi pembelajaran interaktif kimia yang memberikan informasi penting tentang senyawa kimia, seperti:
