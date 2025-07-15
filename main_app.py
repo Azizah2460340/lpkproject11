@@ -906,3 +906,7 @@ elif st.session_state.page == 'asam karboksilat':
     show_asam_karboksilat()
 elif st.session_state.page == 'amida':
     show_amida()
+elif st.session_state.page == 'protein':
+    show_protein()
+elif st.session_state.page == 'lemak dan minyak':
+    show_lemak_minyak()
