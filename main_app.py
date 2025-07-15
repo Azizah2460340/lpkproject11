@@ -725,7 +725,6 @@ def show_chatbot():
     if question:
         q = question.lower()
 
-        # Benzena
         if "benzena" in q:
             if "kepolaran" in q:
                 st.success("Benzena bersifat nonpolar dan tidak larut dalam air.")
