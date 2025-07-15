@@ -99,10 +99,10 @@ def show_alkana():
     3. Jika ada cabang, nama dimulai dengan nomor posisi dan nama gugus alkil (metil, etil, dll).
 
     **Contoh:**
-            CH₄ → Metana.
-            CH₃–CH₃ → Etana.
-            CH₃–CH₂–CH₃ → Propana.
-            CH₃–CH(CH₃)–CH₃ → 2-Metilpropana (bentuk bercabang)
+    - CH₄ → Metana
+    - CH₃–CH₃ → Etana
+    - CH₃–CH₂–CH₃ → Propana
+    - CH₃–CH(CH₃)–CH₃ → 2-Metilpropana (bentuk bercabang)
     """)
 
 def show_alkena():
@@ -128,9 +128,9 @@ def show_alkena():
     3. Akhiran -ena menunjukkan alkena.
 
     **Contoh:**
-        - CH₂=CH₂ → Etena
-        - CH₂=CH–CH₃ → Propena
-        - CH₃–CH=CH–CH₃ → But-2-ena (atau but-1-ena tergantung posisi ikatan)
+    - CH₂=CH₂ → Etena
+    - CH₂=CH–CH₃ → Propena
+    - CH₃–CH=CH–CH₃ → But-2-ena (atau but-1-ena tergantung posisi ikatan)
     """)
 
 def show_alkuna():
@@ -156,9 +156,9 @@ def show_alkuna():
     3. Gunakan akhiran -una.
 
     **Contoh:**
-        - CH≡CH → Etuna (asetilena)
-        - CH≡C–CH₃ → Propuna
-        - CH₃–C≡C–CH₃ → But-2-una
+    - CH≡CH → Etuna (asetilena)
+    - CH≡C–CH₃ → Propuna
+    - CH₃–C≡C–CH₃ → But-2-una
     """)
 
 def show_alkohol():
@@ -186,10 +186,10 @@ def show_alkohol():
     4. Jika lebih dari satu gugus –OH, gunakan akhiran -diol, -triol, dst.
 
     **Contoh:**
-        - CH₃OH → Metanol
-        - CH₃CH₂OH → Etanol
-        - CH₃CH(OH)CH₃ → 2-Propanol
-        - HO–CH₂–CH₂–OH → 1,2-Etanadiol (etilen glikol)
+    - CH₃OH → Metanol
+    - CH₃CH₂OH → Etanol
+    - CH₃CH(OH)CH₃ → 2-Propanol
+    - HO–CH₂–CH₂–OH → 1,2-Etanadiol (etilen glikol)
     """)
 
 def show_fenol():
@@ -241,9 +241,9 @@ def show_eter():
     - Jika ada dua gugus alkil yang berbeda, nama yang lebih besar ditulis terlebih dahulu.
 
     **Contoh:**
-        - CH₃OCH₃ → Dimetil eter
-        - C₂H₅OCH₃ → Eter metil etil
-        - C₃H₇OCH₂CH₃ → Eter etil propil
+    - CH₃OCH₃ → Dimetil eter
+    - C₂H₅OCH₃ → Eter metil etil
+    - C₃H₇OCH₂CH₃ → Eter etil propil
     """)
 
 def show_aldehida():
@@ -270,9 +270,9 @@ def show_aldehida():
     3. Ganti akhiran -a pada nama alkana menjadi -al.
 
     **Contoh:**
-        - HCHO → Metanal (formaldehida)
-        - CH₃CHO → Etanal (asetaldehida)
-        - CH₃CH₂CH₂CHO → Butanal
+    - HCHO → Metanal (formaldehida)
+    - CH₃CHO → Etanal (asetaldehida)
+    - CH₃CH₂CH₂CHO → Butanal
     """)
 
 def show_keton():
