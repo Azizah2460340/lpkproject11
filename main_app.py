@@ -28,7 +28,7 @@ def show_home():
     st.subheader("🔍 Pilih Senyawa:")
     
 # Membuat baris tombol horizontal
-   cols = st.columns(5)
+cols = st.columns(5)
      with cols[0]:
          if st.button("🍷 Alkohol"):
             st.session_state.page = 'alkohol'
