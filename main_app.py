@@ -56,14 +56,14 @@ def show_home():
             st.session_state.page = 'alkuna'
         if st.button("🧬 Tiol"):
             st.session_state.page = 'tiol'
-    with col[3]:
+    with cols[3]:
         if st.button("🧬 Keton"):
             st.session_state.page = 'keton'
         if st.button("🧬 Ester"):
             st.session_state.page = 'ester'
         if st.button("🧬 Eter"):
             st.session_state.page = 'eter'
-    with col[4]:
+    with cols[4]:
         if st.button("🧬 Asam Halida"):
             st.session_state.page = 'asam_halida'
         if st.button("🧬 Asam Karboksilat"):
