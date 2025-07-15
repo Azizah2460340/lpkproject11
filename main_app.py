@@ -107,7 +107,7 @@ def show_alkena():
     st.title("Detail Senyawa: Alkena")
 
     st.markdown("""
-    **Deskripsi:** Alkena adalah senyawa hidrokarbon tak jenuh yang memiliki setidaknya satu ikatan rangkap dua (C=C) antar atom karbon. Rumus umumnya CₙH₂ₙ. Alkena lebih reaktif dibanding alkana karena keberadaan ikatan π.
+    Deskripsi: Alkena adalah senyawa hidrokarbon tak jenuh yang memiliki setidaknya satu ikatan rangkap dua (C=C) antar atom karbon. Rumus umumnya CₙH₂ₙ. Alkena lebih reaktif dibanding alkana karena keberadaan ikatan π.
 
     **Titik Didih:**
     - Titik didih alkena meningkat seiring bertambahnya jumlah atom karbon.
