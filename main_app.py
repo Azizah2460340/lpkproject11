@@ -367,39 +367,6 @@ def show_amina():
         - Untuk yang lebih kompleks → dianggap substituen: “amino-”
             - NH₂CH₂CH₃ → 2-Aminoetana
     """)
-def show_asam_karboksilat():
-    st.title("Detail Senyawa: Asam Karboksilat")
-
-    st.markdown("""
-    **Deskripsi:** Asam karboksilat adalah senyawa organik yang memiliki gugus karboksil (–COOH), yaitu gabungan dari gugus karbonil (C=O) dan hidroksil (–OH) pada karbon yang sama. Rumus umum: R–COOH. Senyawa ini bersifat asam lemah dan banyak ditemukan dalam alam, seperti dalam cuka (asam asetat) dan lemak (asam lemak).
-
-    **Titik Didih:**
-    - Sangat tinggi dibanding alkohol, karena asam karboksilat membentuk ikatan hidrogen ganda (dimer) yang kuat antar molekul.
-    - Titik didih meningkat seiring bertambahnya jumlah atom karbon.
-    - Contoh:
-        - Asam format (HCOOH): 100,8 °C
-        - Asam asetat (CH₃COOH): 118,1 °C
-        - Asam butirat (CH₃CH₂CH₂COOH): 163,7 °C
-
-    **Kepolaran:** Sangat polar, karena mengandung gugus karbonil dan hidroksil sekaligus. Sangat larut dalam air (terutama rantai pendek), karena dapat membentuk ikatan hidrogen dengan air. Rantai panjang → kelarutan menurun karena bagian hidrokarbon makin dominan.
-
-    **Ikatan Kimia:**
-    - Mengandung:
-        - Ikatan sigma (σ) dan pi (π) pada C=O.
-        - Ikatan sigma antara C–O dan O–H.
-        - Atom karbon pada –COOH bersifat sp² hibridisasi, dengan bentuk planar trigonal.
-        - Dapat melepaskan proton (H⁺) dari gugus –OH → bersifat asam lemah.
-
-    **Tata Nama (IUPAC):** Penamaan asam karboksilat:
-    1. Rantai utama mencakup gugus –COOH.
-    2. Nomor 1 selalu diberikan pada karbon karboksilat.
-    3. Nama alkana diganti akhiran -a menjadi -oat (untuk garam/ester) atau -oat ion (untuk ionik), tetapi untuk asam murni: -oat tetap disebut “asam -oat”.
-
-    **Contoh:**
-        - HCOOH → Asam metanoat (asam format)
-        - CH₃COOH → Asam etanoat (asam asetat)
-        - CH₃CH₂CH₂COOH → Asam butanoat (asam butirat)
-    """)
     
 def show_lemak_dan_minyak():
     st.title("Detail Senyawa: Lemak dan Minyak")
@@ -468,6 +435,41 @@ def show_benzena():
         - C₆H₅NO₂ → nitrobenzena
     - Jika ada dua substituen: orto (1,2), meta (1,3), para (1,4) digunakan untuk posisi relatifnya.
     """)
+
+def show_asam_karboksilat():
+    st.title("Detail Senyawa: Asam Karboksilat")
+
+    st.markdown("""
+    **Deskripsi:** Asam karboksilat adalah senyawa organik yang memiliki gugus karboksil (–COOH), yaitu gabungan dari gugus karbonil (C=O) dan hidroksil (–OH) pada karbon yang sama. Rumus umum: R–COOH. Senyawa ini bersifat asam lemah dan banyak ditemukan dalam alam, seperti dalam cuka (asam asetat) dan lemak (asam lemak).
+
+    **Titik Didih:**
+    - Sangat tinggi dibanding alkohol, karena asam karboksilat membentuk ikatan hidrogen ganda (dimer) yang kuat antar molekul.
+    - Titik didih meningkat seiring bertambahnya jumlah atom karbon.
+    - Contoh:
+        - Asam format (HCOOH): 100,8 °C
+        - Asam asetat (CH₃COOH): 118,1 °C
+        - Asam butirat (CH₃CH₂CH₂COOH): 163,7 °C
+
+    **Kepolaran:** Sangat polar, karena mengandung gugus karbonil dan hidroksil sekaligus. Sangat larut dalam air (terutama rantai pendek), karena dapat membentuk ikatan hidrogen dengan air. Rantai panjang → kelarutan menurun karena bagian hidrokarbon makin dominan.
+
+    **Ikatan Kimia:**
+    - Mengandung:
+        - Ikatan sigma (σ) dan pi (π) pada C=O.
+        - Ikatan sigma antara C–O dan O–H.
+        - Atom karbon pada –COOH bersifat sp² hibridisasi, dengan bentuk planar trigonal.
+        - Dapat melepaskan proton (H⁺) dari gugus –OH → bersifat asam lemah.
+
+    **Tata Nama (IUPAC):** Penamaan asam karboksilat:
+    1. Rantai utama mencakup gugus –COOH.
+    2. Nomor 1 selalu diberikan pada karbon karboksilat.
+    3. Nama alkana diganti akhiran -a menjadi -oat (untuk garam/ester) atau -oat ion (untuk ionik), tetapi untuk asam murni: -oat tetap disebut “asam -oat”.
+
+    **Contoh:**
+    - HCOOH → Asam metanoat (asam format)
+    - CH₃COOH → Asam etanoat (asam asetat)
+    - CH₃CH₂CH₂COOH → Asam butanoat (asam butirat)
+    """)
+    
 def show_amida():
     st.title("Detail Senyawa: Amida")
 
