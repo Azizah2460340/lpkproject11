@@ -214,6 +214,37 @@ def show_fenol():
         - o-Kresol (2-metilfenol) → gugus metil di posisi orto
         - p-Nitrofenol (4-nitrobenzenol) → gugus nitro di posisi para
     """)
+def show_eter():
+    st.title("Detail Senyawa: Eter")
+
+    st.markdown("""
+    **Deskripsi:** Eter adalah senyawa organik yang memiliki dua gugus alkil atau aril yang terikat pada atom oksigen. Rumus umum untuk eter adalah R–O–R', di mana R dan R' adalah gugus alkil atau aril. Eter sering digunakan sebagai pelarut dalam reaksi kimia dan sebagai bahan bakar.
+
+    **Titik Didih:**
+    - Titik didih eter lebih rendah dibandingkan alkohol dengan massa molekul yang sama, karena eter tidak dapat membentuk ikatan hidrogen antar molekul.
+    - Namun, titik didih eter lebih tinggi dibandingkan dengan hidrokarbon nonpolar seukuran.
+    - Contoh:
+        - Dietil eter (C₂H₅)₂O: 34,6 °C
+        - Eter metil (CH₃)₂O: −24,9 °C
+
+    **Kepolaran:** 
+    - Eter bersifat polar, tetapi tidak sepolar alkohol. Eter dapat membentuk ikatan hidrogen dengan air, tetapi tidak dapat membentuk ikatan hidrogen antar molekul eter.
+    - Eter rantai pendek larut dalam air, tetapi eter rantai panjang kurang larut.
+
+    **Ikatan Kimia:**
+    - Eter memiliki ikatan sigma (σ) antara atom karbon dan oksigen.
+    - Struktur eter bersifat tetrahedral di sekitar atom oksigen, dengan sudut ikatan sekitar 110°.
+    - Eter tidak memiliki ikatan pi (π) karena tidak ada ikatan rangkap.
+
+    **Tata Nama (IUPAC):**
+    - Penamaan eter dilakukan dengan menyebutkan nama gugus alkil yang terikat pada oksigen, diikuti dengan kata "eter".
+    - Jika ada dua gugus alkil yang berbeda, nama yang lebih besar ditulis terlebih dahulu.
+
+    **Contoh:**
+        - CH₃OCH₃ → Dimetil eter
+        - C₂H₅OCH₃ → Eter metil etil
+        - C₃H₇OCH₂CH₃ → Eter etil propil
+    """)
 
 def show_aldehida():
     st.title("Detail Senyawa: Aldehid")
@@ -876,8 +907,6 @@ elif st.session_state.page == 'amina':
     show_amina()
 elif st.session_state.page == 'alkil halida':
     show_alkil_halida()
-elif st.session_state.page == 'eter':
-    show_eter()
 elif st.session_state.page == 'nitril':
     show_nitril()
 elif st.session_state.page == 'aldehida':
