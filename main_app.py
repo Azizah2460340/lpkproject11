@@ -430,6 +430,179 @@ def show_chatbot():
                 st.success("🔗 [Tonton Penjelasan Benzena di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
             else:
                 st.info("Benzena adalah senyawa aromatik dengan struktur cincin.")
+        if "keton" in q:
+            if "kepolaran" in q:
+                st.success("Keton bersifat polar karena memiliki gugus karbonil (C=O).")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Gugus fungsi keton: R–CO–R'.")
+            elif "titik" in q:
+                st.success("Titik didih keton lebih tinggi dari alkana, tetapi lebih rendah dari alkohol.")
+            elif "fakta" in q:
+                st.success("Keton sering ditemukan dalam pelarut dan zat aroma.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Keton di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
+            else:
+                st.info("Keton adalah senyawa organik dengan gugus karbonil di tengah rantai.")
+        if "amina" in q:
+            if "kepolaran" in q:
+                st.success("Amina bersifat polar karena adanya pasangan elektron bebas pada nitrogen.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Gugus fungsi amina: R–NH₂, R–NH–R', R–N(R')–R''.")
+            elif "titik" in q:
+                st.success("Titik didih amina primer dan sekunder lebih tinggi dari senyawa nonpolar.")
+            elif "fakta" in q:
+                st.success("Amina banyak terdapat dalam senyawa biologis seperti asam amino.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Amina di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
+            else:
+                st.info("Amina adalah turunan amonia di mana satu atau lebih atom hidrogen diganti dengan gugus alkil.")
+        if "asam karboksilat" in q:
+            if "kepolaran" in q:
+                st.success("Asam karboksilat sangat polar karena mengandung gugus karbonil dan hidroksil.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Gugus fungsi asam karboksilat: R–COOH.")
+            elif "titik" in q:
+                st.success("Titik didih asam karboksilat sangat tinggi karena ikatan hidrogen.")
+            elif "fakta" in q:
+                st.success("Asam karboksilat banyak ditemukan dalam alam, seperti dalam cuka.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Asam Karboksilat di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
+            else:
+                st.info("Asam karboksilat adalah senyawa organik dengan gugus karboksil.")
+        if "amida" in q:
+            if "kepolaran" in q:
+                st.success("Amida sangat polar karena adanya gugus karbonil dan gugus amino.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Gugus fungsi amida: R–CONH₂.")
+            elif "titik" in q:
+                st.success("Titik didih amida tinggi karena dapat membentuk ikatan hidrogen.")
+            elif "fakta" in q:
+                st.success("Amida banyak ditemukan dalam protein.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Amida di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
+            else:
+                st.info("Amida adalah turunan dari asam karboksilat dengan gugus amina.")
+        if "protein" in q:
+            if "kepolaran" in q:
+                st.success("Protein bersifat amfipatik, mengandung bagian polar dan nonpolar.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Protein tersusun dari rantai panjang asam amino.")
+            elif "titik" in q:
+                st.success("Titik didih protein tidak relevan karena denaturasi terjadi sebelum menguap.")
+            elif "fakta" in q:
+                st.success("Protein berperan vital dalam struktur sel dan fungsi biologis.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Protein di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
+            else:
+                st.info("Protein adalah polimer alami yang tersusun dari asam amino.")
+        if "karbohidrat" in q:
+            if "kepolaran" in q:
+                st.success("Karbohidrat sangat polar karena banyak mengandung gugus hidroksil.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Rumus umum karbohidrat: (CH₂O)n.")
+            elif "titik" in q:
+                st.success("Karbohidrat tidak memiliki titik didih pasti karena terurai sebelum menguap.")
+            elif "fakta" in q:
+                st.success("Karbohidrat berfungsi sebagai sumber energi utama.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Karbohidrat di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
+            else:
+                st.info("Karbohidrat adalah senyawa organik yang terdiri dari C, H, dan O.")
+        if "lemak" in q or "minyak" in q:
+            if "kepolaran" in q:
+                st.success("Lemak dan minyak bersifat nonpolar dan tidak larut dalam air.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Lemak dan minyak adalah ester dari gliserol dan asam lemak.")
+            elif "titik" in q:
+                st.success("Titik didih trigliserida sangat tinggi, tetapi mudah rusak saat dipanaskan.")
+            elif "fakta" in q:
+                st.success("Lemak jenuh biasanya padat pada suhu ruang, sedangkan minyak tak jenuh cair.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Lemak dan Minyak di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
+            else:
+                st.info("Lemak dan minyak adalah bagian dari kelompok lipid.")
+        if "benzena" in q:
+            if "kepolaran" in q:
+                st.success("Benzena bersifat nonpolar dan tidak larut dalam air.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Rumus benzena: C₆H₆.")
+            elif "titik" in q:
+                st.success("Titik didih benzena: 80,1 °C.")
+            elif "fakta" in q:
+                st.success("Benzena adalah senyawa hidrokarbon aromatik paling sederhana.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Benzena di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
+            else:
+                st.info("Benzena adalah senyawa aromatik dengan struktur cincin.")
+        if "alkil halida" in q:
+            if "kepolaran" in q:
+                st.success("Alkil halida bersifat polar karena perbedaan elektronegativitas antara C dan halogen.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Rumus umum alkil halida: R–X, di mana X adalah halogen.")
+            elif "titik" in q:
+                st.success("Titik didih alkil halida lebih tinggi dari alkana dengan jumlah karbon setara.")
+            elif "fakta" in q:
+                st.success("Alkil halida digunakan dalam industri dan sebagai pelarut.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Alkil Halida di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
+            else:
+                st.info("Alkil halida adalah senyawa organik yang terbentuk dari alkana dengan menggantikan atom H dengan halogen.")
+        if "nitro" in q:
+            if "kepolaran" in q:
+                st.success("Senyawa nitro sangat polar karena gugus nitro (–NO₂).")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Gugus fungsi nitro: –NO₂.")
+            elif "titik" in q:
+                st.success("Titik didih nitro umumnya tinggi karena gaya tarik dipol-dipol.")
+            elif "fakta" in q:
+                st.success("Senyawa nitro penting dalam bahan peledak dan sintesis kimia.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Nitro di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
+            else:
+                st.info("Senyawa nitro adalah senyawa organik yang mengandung gugus nitro.")
+        if "nitril" in q:
+            if "kepolaran" in q:
+                st.success("Nitril sangat polar karena ikatan rangkap tiga C≡N.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Gugus fungsi nitril: –C≡N.")
+            elif "titik" in q:
+                st.success("Titik didih nitril lebih tinggi dari alkana karena interaksi dipol-dipol.")
+            elif "fakta" in q:
+                st.success("Nitril sering digunakan sebagai bahan antara dalam sintesis senyawa.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Nitril di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
+            else:
+                st.info("Nitril adalah senyawa organik yang mengandung gugus sianida.")
+        if "ester" in q:
+            if "kepolaran" in q:
+                st.success("Ester agak polar, tetapi tidak membentuk ikatan hidrogen antar molekul.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Gugus fungsi ester: R–COOR'.")
+            elif "titik" in q:
+                st.success("Titik didih ester lebih rendah daripada asam karboksilat.")
+            elif "fakta" in q:
+                st.success("Ester sering ditemukan dalam aroma buah dan minyak esensial.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Ester di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
+            else:
+                st.info("Ester adalah senyawa turunan asam karboksilat.")
+        if "asam halida" in q:
+            if "kepolaran" in q:
+                st.success("Asam halida sangat polar karena gugus karbonil dan halogen.")
+            elif "rumus" in q or "gugus" in q:
+                st.success("Rumus umum asam halida: R–COX, di mana X adalah halogen.")
+            elif "titik" in q:
+                st.success("Titik didih asam halida lebih rendah daripada asam karboksilat.")
+            elif "fakta" in q:
+                st.success("Asam halida sangat reaktif dan digunakan dalam sintesis.")
+            elif "video" in q:
+                st.success("🔗 [Tonton Penjelasan Asam Halida di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
+            else:
+                st.info("Asam halida adalah turunan dari asam karboksilat.")
+
+
+    
+
         else:
             st.warning("Maaf, senyawa tersebut belum tersedia atau belum dikenali.")
 
