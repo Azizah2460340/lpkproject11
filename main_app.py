@@ -28,21 +28,21 @@ def show_home():
     st.subheader("🔍 Pilih Senyawa:")
     
 # Membuat baris tombol horizontal
-cols = st.columns(5)
-with cols[0]:
-    if st.button("🍷 Alkohol"):
-        st.session_state.page = 'alkohol'
-    if st.button("🕸️ Benzena"):
-        st.session_state.page = 'benzena'
-    if st.button("🌿 Fenol"):
-        st.session_state.page = 'fenol'
-    if st.button("🧪 Amina"):
-        st.session_state.page = 'amina'
-with cols[1]:
-    if st.button("🔬 Amida"):
-        st.session_state.page = 'amida'
-    if st.button("🧫 Aldehida"):
-        st.session_state.page = 'aldehida'
+   cols = st.columns(5)
+     with cols[0]:
+         if st.button("🍷 Alkohol"):
+            st.session_state.page = 'alkohol'
+         if st.button("🕸️ Benzena"):
+            st.session_state.page = 'benzena'
+         if st.button("🌿 Fenol"):
+            st.session_state.page = 'fenol'
+         if st.button("🧪 Amina"):
+            st.session_state.page = 'amina'
+    with cols[1]:
+         if st.button("🔬 Amida"):
+            st.session_state.page = 'amida'
+         if st.button("🧫 Aldehida"):
+            st.session_state.page = 'aldehida'
     if st.button("⚡ Nitro"):
         st.session_state.page = 'nitro'
     if st.button("🧭 Nitril"):
