@@ -191,6 +191,36 @@ def show_alkohol():
     - CH₃CH(OH)CH₃ → 2-Propanol
     - HO–CH₂–CH₂–OH → 1,2-Etanadiol (etilen glikol)
     """)
+def show_protein():
+    st.title("Detail Senyawa: Protein")
+
+    st.markdown("""
+    **Deskripsi Pengetahuan Singkat:** Protein adalah polimer alami yang tersusun dari rantai panjang asam amino yang terhubung oleh ikatan peptida (sejenis ikatan amida). Protein berperan vital dalam struktur sel, enzim, hormon, antibodi, dan transportasi molekul. Struktur protein dibedakan menjadi:
+    - **Struktur primer:** urutan asam amino
+    - **Struktur sekunder:** bentuk lokal (α-heliks, β-sheet)
+    - **Struktur tersier:** bentuk tiga dimensi
+    - **Struktur kuartener:** asosiasi beberapa rantai polipeptida
+
+    **Titik Didih:**
+    - Tidak relevan untuk protein besar, karena protein tidak memiliki titik didih yang pasti—panas menyebabkan denaturasi (struktur rusak) sebelum menguap.
+    - Denaturasi biasanya terjadi di kisaran suhu 40–80 °C, tergantung jenis protein.
+
+    **Kepolaran:**
+    - Amfipatik (mengandung bagian polar dan nonpolar)
+    - Beberapa bagian protein polar dan larut dalam air (berinteraksi dengan lingkungan sel), bagian lain nonpolar dan tersembunyi di dalam struktur 3D.
+
+    **Ikatan Kimia:**
+    - Ikatan peptida (amida) antara gugus –COOH dan –NH₂ antar asam amino
+    - Ikatan non-kovalen: ikatan hidrogen, gaya van der Waals, interaksi hidrofobik
+    - Ikatan disulfida (–S–S–) antara dua sistein → membantu struktur stabil
+
+    **Tata Nama:**
+    - Tidak dinamai secara IUPAC seperti senyawa organik kecil.
+    - Nama protein berdasarkan fungsi, struktur, atau asal biologis, misalnya:
+        - Insulin → hormon pengatur gula darah
+        - Hemoglobin → pengangkut oksigen
+        - Amilase → enzim pemecah pati
+    """)
 
 def show_fenol():
     st.title("Detail Senyawa: Fenol")
