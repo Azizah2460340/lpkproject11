@@ -161,7 +161,7 @@ def show_alkuna():
         - CH₃–C≡C–CH₃ → But-2-una
     """)
 
-def show_alcohol():
+def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
 
     st.markdown("""
