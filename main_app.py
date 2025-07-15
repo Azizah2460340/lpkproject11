@@ -272,6 +272,7 @@ def show_alkil_halida():
 
 def show_nitro():
     st.title("Detail Senyawa: Nitro")
+    
     st.markdown("""
     **Deskripsi:** Senyawa nitro adalah senyawa organik yang mengandung gugus nitro (–NO₂).
     **Titik Didih:** Umumnya memiliki titik didih tinggi.
@@ -282,6 +283,7 @@ def show_nitro():
 
 def show_nitril():
     st.title("Detail Senyawa: Nitril")
+    
     st.markdown("""
     **Deskripsi:** Nitril adalah senyawa organik yang mengandung gugus –C≡N (gugus sianida).
     **Titik Didih:** Nitril memiliki titik didih sedang hingga tinggi.
@@ -320,204 +322,6 @@ def show_amina():
     **Kepolaran:** Polar  
     **Fun Fact:** Amina banyak ditemukan dalam alkaloid seperti nikotin dan morfin.
 
-    🔗 [Tonton Penjelasan Amina di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-def show_ester():
-    st.title("Detail Senyawa: Ester")
-
-    st.markdown("""
-    **Tatanama:** Etil Asetat  
-    **Gugus Fungsi:** –COO–R  
-    **Titik Didih:** ~77°C  
-    **Titik Leleh:** –24°C  
-    **Kepolaran:** Polar  
-    **Fun Fact:** Ester memberikan aroma buah seperti pisang dan stroberi.
-
-    🔗 [Tonton Penjelasan Ester di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-
-def show_halida_asam():
-    st.title("Detail Senyawa: Halida Asam")
-
-    st.markdown("""
-    **Tatanama:** -  
-    **Gugus Fungsi:** –COX  
-    **Titik Didih:** ~50–100°C  
-    **Titik Leleh:** –80°C  
-    **Kepolaran:** Cukup polar  
-    **Fun Fact:** Merupakan turunan sintetik dari asam karboksilat.
-
-    🔗 [Tonton Penjelasan Halida Asam di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-
-def show_amida():
-    st.title("Detail Senyawa: Amida")
-
-    st.markdown("""
-    **Tatanama:** Acetamida  
-    **Gugus Fungsi:** –CONH₂  
-    **Titik Didih:** ~221°C  
-    **Titik Leleh:** ~132°C  
-    **Kepolaran:** Sangat polar (H-bond)  
-    **Fun Fact:** Amida menyusun ikatan peptida pada protein.
-
-    🔗 [Tonton Penjelasan Amida di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-
-def show_nitril():
-    st.title("Detail Senyawa: Nitril")
-
-    st.markdown("""
-    **Tatanama:** Etanonitril  
-    **Gugus Fungsi:** –C≡N  
-    **Titik Didih:** ~82°C  
-    **Titik Leleh:** –83°C  
-    **Kepolaran:** Polar  
-    **Fun Fact:** Digunakan dalam sintesis senyawa metabolik sekunder.
-
-    🔗 [Tonton Penjelasan Nitril di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-
-def show_aldehida():
-    st.title("Detail Senyawa: Aldehida")
-
-    st.markdown("""
-    **Tatanama:** Asetaldehida  
-    **Gugus Fungsi:** –CHO  
-    **Titik Didih:** ~21°C  
-    **Titik Leleh:** –80°C  
-    **Kepolaran:** Polar  
-    **Fun Fact:** Memberikan aroma khas pada daun, seperti cinnamaldehid pada kayu manis.
-
-    🔗 [Tonton Penjelasan Aldehida di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-
-def show_keton():
-    st.title("Detail Senyawa: Keton")
-
-    st.markdown("""
-    **Tatanama:** Aseton  
-    **Gugus Fungsi:** –CO–R₂  
-    **Titik Didih:** ~56°C  
-    **Titik Leleh:** –95°C  
-    **Kepolaran:** Polar  
-    **Fun Fact:** Keton termasuk senyawa penting dalam terpenoid dan steroid tanaman.
-
-    🔗 [Tonton Penjelasan Keton di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-
-def show_tiol():
-    st.title("Detail Senyawa: Tiol")
-
-    st.markdown("""
-    **Tatanama:** Etanotiol  
-    **Gugus Fungsi:** –SH  
-    **Titik Didih:** ~97°C  
-    **Titik Leleh:** –86°C  
-    **Kepolaran:** Sedikit polar  
-    **Fun Fact:** Menghasilkan bau khas seperti bawang.
-
-    🔗 [Tonton Penjelasan Tiol di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-
-def show_arene():
-    st.title("Detail Senyawa: Arene")
-
-    st.markdown("""
-    **Tatanama:** Benzena  
-    **Gugus Fungsi:** C₆H₆ & Turunan  
-    **Titik Didih:** ~80°C  
-    **Titik Leleh:** ~6°C  
-    **Kepolaran:** Nonpolar – Moderat  
-    **Fun Fact:** Digunakan dalam senyawa fenolik dan flavonoid.
-
-    🔗 [Tonton Penjelasan Arene di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-
-def show_alkena():
-    st.title("Detail Senyawa: Alkena")
-
-    st.markdown("""
-    **Tatanama:** Etena  
-    **Gugus Fungsi:** –C=C–  
-    **Titik Didih:** –104°C  
-    **Titik Leleh:** –169°C  
-    **Kepolaran:** Nonpolar  
-    **Fun Fact:** Etilen adalah hormon pematangan buah.
-
-    🔗 [Tonton Penjelasan Alkena di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-
-def show_alkuna():
-    st.title("Detail Senyawa: Alkuna")
-
-    st.markdown("""
-    **Tatanama:** Etuna  
-    **Gugus Fungsi:** –C≡C–  
-    **Titik Didih:** –75°C  
-    **Titik Leleh:** –84°C  
-    **Kepolaran:** Nonpolar  
-    **Fun Fact:** Jarang ditemukan di alam, biasanya pada senyawa kompleks.
-
-    🔗 [Tonton Penjelasan Alkuna di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-
-def show_alkana():
-    st.title("Detail Senyawa: Alkana")
-
-    st.markdown("""
-    **Tatanama:** Pentana  
-    **Gugus Fungsi:** –  
-    **Titik Didih:** ~36°C  
-    **Titik Leleh:** –183°C  
-    **Kepolaran:** Sangat nonpolar  
-    **Fun Fact:** Merupakan hidrokarbon sederhana dalam tanaman.
-
-    🔗 [Tonton Penjelasan Alkana di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-
-def show_eter():
-    st.title("Detail Senyawa: Eter")
-
-    st.markdown("""
-    **Tatanama:** Dietil Eter  
-    **Gugus Fungsi:** –O–  
-    **Titik Didih:** ~35°C  
-    **Titik Leleh:** –116°C  
-    **Kepolaran:** Moderat polar  
-    **Fun Fact:** Terdapat dalam minyak atsiri seperti terpen eterik.
-
-    🔗 [Tonton Penjelasan Eter di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-
-def show_alkil_halida():
-    st.title("Detail Senyawa: Alkil Halida")
-
-    st.markdown("""
-    **Tatanama:** Kloroform  
-    **Gugus Fungsi:** –R–X  
-    **Titik Didih:** ~61°C  
-    **Titik Leleh:** –123°C  
-    **Kepolaran:** Polar  
-    **Fun Fact:** Merupakan senyawa sintetik yang sering digunakan di laboratorium.
-
-    🔗 [Tonton Penjelasan Alkil Halida di YouTube](https://www.youtube.com/watch?v=tvES-hSZKDY)
-    """)
-
-def show_nitro():
-    st.title("Detail Senyawa: Nitro")
-
-    st.markdown("""
-    **Tatanama:** Nitrometana  
-    **Gugus Fungsi:** –NO₂  
-    **Titik Didih:** ~101°C  
-    **Titik Leleh:** –29°C  
-    **Kepolaran:** Sangat polar  
-    **Fun Fact:** Senyawa nitro jarang ditemukan di alam, kebanyakan dibuat secara sintetik.
-
-    🔗 [Tonton Penjelasan Nitro di YouTube](https://www.youtube.com/watch?v=tvES
-     """)
-    
 def show_chatbot():
     st.title("💬 Chatbot O-KIMIAKU")
 
