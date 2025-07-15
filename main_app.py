@@ -654,6 +654,38 @@ def show_asam_halida():
     - C₂H₅COBr → Propanoil bromida
     - C₆H₅COCl → Benzoil klorida
     """)
+def show_karbohidrat():
+    st.title("Detail Senyawa: Karbohidrat")
+
+    st.markdown("""
+    **Deskripsi Pengetahuan Singkat:** Karbohidrat adalah senyawa organik yang terdiri dari unsur C, H, dan O, dengan rumus umum (CH₂O)n. Fungsinya sebagai sumber energi utama, bahan struktural (seperti selulosa), dan penyimpan energi (seperti pati). Karbohidrat dibagi menjadi:
+    - **Monosakarida:** (glukosa, fruktosa)
+    - **Disakarida:** (sukrosa, laktosa)
+    - **Polisakarida:** (pati, glikogen, selulosa)
+
+    **Titik Didih:**
+    - Tidak memiliki titik didih pasti, karena karbohidrat terurai atau terkarbonisasi sebelum menguap.
+    - Monosakarida dan disakarida mudah larut dalam air dan bersifat padat kristalin pada suhu ruang.
+
+    **Kepolaran:**
+    - Sangat polar, karena banyak mengandung gugus hidroksil (–OH).
+    - Larut dalam air (terutama monosakarida dan disakarida) karena bisa membentuk ikatan hidrogen dengan air.
+    - Polisakarida besar (seperti pati dan selulosa) tidak larut, tapi bisa menyerap air.
+
+    **Ikatan Kimia:**
+    - Tersusun dari ikatan glikosidik (C–O–C) antara gugus –OH dari dua monosakarida.
+    - Gugus fungsional penting: aldehid (–CHO) atau keton (–CO) pada monosakarida.
+    - Ikatan hidrogen antargugus –OH penting untuk membentuk struktur tiga dimensi (misalnya heliks pada pati).
+
+    **Tata Nama:**
+    - Monosakarida dinamai berdasarkan jumlah atom karbon + tipe gugus karbonil:
+        - Aldosa (gugus aldehid) → glukosa (aldoheksosa)
+        - Ketosa (gugus keton) → fruktosa (ketoheksosa)
+    - Disakarida/polisakarida dinamai berdasarkan jenis dan urutan monosakaridanya:
+        - Glukosa + fruktosa → sukrosa
+        - Glukosa + glukosa → maltosa
+        - Polimer glukosa → amilosa (dalam pati), selulosa, glikogen
+    """)
 
 def show_chatbot():
     st.title("💬 Chatbot O-KIMIAKU")
