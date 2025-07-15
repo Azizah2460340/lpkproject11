@@ -43,37 +43,37 @@ def show_home():
             st.session_state.page = 'amida'
          if st.button("🧫 Aldehida"):
             st.session_state.page = 'aldehida'
-    if st.button("⚡ Nitro"):
-        st.session_state.page = 'nitro'
-    if st.button("🧭 Nitril"):
-        st.session_state.page = 'nitril'
-with cols[2]:
-    if st.button("🧬 Alkana"):
-        st.session_state.page = 'alkana'
-    if st.button("🌱 Alkena"):
-        st.session_state.page = 'alkena'
-    if st.button("🔥 Alkuna"):
-        st.session_state.page = 'alkuna'
-    if st.button("🍞 Karbohidrat"):
-        st.session_state.page = 'karbohidrat'
-with cols[3]:
-    if st.button("🎯 Keton"):
-        st.session_state.page = 'keton'
-    if st.button("🧴 Ester"):
-        st.session_state.page = 'ester'
-    if st.button("💧 Eter"):
-        st.session_state.page = 'eter'
-    if st.button("🍗 Protein"):
-        st.session_state.page = 'protein'
-with cols[4]:
-    if st.button("🧂 Asam Halida"):
-        st.session_state.page = 'asam_halida'
-    if st.button("🍋 Asam Karboksilat"):
-        st.session_state.page = 'asam_karboksilat'
-    if st.button("🔌 Alkil Halida"):
-        st.session_state.page = 'alkil_halida'
-    if st.button("🛢️ Lemak dan Minyak"):
-        st.session_state.page = 'lemak_dan_minyak'
+         if st.button("⚡ Nitro"):
+            st.session_state.page = 'nitro'
+         if st.button("🧭 Nitril"):
+            st.session_state.page = 'nitril'
+    with cols[2]:
+         if st.button("🧬 Alkana"):
+            st.session_state.page = 'alkana'
+         if st.button("🌱 Alkena"):
+            st.session_state.page = 'alkena'
+         if st.button("🔥 Alkuna"):
+            st.session_state.page = 'alkuna'
+         if st.button("🍞 Karbohidrat"):
+            st.session_state.page = 'karbohidrat'
+    with cols[3]:
+         if st.button("🎯 Keton"):
+            st.session_state.page = 'keton'
+         if st.button("🧴 Ester"):
+            st.session_state.page = 'ester'
+         if st.button("💧 Eter"):
+            st.session_state.page = 'eter'
+         if st.button("🍗 Protein"):
+            st.session_state.page = 'protein'
+    with cols[4]:
+         if st.button("🧂 Asam Halida"):
+            st.session_state.page = 'asam_halida'
+         if st.button("🍋 Asam Karboksilat"):
+            st.session_state.page = 'asam_karboksilat'
+         if st.button("🔌 Alkil Halida"):
+            st.session_state.page = 'alkil_halida'
+         if st.button("🛢️ Lemak dan Minyak"):
+            st.session_state.page = 'lemak_dan_minyak'
 
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
