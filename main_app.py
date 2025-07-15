@@ -104,12 +104,16 @@ def show_alkana():
     - CH₃–CH₂–CH₃ → Propana
     - CH₃–CH(CH₃)–CH₃ → 2-Metilpropana (bentuk bercabang)
 
-     **Video Penjelasan:**
-    - [Video 1](https://youtu.be/NWkgH-ZdRS4?si=wJ05w-xF-mvW4rhT)
-    - [Video 2](https://youtu.be/ljW7asUnIdg?si=XUnDIIk2iedjBHr5)
-    - [Video 3](https://youtu.be/U2HNbktxDPY?si=gc2DDhRqgS_4lkPu)
+     **Berikut adalah beberapa video penjelasan tentang senyawa organik:**
+    st.markdown("""
+    **Video Penjelasan:**
+    - [Video 1](https://youtu.be/NWkgH-ZdRS4)
+    - [Video 2](https://youtu.be/ljW7asUnIdg)
+    - [Video 3](https://youtu.be/U2HNbktxDPY)
     """)
-
+    # Menampilkan video YouTube
+    st.video("https://www.youtube.com/watch?v=NWkgH-ZdRS4")
+    
 def show_alkena():
     st.title("Detail Senyawa: Alkena")
 
