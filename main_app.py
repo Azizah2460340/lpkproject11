@@ -1001,7 +1001,7 @@ elif st.session_state.page == 'amida':
 elif st.session_state.page == 'protein':
     show_protein()
 elif st.session_state.page == 'lemak dan minyak':
-    show_lemak_minyak()
+    show_lemak_dan_minyak()
 elif st.session_state.page == 'eter':
     show_eter()
 elif st.session_state.page == 'karbohidrat':
