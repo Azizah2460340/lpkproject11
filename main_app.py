@@ -542,7 +542,7 @@ def show_about():
 **Developer:**  
 KELOMPOK 11 KELAS 1C 
 1. Nama : Azizah Putri Azzahra (2460340)  
-2. Nama : Nadifah Adya Anggita (2460
+2. Nama : Nadifah Adya Anggita (2460449)
 3. Nama : Raudhatul Dahlia (2460493)
 4. Nama : Zahira Dwi Safitri (2460542) 
    
