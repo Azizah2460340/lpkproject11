@@ -916,7 +916,8 @@ def show_chatbot():
                 st.info("Asam halida adalah turunan dari asam karboksilat.")
         else:
             st.warning("Maaf, senyawa tersebut belum tersedia atau belum dikenali.")
-
+    st.button("enter"):
+        
 def show_about():
     st.title("Tentang Kami 👨‍💻")
     st.markdown("""
