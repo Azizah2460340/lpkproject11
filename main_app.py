@@ -914,8 +914,7 @@ def show_chatbot():
                 st.success("🔗 [Tonton Penjelasan Asam Halida di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
             else:
                 st.info("Asam halida adalah turunan dari asam karboksilat.")
-                
-        else:
+        if not recognized:
             st.warning("Maaf, senyawa tersebut belum tersedia atau belum dikenali.")
 
 def show_about():
