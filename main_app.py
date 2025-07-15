@@ -32,6 +32,9 @@ def show_home():
     with cols[0]:
         if st.button("🧪 Alkohol"):
             st.session_state.page = 'alkohol'
+            st.image("alkohol.png", caption="Alkohol", width=120)  # Pastikan file gambar ada
+        if st.button("🧪 Alkohol"):
+            st.session_state.page = 'alkohol'
         if st.button("🧬 Amina"):
             st.session_state.page = 'amina'
         if st.button("🧬 Benzena"):
