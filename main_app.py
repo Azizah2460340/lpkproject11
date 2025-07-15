@@ -784,10 +784,6 @@ def show_chatbot():
                 st.success("🔗 [Tonton Penjelasan Asam Halida di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)")
             else:
                 st.info("Asam halida adalah turunan dari asam karboksilat.")
-
-
-    
-
         else:
             st.warning("Maaf, senyawa tersebut belum tersedia atau belum dikenali.")
 
@@ -847,14 +843,12 @@ elif st.session_state.page == 'alkil halida':
     show_alkil_halida()
 elif st.session_state.page == 'eter':
     show_eter()
-elif st.session_state.page == 'amida':
-    show_amida()
 elif st.session_state.page == 'nitril':
     show_nitril()
 elif st.session_state.page == 'aldehida':
     show_aldehida()
 elif st.session_state.page == 'nitro':
-    show_nitril()
+    show_nitro()
 elif st.session_state.page == 'keton':
     show_keton()
 elif st.session_state.page == 'asam halida':
@@ -873,3 +867,7 @@ elif st.session_state.page == 'fenol':
     show_fenol()
 elif st.session_state.page == 'benzena':
     show_benzena()
+elif st.session_state.page == 'asam karboksilat':
+    show_asam_karboksilat()
+elif st.session_state.page == 'amida':
+    show_(amida)
