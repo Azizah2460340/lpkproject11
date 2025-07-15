@@ -99,10 +99,10 @@ def show_alkana():
     3. Jika ada cabang, nama dimulai dengan nomor posisi dan nama gugus alkil (metil, etil, dll).
 
     **Contoh:**
-            - CH₄ → Metana.
-            - CH₃–CH₃ → Etana.
-            - CH₃–CH₂–CH₃ → Propana.
-            - CH₃–CH(CH₃)–CH₃ → 2-Metilpropana (bentuk bercabang)
+            CH₄ → Metana.
+            CH₃–CH₃ → Etana.
+            CH₃–CH₂–CH₃ → Propana.
+            CH₃–CH(CH₃)–CH₃ → 2-Metilpropana (bentuk bercabang)
     """)
 
 def show_alkena():
