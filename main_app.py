@@ -63,6 +63,8 @@ def show_home():
             st.session_state.page = 'ester'
         if st.button("🧬 Eter"):
             st.session_state.page = 'eter'
+        if st.button("🧬 Protein"):
+            st.session_state.page = 'protein'
     with cols[4]:
         if st.button("🧬 Asam Halida"):
             st.session_state.page = 'asam_halida'
@@ -70,6 +72,8 @@ def show_home():
             st.session_state.page = 'asam_karboksilat'
         if st.button("🧬 Alkil Halida"):
             st.session_state.page = 'alkil_halida'
+        if st.button("🧬 Karbohidrat"):
+            st.session_state.page = 'karbohidrat'
 
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
