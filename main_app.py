@@ -64,6 +64,8 @@ def show_home():
             st.session_state.page = 'eter'
          if st.button("🍗 Protein"):
             st.session_state.page = 'protein'
+         if st.button("🛢️ Lemak dan Minyak"):
+            st.session_state.page = 'lemak_dan_minyak'
     with cols[4]:
          if st.button("🧂 Asam Halida"):
             st.session_state.page = 'asam_halida'
@@ -71,8 +73,6 @@ def show_home():
             st.session_state.page = 'asam_karboksilat'
          if st.button("🔌 Alkil Halida"):
             st.session_state.page = 'alkil_halida'
-         if st.button("🛢️ Lemak dan Minyak"):
-            st.session_state.page = 'lemak_dan_minyak'
 
 def show_alkana():
     st.title("Detail Senyawa: Alkana")
