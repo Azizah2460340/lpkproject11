@@ -64,8 +64,6 @@ def show_home():
             st.session_state.page = 'eter'
          if st.button("🍗 Protein"):
             st.session_state.page = 'protein'
-         if st.button("🛢️ Lemak dan Minyak"):
-            st.session_state.page = 'lemak_dan_minyak'
     with cols[4]:
          if st.button("🧂 Asam Halida"):
             st.session_state.page = 'asam_halida'
@@ -73,6 +71,8 @@ def show_home():
             st.session_state.page = 'asam_karboksilat'
          if st.button("🔌 Alkil Halida"):
             st.session_state.page = 'alkil_halida'
+         if st.button("🛢️ Lemak dan Minyak"):
+            st.session_state.page = 'lemak_dan_minyak'
 
 def show_alkana():
     st.title("Detail Senyawa: Alkana")
@@ -503,7 +503,6 @@ def show_amida():
     - CH₃CONHCH₃ → N-Metiletanamida
     - CH₃CON(CH₃)₂ → N,N-Dimetiletanamida
     """)
-
 def show_alkil_halida():
     st.title("Detail Senyawa: Alkil Halida")
 
@@ -542,7 +541,6 @@ def show_alkil_halida():
     - CH₃CH(Cl)CH₃ → 2-Kloropropana
     - CH₃CHBrCH₂CH₃ → 2-Bromobutana
     """)
-
 def show_nitro():
     st.title("Detail Senyawa: Nitro")
 
@@ -686,6 +684,7 @@ def show_asam_halida():
     - C₂H₅COBr → Propanoil bromida
     - C₆H₅COCl → Benzoil klorida
     """)
+    
 def show_karbohidrat():
     st.title("Detail Senyawa: Karbohidrat")
 
