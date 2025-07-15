@@ -134,7 +134,7 @@ def show_alkuna():
     **Tata Nama (IUPAC):** Berdasarkan rantai terpanjang yang mengandung ikatan rangkap tiga dan akhiran -una.
     """)
 
-def show_alcohol():
+def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
 
     st.markdown("""
