@@ -28,11 +28,8 @@ def show_home():
     st.subheader("🔍 Pilih Senyawa:")
     
 # Membuat baris tombol horizontal
-    cols = st.columns(4)
+    cols = st.columns(5)
     with cols[0]:
-        if st.button("🧪 Alkohol"):
-            st.session_state.page = 'alkohol'
-            st.image("alkohol.png", caption="Alkohol", width=120)  # Pastikan file gambar ada
         if st.button("🧪 Alkohol"):
             st.session_state.page = 'alkohol'
         if st.button("🧬 Amina"):
@@ -48,20 +45,31 @@ def show_home():
             st.session_state.page = 'aldehida'
         if st.button("🧬 Nitro"):
             st.session_state.page = 'nitro'
-    with cols[2]:
         if st.button("🧬 Nitril"):
             st.session_state.page = 'nitril'
+    with cols[2]:
         if st.button("🧬 Alkana"):
             st.session_state.page = 'alkana'
         if st.button("🧬 Alkena"):
             st.session_state.page = 'alkena'
-    with cols[3]:
         if st.button("🧬 Alkuna"):
             st.session_state.page = 'alkuna'
+        if st.button("🧬 Tiol"):
+            st.session_state.page = 'tiol'
+    with col[3]:
+        if st.button("🧬 Keton"):
+            st.session_state.page = 'keton'
+        if st.button("🧬 Ester"):
+            st.session_state.page = 'ester'
+        if st.button("🧬 Eter"):
+            st.session_state.page = 'eter'
+    with col[4]:
         if st.button("🧬 Asam Halida"):
-            st.session_state.page = 'Asam halida'
+            st.session_state.page = 'asam_halida'
         if st.button("🧬 Asam Karboksilat"):
             st.session_state.page = 'asam_karboksilat'
+        if st.button("🧬 Alkil Halida"):
+            st.session_state.page = 'alkil_halida'
 
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
