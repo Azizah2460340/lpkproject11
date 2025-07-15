@@ -910,3 +910,5 @@ elif st.session_state.page == 'protein':
     show_protein()
 elif st.session_state.page == 'lemak dan minyak':
     show_lemak_minyak()
+elif st.session_state.page == 'eter':
+    show_eter()
