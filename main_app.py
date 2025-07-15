@@ -973,3 +973,5 @@ elif st.session_state.page == 'lemak dan minyak':
     show_lemak_minyak()
 elif st.session_state.page == 'eter':
     show_eter()
+elif st.session_state.page == 'karbohidrat':
+    show_karbohidrat()
