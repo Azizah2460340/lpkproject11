@@ -979,7 +979,7 @@ elif st.session_state.page == 'nitro':
     show_nitro()
 elif st.session_state.page == 'keton':
     show_keton()
-elif st.session_state.page == 'asam halida':
+elif st.session_state.page == 'asam_halida':
     show_asam_halida()
 elif st.session_state.page == 'ester':
     show_ester()
@@ -995,13 +995,13 @@ elif st.session_state.page == 'fenol':
     show_fenol()
 elif st.session_state.page == 'benzena':
     show_benzena()
-elif st.session_state.page == 'asam karboksilat':
+elif st.session_state.page == 'asam_karboksilat':
     show_asam_karboksilat()
 elif st.session_state.page == 'amida':
     show_amida()
 elif st.session_state.page == 'protein':
     show_protein()
-elif st.session_state.page == 'lemak dan minyak':
+elif st.session_state.page == 'lemak_dan_minyak':
     show_lemak_dan_minyak()
 elif st.session_state.page == 'eter':
     show_eter()
