@@ -969,7 +969,7 @@ elif st.session_state.page == 'rating':
     show_rating()
 elif st.session_state.page == 'amina':
     show_amina()
-elif st.session_state.page == 'alkil halida':
+elif st.session_state.page == 'alkil_halida':
     show_alkil_halida()
 elif st.session_state.page == 'nitril':
     show_nitril()
