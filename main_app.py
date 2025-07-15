@@ -400,6 +400,7 @@ def show_asam_karboksilat():
         - CH₃COOH → Asam etanoat (asam asetat)
         - CH₃CH₂CH₂COOH → Asam butanoat (asam butirat)
     """)
+    
 def show_lemak_dan_minyak():
     st.title("Detail Senyawa: Lemak dan Minyak")
 
