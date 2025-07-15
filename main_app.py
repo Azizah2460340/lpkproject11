@@ -45,7 +45,7 @@ def show_home():
     if st.button("🧬 Nitro"):
         st.session_state.page = 'nitro'
         
-     if st.button("🧬 Nitril"):
+    if st.button("🧬 Nitril"):
         st.session_state.page = 'nitril'
 
     if st.button("🧬 Alkana"):
