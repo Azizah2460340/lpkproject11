@@ -15,7 +15,7 @@ def show_home():
     st.title("Selamat Datang di O-KimiaKu 👩‍🔬🧪")
 
     st.markdown("""
-    **O-KIMIAKU** adalah aplikasi pembelajaran interaktif kimia yang memberikan informasi penting tentang senyawa kimia, seperti:
+    **O-KimiaKu** adalah aplikasi pembelajaran interaktif kimia yang memberikan informasi penting tentang senyawa kimia, seperti:
     - ✅ Tatanama Senyawa
     - 🌡️ Titik Didih dan Titik Leleh
     - 🤓 Fun Fact Kimia
@@ -26,10 +26,9 @@ def show_home():
     """)
 
     st.subheader("🔍 Pilih Senyawa:")
-    
-# Membuat baris tombol horizontal
-cols = st.columns(5)
-with cols[0]:
+
+    cols = st.columns(5)
+    with cols[0]:
          if st.button("🍷 Alkohol"):
             st.session_state.page = 'alkohol'
          if st.button("🕸️ Benzena"):
@@ -38,7 +37,7 @@ with cols[0]:
             st.session_state.page = 'fenol'
          if st.button("🧪 Amina"):
             st.session_state.page = 'amina'
-with cols[1]:
+    with cols[1]:
          if st.button("🔬 Amida"):
             st.session_state.page = 'amida'
          if st.button("🧫 Aldehida"):
@@ -47,7 +46,7 @@ with cols[1]:
             st.session_state.page = 'nitro'
          if st.button("🧭 Nitril"):
             st.session_state.page = 'nitril'
-with cols[2]:
+    with cols[2]:
          if st.button("🧬 Alkana"):
             st.session_state.page = 'alkana'
          if st.button("🌱 Alkena"):
@@ -56,7 +55,7 @@ with cols[2]:
             st.session_state.page = 'alkuna'
          if st.button("🍞 Karbohidrat"):
             st.session_state.page = 'karbohidrat'
-with cols[3]:
+    with cols[3]:
          if st.button("🎯 Keton"):
             st.session_state.page = 'keton'
          if st.button("🧴 Ester"):
@@ -65,7 +64,7 @@ with cols[3]:
             st.session_state.page = 'eter'
          if st.button("🍗 Protein"):
             st.session_state.page = 'protein'
-with cols[4]:
+    with cols[4]:
          if st.button("🧂 Asam Halida"):
             st.session_state.page = 'asam_halida'
          if st.button("🍋 Asam Karboksilat"):
