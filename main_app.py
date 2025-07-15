@@ -32,12 +32,21 @@ def show_home():
 
     if st.button("🧬 Amina"):
         st.session_state.page = 'amina'
+
+    if st.button("🧬 Asam Karboksilat"):
+        st.session_state.page = 'asam_karboksilat'
+
+    if st.button("🧬 Amida"):
+        st.session_state.page = 'amida'
         
     if st.button("🧬 Aldehida"):
         st.session_state.page = 'aldehida'
         
     if st.button("🧬 Nitro"):
         st.session_state.page = 'nitro'
+        
+     if st.button("🧬 Nitril"):
+        st.session_state.page = 'nitril'
 
     if st.button("🧬 Alkana"):
         st.session_state.page = 'alkana'
@@ -47,6 +56,10 @@ def show_home():
         
     if st.button("🧬 Alkuna"):
         st.session_state.page = 'alkuna'
+        
+    if st.button("🧬 Asam Halida"):
+        st.session_state.page = 'Asam halida'
+
         
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
