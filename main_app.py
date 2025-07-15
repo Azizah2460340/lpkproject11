@@ -119,7 +119,7 @@ def show_alkuna():
     **Tata Nama (IUPAC):** Berdasarkan rantai terpanjang yang mengandung ikatan rangkap tiga dan akhiran -una.
     """)
 
-def show_alcohol():
+def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
     st.markdown("""
     **Deskripsi:** Alkohol adalah senyawa organik yang memiliki gugus hidroksil (–OH) yang terikat pada atom karbon jenuh (sp³). Rumus umum: R–OH.
@@ -309,18 +309,6 @@ def show_asam_halida():
     **Tata Nama (IUPAC):** Nama berasal dari nama asam karboksilat induk, ubah akhiran -oat menjadi -oyl halida.
     """)
 
-def show_alkohol():
-    st.title("Detail Senyawa: Alkohol")
-    st.markdown("""
-    **Tatanama:** Etanol (Ethanol)  
-    **Rumus Kimia:** C₂H₅OH  
-    **Titik Didih:** 78.37°C  
-    **Titik Leleh:** -114.1°C  
-    **Kepolaran:** Polar  
-    **Fun Fact:** Etanol dapat digunakan sebagai bahan bakar ramah lingkungan!
-
-    🔗 [Tonton Penjelasan Alkohol di YouTube](https://www.youtube.com/watch?v=2CK7zTJdXXo)
-    """)
 def show_amina():
     st.title("Detail Senyawa: Amina")
     st.markdown("""
