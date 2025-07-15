@@ -870,4 +870,4 @@ elif st.session_state.page == 'benzena':
 elif st.session_state.page == 'asam karboksilat':
     show_asam_karboksilat()
 elif st.session_state.page == 'amida':
-    show_(amida)
+    show_amida()
