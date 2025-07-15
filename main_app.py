@@ -54,8 +54,8 @@ def show_home():
             st.session_state.page = 'alkena'
         if st.button("🧬 Alkuna"):
             st.session_state.page = 'alkuna'
-        if st.button("🧬 Tiol"):
-            st.session_state.page = 'tiol'
+        if st.button("🧬 Karbohidrat"):
+            st.session_state.page = 'karbohidrat'
     with cols[3]:
         if st.button("🧬 Keton"):
             st.session_state.page = 'keton'
@@ -72,8 +72,8 @@ def show_home():
             st.session_state.page = 'asam_karboksilat'
         if st.button("🧬 Alkil Halida"):
             st.session_state.page = 'alkil_halida'
-        if st.button("🧬 Karbohidrat"):
-            st.session_state.page = 'karbohidrat'
+        if st.button("🧬 Lemak dan Minyak"):
+            st.session_state.page = 'lemak_dan_minyak'
 
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
