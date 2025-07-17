@@ -17,7 +17,7 @@ def show_home():
     **O-KimiaKu** adalah aplikasi pembelajaran interaktif kimia yang memberikan informasi penting tentang senyawa kimia, seperti:
     - ✅ Tatanama Senyawa
     - 🌡️ Titik Didih dan Titik Leleh
-    - 🤓 Fun Fact Kimia
+    - 🤓 Deskripsi Singkat
     - ⚖️ Kepolaran
     - 🧬 Rumus Kimia
 
