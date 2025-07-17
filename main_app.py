@@ -929,7 +929,7 @@ def show_chatbot():
             else:
                 st.info("Lemak dan minyak adalah bagian dari kelompok lipid.")
         if "alkil halida" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Alkil halida bersifat polar karena perbedaan elektronegativitas antara C dan halogen.")
             elif "rumus" in q or "gugus" in q:
@@ -1041,7 +1041,7 @@ def show_chatbot():
             else:
                 st.info("Alkana adalah senyawa hidrokarbon jenuh yang hanya mengandung ikatan tunggal.")
         if "alkena" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Alkena umumnya nonpolar, tetapi sedikit lebih polar dari alkana.")
             elif "rumus" in q or "gugus" in q:
