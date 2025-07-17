@@ -1,5 +1,4 @@
 import streamlit as st
-from PIL import Image
 import time
 
 # Konfigurasi halaman
@@ -103,6 +102,7 @@ def show_alkana():
     - CH₃–CH₃ → Etana
     - CH₃–CH₂–CH₃ → Propana
     - CH₃–CH(CH₃)–CH₃ → 2-Metilpropana (bentuk bercabang)
+    
 def show_alkena():
     st.title("Detail Senyawa: Alkena")
 
@@ -1140,8 +1140,6 @@ elif st.session_state.page == 'asam_halida':
     show_asam_halida()
 elif st.session_state.page == 'ester':
     show_ester()
-elif st.session_state.page == 'tiol':
-    show_tiol()
 elif st.session_state.page == 'alkana':
     show_alkana()
 elif st.session_state.page == 'alkena':
