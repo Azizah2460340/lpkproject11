@@ -915,7 +915,7 @@ def show_chatbot():
             else:
                 st.info("Karbohidrat adalah senyawa organik yang terdiri dari C, H, dan O.")
         if "lemak" in q or "minyak" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Lemak dan minyak bersifat nonpolar dan tidak larut dalam air.")
             elif "rumus" in q or "gugus" in q:
