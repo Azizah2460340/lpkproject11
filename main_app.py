@@ -1117,6 +1117,7 @@ def show_rating():
     st.title("Sebelum Keluar, Beri Rating Aplikasi Ini ⭐")
     st.markdown("Kami ingin mendengar pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
     sentiment_mapping = ["one", "two", "three", "four", "five"]
+    rating = st.radio("Berapa bintang untuk aplikasi ini?", [1, 2, 3, 4, 5], horizontal=True)
 
     # Area saran (emoji di placeholder)
     def saran_area():
