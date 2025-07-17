@@ -1115,10 +1115,31 @@ Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang 
 
 def show_rating():
     st.title("Sebelum Keluar, Beri Rating Aplikasi Ini ⭐")
-    sentiment_mapping = ["one", "two", "three", "four", "five"]
-    selected = st.feedback("stars")
-    if selected is not None:
-       st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
+    st.markdown("Kami ingin mendengar pendapat dan masukan kamu agar O-KimiaKu makin baik! 😊")
+
+    rating = st.radio("Berapa bintang untuk aplikasi ini?", [1, 2, 3, 4, 5], horizontal=True)
+
+    # Area saran (emoji di placeholder)
+    def saran_area():
+        st.subheader("Masukkan Saran/Kritik")
+        saran = st.text_area("Tulis saran atau masukan di sini", key="saran_area")
+        if st.button("Kirim Saran"):
+            if saran.strip():
+                st.success("Terima kasih atas saran dan masukanmu! 💌✨")
+                st.balloons()
+            else:
+                st.warning("Saran tidak boleh kosong!")
+    if rating >= 4:
+        st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
+        if st.button("Terima Kasih! 🙏"):
+            st.balloons()
+            st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
+        saran_area()
+    elif rating <= 3:
+        st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
+        st.info("Tolong isi saran agar web ini bisa lebih baik, boleh pakai emoji! 👇")
+        saran_area()
+    st.write(f"Kamu memilih {rating} bintang.")
 
 # ------------- UI & PAGE CONTROL --------------
 if 'page' not in st.session_state:
