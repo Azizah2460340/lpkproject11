@@ -102,7 +102,8 @@ def show_alkana():
     - CH₃–CH₃ → Etana
     - CH₃–CH₂–CH₃ → Propana
     - CH₃–CH(CH₃)–CH₃ → 2-Metilpropana (bentuk bercabang)
-    
+    """)
+
 def show_alkena():
     st.title("Detail Senyawa: Alkena")
 
