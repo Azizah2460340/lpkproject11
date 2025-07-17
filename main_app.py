@@ -1140,7 +1140,6 @@ def show_rating():
             st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
             st.info("Tolong isi saran agar web ini bisa lebih baik")
             saran_area()
-    st.write(f"Kamu memilih {rating} bintang.")
 
 # ------------- UI & PAGE CONTROL --------------
 if 'page' not in st.session_state:
