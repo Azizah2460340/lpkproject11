@@ -813,7 +813,7 @@ def show_chatbot():
         q = question.lower()
         ditemukan= True
         if "benzena" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Benzena bersifat nonpolar dan tidak larut dalam air.")
             elif "rumus" in q or "gugus" in q:
@@ -831,7 +831,7 @@ def show_chatbot():
             else:
                 st.info("Benzena adalah senyawa aromatik dengan struktur cincin.")
         if "keton" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Keton bersifat polar karena memiliki gugus karbonil (C=O).")
             elif "rumus" in q or "gugus" in q:
@@ -845,7 +845,7 @@ def show_chatbot():
             else:
                 st.info("Keton adalah senyawa organik dengan gugus karbonil di tengah rantai.")
         if "amina" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Amina bersifat polar karena adanya pasangan elektron bebas pada nitrogen.")
             elif "rumus" in q or "gugus" in q:
@@ -859,7 +859,7 @@ def show_chatbot():
             else:
                 st.info("Amina adalah turunan amonia di mana satu atau lebih atom hidrogen diganti dengan gugus alkil.")
         if "asam karboksilat" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Asam karboksilat sangat polar karena mengandung gugus karbonil dan hidroksil.")
             elif "rumus" in q or "gugus" in q:
@@ -873,7 +873,7 @@ def show_chatbot():
             else:
                 st.info("Asam karboksilat adalah senyawa organik dengan gugus karboksil.")
         if "amida" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Amida sangat polar karena adanya gugus karbonil dan gugus amino.")
             elif "rumus" in q or "gugus" in q:
@@ -887,7 +887,7 @@ def show_chatbot():
             else:
                 st.info("Amida adalah turunan dari asam karboksilat dengan gugus amina.")
         if "protein" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Protein bersifat amfipatik, mengandung bagian polar dan nonpolar.")
             elif "rumus" in q or "gugus" in q:
@@ -901,7 +901,7 @@ def show_chatbot():
             else:
                 st.info("Protein adalah polimer alami yang tersusun dari asam amino.")
         if "karbohidrat" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Karbohidrat sangat polar karena banyak mengandung gugus hidroksil.")
             elif "rumus" in q or "gugus" in q:
@@ -943,7 +943,7 @@ def show_chatbot():
             else:
                 st.info("Alkil halida adalah senyawa organik yang terbentuk dari alkana dengan menggantikan atom H dengan halogen.")
         if "nitro" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Senyawa nitro sangat polar karena gugus nitro (–NO₂).")
             elif "rumus" in q or "gugus" in q:
@@ -957,7 +957,7 @@ def show_chatbot():
             else:
                 st.info("Senyawa nitro adalah senyawa organik yang mengandung gugus nitro.")
         if "nitril" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Nitril sangat polar karena ikatan rangkap tiga C≡N.")
             elif "rumus" in q or "gugus" in q:
@@ -971,7 +971,7 @@ def show_chatbot():
             else:
                 st.info("Nitril adalah senyawa organik yang mengandung gugus sianida.")
         if "ester" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Ester agak polar, tetapi tidak membentuk ikatan hidrogen antar molekul.")
             elif "rumus" in q or "gugus" in q:
@@ -985,7 +985,7 @@ def show_chatbot():
             else:
                 st.info("Ester adalah senyawa turunan asam karboksilat.")
         if "asam halida" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Asam halida sangat polar karena gugus karbonil dan halogen.")
             elif "rumus" in q or "gugus" in q:
@@ -999,7 +999,7 @@ def show_chatbot():
             else:
                 st.info("Asam halida adalah turunan dari asam karboksilat.")
         if "alkohol" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Alkohol bersifat polar karena adanya gugus hidroksil (–OH).")
             elif "rumus" in q or "gugus" in q:
@@ -1013,7 +1013,7 @@ def show_chatbot():
             else:
                 st.info("Alkohol adalah senyawa organik yang memiliki gugus hidroksil (–OH).")
         if "fenol" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Fenol adalah senyawa polar karena adanya gugus hidroksil (–OH).")
             elif "rumus" in q or "gugus" in q:
@@ -1027,7 +1027,7 @@ def show_chatbot():
             else:
                 st.info("Fenol adalah senyawa aromatik yang terdiri dari cincin benzena dan gugus hidroksil.")        
         if "alkana" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Alkana adalah senyawa nonpolar karena distribusi elektron seimbang.")
             elif "rumus" in q or "gugus" in q:
@@ -1055,7 +1055,7 @@ def show_chatbot():
             else:
                 st.info("Alkena adalah senyawa hidrokarbon tak jenuh dengan setidaknya satu ikatan rangkap dua.")
         if "alkuna" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Sebagian besar alkuna adalah nonpolar.")
             elif "rumus" in q or "gugus" in q:
@@ -1069,7 +1069,7 @@ def show_chatbot():
             else:
                 st.info("Alkuna adalah senyawa hidrokarbon tak jenuh dengan setidaknya satu ikatan rangkap tiga.")
         if "aldehid" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Aldehid sangat polar karena gugus karbonil (C=O).")
             elif "rumus" in q or "gugus" in q:
@@ -1083,7 +1083,7 @@ def show_chatbot():
             else:
                 st.info("Aldehid adalah senyawa organik dengan gugus karbonil di ujung rantai.")
         if "eter" in q:
-        ditemukan = True
+            ditemukan = True
             if "kepolaran" in q:
                 st.success("Eter umumnya nonpolar, tetapi dapat sedikit polar tergantung pada struktur.")
             elif "rumus" in q or "gugus" in q:
