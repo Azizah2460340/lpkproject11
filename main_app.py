@@ -1121,7 +1121,6 @@ def show_rating():
     if selected is not None:
         st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
     
-
     # Area saran (emoji di placeholder)
     def saran_area():
         st.subheader("Masukkan Saran/Kritik")
@@ -1132,12 +1131,12 @@ def show_rating():
                 st.balloons()
             else:
                 st.warning("Saran tidak boleh kosong!")
-    if rating >= 4:
+        if rating >= 4:
             st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
             st.balloons()
             st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
             saran_area()
-    elif rating <= 3:
+        elif rating <= 3:
             st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
             st.info("Tolong isi saran agar web ini bisa lebih baik")
             saran_area()
