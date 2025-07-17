@@ -1117,7 +1117,10 @@ def show_rating():
     st.title("Sebelum Keluar, Beri Rating Aplikasi Ini ⭐")
     st.markdown("Kami ingin mendengar pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
     sentiment_mapping = ["one", "two", "three", "four", "five"]
-    rating = st.radio("Berapa bintang untuk aplikasi ini?", [1, 2, 3, 4, 5], horizontal=True)
+    selected = st.feedback("stars")
+    if selected is not None:
+        st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
+    
 
     # Area saran (emoji di placeholder)
     def saran_area():
@@ -1129,12 +1132,12 @@ def show_rating():
                 st.balloons()
             else:
                 st.warning("Saran tidak boleh kosong!")
-        if rating >= 4:
+    if rating >= 4:
             st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
             st.balloons()
             st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
             saran_area()
-        elif rating <= 3:
+    elif rating <= 3:
             st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
             st.info("Tolong isi saran agar web ini bisa lebih baik")
             saran_area()
