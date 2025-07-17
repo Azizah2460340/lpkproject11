@@ -1128,16 +1128,15 @@ def show_rating():
                 st.balloons()
             else:
                 st.warning("Saran tidak boleh kosong!")
-    if rating >= 4:
-        st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
-        if st.button("Terima Kasih! 🙏"):
+        if rating >= 4:
+            st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
             st.balloons()
             st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
-        saran_area()
-    elif rating <= 3:
-        st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
-        st.info("Tolong isi saran agar web ini bisa lebih baik")
-        saran_area()
+            saran_area()
+        elif rating <= 3:
+            st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
+            st.info("Tolong isi saran agar web ini bisa lebih baik")
+            saran_area()
 
 # ------------- UI & PAGE CONTROL --------------
 if 'page' not in st.session_state:
