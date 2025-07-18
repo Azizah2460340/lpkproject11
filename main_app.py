@@ -1123,20 +1123,20 @@ def show_rating():
     
     # Area saran (emoji di placeholder)
 def saran_area():
-        st.subheader("Masukkan Saran/Kritik")
-        saran = st.text_area("Tulis saran atau masukan di sini", key="saran_area")
-        if st.button("Kirim Saran"):
-            if saran.strip():
+    st.subheader("Masukkan Saran/Kritik")
+    saran = st.text_area("Tulis saran atau masukan di sini", key="saran_area")
+    if st.button("Kirim Saran"):
+        if saran.strip():
                 st.success("Terima kasih atas saran dan masukanmu! 💌✨")
                 st.balloons()
-            else:
+        else:
                 st.warning("Saran tidak boleh kosong!")
-        if rating >= 4:
+    if rating >= 4:
             st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
             st.balloons()
             st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
             saran_area()
-        elif rating <= 3:
+    elif rating <= 3:
             st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
             st.info("Tolong isi saran agar web ini bisa lebih baik")
             saran_area()
