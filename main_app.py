@@ -1099,6 +1099,117 @@ def show_chatbot():
         if not ditemukan:
             st.warning("Maaf, senyawa tersebut belum tersedia atau belum dikenali.")
 
+# Inisialisasi skor di session_state
+if "skor" not in st.session_state:
+    st.session_state.skor = 0
+if "dijawab" not in st.session_state:
+    st.session_state.dijawab = set()
+
+# Data kuis
+quiz = {
+    "Alkohol": {
+        "soal": "Apa gugus fungsi utama pada alkohol?",
+        "opsi": ["-COOH", "-OH", "-NH₂", "-C=O"],
+        "jawaban": "-OH"
+    },
+    "Benzena": {
+        "soal": "Berapakah jumlah atom karbon pada cincin benzena?",
+        "opsi": ["4", "5", "6", "7"],
+        "jawaban": "6"
+    },
+    "Fenol": {
+        "soal": "Fenol adalah senyawa aromatik dengan gugus utama ...",
+        "opsi": ["-OH", "-COOH", "-NH₂", "-NO₂"],
+        "jawaban": "-OH"
+    },
+    "Amina": {
+        "soal": "Amina adalah turunan dari ...",
+        "opsi": ["Amonia", "Benzena", "Alkohol", "Ester"],
+        "jawaban": "Amonia"
+    },
+    "Amida": {
+        "soal": "Amida merupakan turunan dari ...",
+        "opsi": ["Asam karboksilat", "Alkohol", "Amina", "Alkana"],
+        "jawaban": "Asam karboksilat"
+    },
+    "Aldehida": {
+        "soal": "Gugus fungsi khas pada aldehida adalah ...",
+        "opsi": ["-COOH", "-CHO", "-NH₂", "-OH"],
+        "jawaban": "-CHO"
+    },
+    "Nitro": {
+        "soal": "Gugus fungsi nitro ditulis sebagai ...",
+        "opsi": ["-NO₂", "-COO-", "-CN", "-OH"],
+        "jawaban": "-NO₂"
+    },
+    "Nitril": {
+        "soal": "Gugus fungsi utama pada nitril adalah ...",
+        "opsi": ["-C≡N", "-COOH", "-NH₂", "-C=O"],
+        "jawaban": "-C≡N"
+    },
+    "Alkana": {
+        "soal": "Rumus umum alkana adalah ...",
+        "opsi": ["CnH₂n+2", "CnH₂n", "CnH₂n-2", "CnH₂n+1OH"],
+        "jawaban": "CnH₂n+2"
+    },
+    "Alkena": {
+        "soal": "Alkena memiliki ikatan rangkap ...",
+        "opsi": ["dua", "tiga", "empat", "tunggal"],
+        "jawaban": "dua"
+    },
+    "Alkuna": {
+        "soal": "Apa ciri khas ikatan pada alkuna?",
+        "opsi": ["Ikatan rangkap tiga", "Ikatan rangkap dua", "Ikatan tunggal", "Ikatan peptida"],
+        "jawaban": "Ikatan rangkap tiga"
+    },
+    "Karbohidrat": {
+        "soal": "Manakah berikut ini yang termasuk monosakarida?",
+        "opsi": ["Glukosa", "Sukrosa", "Pati", "Selulosa"],
+        "jawaban": "Glukosa"
+    },
+    "Keton": {
+        "soal": "Gugus fungsi keton terletak di ...",
+        "opsi": ["Tengah rantai karbon", "Ujung rantai karbon", "Cincin aromatik", "Gugus amina"],
+        "jawaban": "Tengah rantai karbon"
+    },
+    "Ester": {
+        "soal": "Ester terbentuk dari reaksi antara asam karboksilat dan ...",
+        "opsi": ["Alkohol", "Amina", "Keton", "Nitro"],
+        "jawaban": "Alkohol"
+    },
+    "Eter": {
+        "soal": "Ciri utama eter adalah ...",
+        "opsi": ["Dua gugus alkil terhubung oleh oksigen", "Adanya gugus amina", "Cincin benzena", "Gugus nitro"],
+        "jawaban": "Dua gugus alkil terhubung oleh oksigen"
+    },
+}
+
+# Fungsi menampilkan kuis
+def show_quiz():
+    st.title("🧪 Kuis Senyawa Kimia Organik")
+    st.markdown(f"### Skor Total: **{st.session_state.skor}** ✅")
+
+    senyawa = st.selectbox("📘 Pilih Senyawa untuk Dijawab:", list(quiz.keys()))
+
+    if senyawa:
+        data = quiz[senyawa]
+        sudah_dijawab = senyawa in st.session_state.dijawab
+
+        with st.form(key=f"form_{senyawa}"):
+            user_ans = st.radio(data["soal"], data["opsi"], key=f"quiz_{senyawa}")
+            submit = st.form_submit_button("Cek Jawaban")
+
+            if submit:
+                if sudah_dijawab:
+                    st.info("❗ Soal ini sudah dijawab sebelumnya. Skor tidak berubah.")
+                else:
+                    st.session_state.dijawab.add(senyawa)
+                    if user_ans == data["jawaban"]:
+                        st.session_state.skor += 1
+                        st.success("✅ Jawaban kamu BENAR! 🎉 +1 poin")
+                    else:
+                        st.error(f"❌ Salah. Jawaban yang benar adalah: **{data['jawaban']}**")
+
 def show_about():
     st.title("Tentang Kami 👨‍💻")
     st.markdown("""
