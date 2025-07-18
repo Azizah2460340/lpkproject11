@@ -1229,19 +1229,19 @@ def show_rating():
     st.markdown("Kami ingin mendengar pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
 
     selected = st.feedback("stars")
-        if selected == "five":
+    if selected == "five":
             st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
             st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
-        elif selected == "four":
+    elif selected == "four":
             st.success("Terima kasih sudah memberi rating 4 untuk aplikasi ini! 🌟")
             st.info("Jika ada masukan agar O-KimiaKu lebih baik, silakan tulis di bawah ya!")
-        elif selected == "three":
+    elif selected == "three":
             st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
             st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
-        elif selected == "two":
+    elif selected == "two":
             st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
             st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
-        elif selected == "one":
+    elif selected == "one":
             st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
             st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
 
