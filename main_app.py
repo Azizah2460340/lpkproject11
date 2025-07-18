@@ -1112,30 +1112,29 @@ KELOMPOK 11 KELAS 1C
    
 Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang interaktif.
 """)
+
 def show_rating():
     st.title("Sebelum Keluar, Beri Rating Aplikasi Ini ⭐")
     st.markdown("Kami ingin mendengar pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
 
-    # Rating bintang
-    sentiment_mapping = ["one", "two", "three", "four", "five"]
     selected = st.feedback("stars")
 
-    # Pesan apresiasi/mohon maaf langsung di bawah rating
-    if selected == "five":
-        st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
-        st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
-    elif selected == "four":
-        st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
-        st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
-    elif selected == "three":
-        st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
-        st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
-    elif selected == "two":
-        st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
-        st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
-    elif selected == "one":
-        st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
-        st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
+    if selected:
+        if selected == "five":
+            st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
+            st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
+        elif selected == "four":
+            st.success("Terima kasih sudah memberi rating 4 untuk aplikasi ini! 🌟")
+            st.info("Jika ada masukan agar O-KimiaKu lebih baik, silakan tulis di bawah ya!")
+        elif selected == "three":
+            st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
+            st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
+        elif selected == "two":
+            st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
+            st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
+        elif selected == "one":
+            st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
+            st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
 
     # Area saran di bawahnya
     st.subheader("Masukkan Saran/Kritik")
@@ -1146,7 +1145,8 @@ def show_rating():
             st.success("Terima kasih atas saran dan masukanmu! 💌✨")
             st.balloons()
         else:
-            st.warning("Saran tidak boleh kosong!")    
+            st.warning("Saran tidak boleh kosong!")
+            
 
 # ------------- UI & PAGE CONTROL --------------
 if 'page' not in st.session_state:
