@@ -7,7 +7,7 @@ st.set_page_config(
     page_icon="🧪",
     layout="wide",
     initial_sidebar_state="expanded"
-    st.image("logo_O-KimiaKu.jpg", width=180),
+    st.image("logo_O-KimiaKu.jpg", width=180)
 )
     
 # ------------- FUNGSI --------------
