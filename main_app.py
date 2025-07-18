@@ -1118,7 +1118,7 @@ def show_rating():
     st.markdown("Kami ingin mendengar pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
 
     # Rating bintang
-    sentiment_mapping = [1,2,3,4,5]
+    sentiment_mapping = ["one", "two", "three", "four", "five"]
     selected = st.feedback("stars")
 
     # Pesan apresiasi/mohon maaf langsung di bawah rating
