@@ -1165,6 +1165,9 @@ if st.sidebar.button("💬 Chatbot"):
 if st.sidebar.button(" ⭐ Rating"):
     st.session_state.page = 'rating'
     
+if st.sidebar.button("📝 Quiz"):
+    st.session_state.page = 'quiz'
+    
 # Routing
 if st.session_state.page == 'home':
     show_home()
