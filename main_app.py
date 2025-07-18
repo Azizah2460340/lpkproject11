@@ -1102,7 +1102,7 @@ def show_chatbot():
 import streamlit as st
 
 def show_quiz():
-    st.title("🔬 Kuis Kimia Organik – 15 Soal")
+    st.title("🔬 Quiz Kimia Organik – 15 Soal")
 
     with st.form("quiz_form"):
         st.markdown("Jawab semua pertanyaan berikut, lalu klik **Kirim Jawaban** di bawah:")
@@ -1171,8 +1171,6 @@ def show_quiz():
             st.info("Bagus! Terus belajar dan tingkatkan pemahaman 💪")
         else:
             st.warning("Yuk belajar lagi. Jangan menyerah! 📘")
-
-        st.markdown("*(Klik sidebar untuk kembali ke menu utama)*")
         
 def show_about():
     st.title("Tentang Kami 👨‍💻")
@@ -1193,21 +1191,6 @@ def show_rating():
     st.markdown("Kami ingin mendengar pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
 
     selected = st.feedback("stars")
-    if selected == "five":
-            st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
-            st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
-    elif selected == "four":
-            st.success("Terima kasih sudah memberi rating 4 untuk aplikasi ini! 🌟")
-            st.info("Jika ada masukan agar O-KimiaKu lebih baik, silakan tulis di bawah ya!")
-    elif selected == "three":
-            st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
-            st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
-    elif selected == "two":
-            st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
-            st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
-    elif selected == "one":
-            st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
-            st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
 
     # Area saran di bawahnya
     st.subheader("Masukkan Saran/Kritik")
