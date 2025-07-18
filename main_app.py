@@ -1117,29 +1117,28 @@ def show_rating():
     st.title("Sebelum Keluar, Beri Rating Aplikasi Ini ⭐")
     st.markdown("Kami ingin mendengar pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
     sentiment_mapping = ["one", "two", "three", "four", "five"]
-    selected = st.feedback("stars")
-    if selected is not None:
-        st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
-    
-    # Area saran (emoji di placeholder)
-def saran_area():
-    st.subheader("Masukkan Saran/Kritik")
-    saran = st.text_area("Tulis saran atau masukan di sini", key="saran_area")
+    st.write(f"Kamu memilih {rating} bintang.")
+
+    # Bagian saran, selalu tampil
+    st.subheader("Masukkan Saran/Kritik (boleh pakai emoji!)")
+    saran = st.text_area("📝 Tulis saran atau masukan di sini, boleh pakai emoji!")
+
+    # Tombol Kirim Saran
     if st.button("Kirim Saran"):
         if saran.strip():
-                st.success("Terima kasih atas saran dan masukanmu! 💌✨")
-                st.balloons()
+            st.success("Terima kasih atas saran dan masukanmu! 💌✨")
+            st.balloons()
         else:
-                st.warning("Saran tidak boleh kosong!")
+            st.warning("Saran tidak boleh kosong!")
+
+    # Pesan apresiasi atau mohon maaf sesuai rating
     if rating >= 4:
-            st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
+        st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
             st.balloons()
             st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
-            saran_area()
     elif rating <= 3:
-            st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
-            st.info("Tolong isi saran agar web ini bisa lebih baik")
-            saran_area()
+        st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
+        st.info("Tolong isi saran agar web ini bisa lebih baik👇")
 
 # ------------- UI & PAGE CONTROL --------------
 if 'page' not in st.session_state:
