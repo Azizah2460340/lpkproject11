@@ -1117,13 +1117,8 @@ def show_rating():
     st.markdown("Kami ingin mendengar pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
 
     # Rating bintang
-    rating = st.radio(
-        "Beri rating untuk aplikasi ini:",
-        [1, 2, 3, 4, 5],
-        format_func=lambda x: "⭐" * x,
-        horizontal=True,
-        key="star_rating"
-    )
+    sentiment_mapping = [1,2,3,4,5]
+    selected = st.feedback("stars")
 
     # Pesan apresiasi/mohon maaf langsung di bawah rating
     if rating >= 4:
@@ -1132,8 +1127,6 @@ def show_rating():
     elif rating <= 3:
         st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
         st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
-
-    st.write(f"Kamu memilih {rating} bintang.")
 
     # Area saran di bawahnya
     st.subheader("Masukkan Saran/Kritik (boleh pakai emoji!)")
