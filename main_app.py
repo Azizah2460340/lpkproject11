@@ -1122,7 +1122,7 @@ def show_rating():
     selected = st.feedback("stars")
 
     # Pesan apresiasi/mohon maaf langsung di bawah rating
-    if rating >= 4:
+    if rating = "five":
         st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
         st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
     elif rating <= 3:
