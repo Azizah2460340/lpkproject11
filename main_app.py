@@ -1134,8 +1134,8 @@ def show_rating():
     # Pesan apresiasi atau mohon maaf sesuai rating
     if rating >= 4:
         st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
-            st.balloons()
-            st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
+        st.balloons()
+        st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
     elif rating <= 3:
         st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
         st.info("Tolong isi saran agar web ini bisa lebih baik👇")
