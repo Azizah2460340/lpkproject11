@@ -1328,3 +1328,5 @@ elif st.session_state.page == 'eter':
     show_eter()
 elif st.session_state.page == 'karbohidrat':
     show_karbohidrat()
+elif st.session_state.page == 'quiz':
+    show_quiz()
