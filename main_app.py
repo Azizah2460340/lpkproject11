@@ -1099,117 +1099,81 @@ def show_chatbot():
         if not ditemukan:
             st.warning("Maaf, senyawa tersebut belum tersedia atau belum dikenali.")
 
-# Inisialisasi skor di session_state
-if "skor" not in st.session_state:
-    st.session_state.skor = 0
-if "dijawab" not in st.session_state:
-    st.session_state.dijawab = set()
+import streamlit as st
 
-# Data kuis
-quiz = {
-    "Alkohol": {
-        "soal": "Apa gugus fungsi utama pada alkohol?",
-        "opsi": ["-COOH", "-OH", "-NH₂", "-C=O"],
-        "jawaban": "-OH"
-    },
-    "Benzena": {
-        "soal": "Berapakah jumlah atom karbon pada cincin benzena?",
-        "opsi": ["4", "5", "6", "7"],
-        "jawaban": "6"
-    },
-    "Fenol": {
-        "soal": "Fenol adalah senyawa aromatik dengan gugus utama ...",
-        "opsi": ["-OH", "-COOH", "-NH₂", "-NO₂"],
-        "jawaban": "-OH"
-    },
-    "Amina": {
-        "soal": "Amina adalah turunan dari ...",
-        "opsi": ["Amonia", "Benzena", "Alkohol", "Ester"],
-        "jawaban": "Amonia"
-    },
-    "Amida": {
-        "soal": "Amida merupakan turunan dari ...",
-        "opsi": ["Asam karboksilat", "Alkohol", "Amina", "Alkana"],
-        "jawaban": "Asam karboksilat"
-    },
-    "Aldehida": {
-        "soal": "Gugus fungsi khas pada aldehida adalah ...",
-        "opsi": ["-COOH", "-CHO", "-NH₂", "-OH"],
-        "jawaban": "-CHO"
-    },
-    "Nitro": {
-        "soal": "Gugus fungsi nitro ditulis sebagai ...",
-        "opsi": ["-NO₂", "-COO-", "-CN", "-OH"],
-        "jawaban": "-NO₂"
-    },
-    "Nitril": {
-        "soal": "Gugus fungsi utama pada nitril adalah ...",
-        "opsi": ["-C≡N", "-COOH", "-NH₂", "-C=O"],
-        "jawaban": "-C≡N"
-    },
-    "Alkana": {
-        "soal": "Rumus umum alkana adalah ...",
-        "opsi": ["CnH₂n+2", "CnH₂n", "CnH₂n-2", "CnH₂n+1OH"],
-        "jawaban": "CnH₂n+2"
-    },
-    "Alkena": {
-        "soal": "Alkena memiliki ikatan rangkap ...",
-        "opsi": ["dua", "tiga", "empat", "tunggal"],
-        "jawaban": "dua"
-    },
-    "Alkuna": {
-        "soal": "Apa ciri khas ikatan pada alkuna?",
-        "opsi": ["Ikatan rangkap tiga", "Ikatan rangkap dua", "Ikatan tunggal", "Ikatan peptida"],
-        "jawaban": "Ikatan rangkap tiga"
-    },
-    "Karbohidrat": {
-        "soal": "Manakah berikut ini yang termasuk monosakarida?",
-        "opsi": ["Glukosa", "Sukrosa", "Pati", "Selulosa"],
-        "jawaban": "Glukosa"
-    },
-    "Keton": {
-        "soal": "Gugus fungsi keton terletak di ...",
-        "opsi": ["Tengah rantai karbon", "Ujung rantai karbon", "Cincin aromatik", "Gugus amina"],
-        "jawaban": "Tengah rantai karbon"
-    },
-    "Ester": {
-        "soal": "Ester terbentuk dari reaksi antara asam karboksilat dan ...",
-        "opsi": ["Alkohol", "Amina", "Keton", "Nitro"],
-        "jawaban": "Alkohol"
-    },
-    "Eter": {
-        "soal": "Ciri utama eter adalah ...",
-        "opsi": ["Dua gugus alkil terhubung oleh oksigen", "Adanya gugus amina", "Cincin benzena", "Gugus nitro"],
-        "jawaban": "Dua gugus alkil terhubung oleh oksigen"
-    },
-}
-
-# Fungsi menampilkan kuis
 def show_quiz():
-    st.title("🧪 Kuis Senyawa Kimia Organik")
-    st.markdown(f"### Skor Total: **{st.session_state.skor}** ✅")
+    st.title("🔬 Kuis Kimia Organik – 15 Soal")
 
-    senyawa = st.selectbox("📘 Pilih Senyawa untuk Dijawab:", list(quiz.keys()))
+    with st.form("quiz_form"):
+        st.markdown("Jawab semua pertanyaan berikut, lalu klik **Kirim Jawaban** di bawah:")
 
-    if senyawa:
-        data = quiz[senyawa]
-        sudah_dijawab = senyawa in st.session_state.dijawab
+        # 15 soal dipilih dari bank soal kamu
+        q1 = st.radio("1. Apa gugus fungsi utama pada alkohol?", 
+                      ["-COOH", "-OH", "-NH₂", "-C=O"], key="q1")
+        q2 = st.radio("2. Berapakah jumlah atom karbon pada cincin benzena?", 
+                      ["4", "5", "6", "7"], key="q2")
+        q3 = st.radio("3. Fenol adalah senyawa aromatik dengan gugus utama ...", 
+                      ["-OH", "-COOH", "-NH₂", "-NO₂"], key="q3")
+        q4 = st.radio("4. Amina adalah turunan dari ...", 
+                      ["Amonia", "Benzena", "Alkohol", "Ester"], key="q4")
+        q5 = st.radio("5. Amida merupakan turunan dari ...", 
+                      ["Asam karboksilat", "Alkohol", "Amina", "Alkana"], key="q5")
+        q6 = st.radio("6. Gugus fungsi khas pada aldehida adalah ...", 
+                      ["-COOH", "-CHO", "-NH₂", "-OH"], key="q6")
+        q7 = st.radio("7. Gugus fungsi nitro ditulis sebagai ...", 
+                      ["-NO₂", "-COO-", "-CN", "-OH"], key="q7")
+        q8 = st.radio("8. Gugus fungsi utama pada nitril adalah ...", 
+                      ["-C≡N", "-COOH", "-NH₂", "-C=O"], key="q8")
+        q9 = st.radio("9. Rumus umum alkana adalah ...", 
+                      ["CnH₂n+2", "CnH₂n", "CnH₂n-2", "CnH₂n+1OH"], key="q9")
+        q10 = st.radio("10. Alkena memiliki ikatan rangkap ...", 
+                       ["dua", "tiga", "empat", "tunggal"], key="q10")
+        q11 = st.radio("11. Apa ciri khas ikatan pada alkuna?", 
+                       ["Ikatan rangkap tiga", "Ikatan rangkap dua", "Ikatan tunggal", "Ikatan peptida"], key="q11")
+        q12 = st.radio("12. Manakah berikut ini yang termasuk monosakarida?", 
+                       ["Glukosa", "Sukrosa", "Pati", "Selulosa"], key="q12")
+        q13 = st.radio("13. Gugus fungsi keton terletak di ...", 
+                       ["Tengah rantai karbon", "Ujung rantai karbon", "Cincin aromatik", "Gugus amina"], key="q13")
+        q14 = st.radio("14. Ester terbentuk dari reaksi antara asam karboksilat dan ...", 
+                       ["Alkohol", "Amina", "Keton", "Nitro"], key="q14")
+        q15 = st.radio("15. Ciri utama eter adalah ...", 
+                       ["Dua gugus alkil terhubung oleh oksigen", "Adanya gugus amina", "Cincin benzena", "Gugus nitro"], key="q15")
 
-        with st.form(key=f"form_{senyawa}"):
-            user_ans = st.radio(data["soal"], data["opsi"], key=f"quiz_{senyawa}")
-            submit = st.form_submit_button("Cek Jawaban")
+        submitted = st.form_submit_button("Kirim Jawaban")
 
-            if submit:
-                if sudah_dijawab:
-                    st.info("❗ Soal ini sudah dijawab sebelumnya. Skor tidak berubah.")
-                else:
-                    st.session_state.dijawab.add(senyawa)
-                    if user_ans == data["jawaban"]:
-                        st.session_state.skor += 1
-                        st.success("✅ Jawaban kamu BENAR! 🎉 +1 poin")
-                    else:
-                        st.error(f"❌ Salah. Jawaban yang benar adalah: **{data['jawaban']}**")
+    if submitted:
+        score = 0
+        # Kunci jawaban
+        if q1 == "-OH": score += 1
+        if q2 == "6": score += 1
+        if q3 == "-OH": score += 1
+        if q4 == "Amonia": score += 1
+        if q5 == "Asam karboksilat": score += 1
+        if q6 == "-CHO": score += 1
+        if q7 == "-NO₂": score += 1
+        if q8 == "-C≡N": score += 1
+        if q9 == "CnH₂n+2": score += 1
+        if q10 == "dua": score += 1
+        if q11 == "Ikatan rangkap tiga": score += 1
+        if q12 == "Glukosa": score += 1
+        if q13 == "Tengah rantai karbon": score += 1
+        if q14 == "Alkohol": score += 1
+        if q15 == "Dua gugus alkil terhubung oleh oksigen": score += 1
 
+        st.success(f"Skor akhir kamu: {score} / 15")
+
+        if score == 15:
+            st.balloons()
+            st.info("Sempurna! Semua jawaban benar 🎉")
+        elif score >= 12:
+            st.info("Hebat! Kamu paham betul senyawa kimia organik 👏")
+        elif score >= 8:
+            st.info("Bagus! Terus belajar dan tingkatkan pemahaman 💪")
+        else:
+            st.warning("Yuk belajar lagi. Jangan menyerah! 📘")
+
+        st.markdown("*(Klik sidebar untuk kembali ke menu utama)*")
+        
 def show_about():
     st.title("Tentang Kami 👨‍💻")
     st.markdown("""
