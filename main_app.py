@@ -1112,6 +1112,7 @@ KELOMPOK 11 KELAS 1C
    
 Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang interaktif.
 """)
+    
 def show_rating():
     st.title("Sebelum Keluar, Beri Rating Aplikasi Ini ⭐")
     st.markdown("Kami ingin mendengar pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
@@ -1129,7 +1130,7 @@ def show_rating():
         st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
 
     # Area saran di bawahnya
-    st.subheader("Masukkan Saran/Kritik (boleh pakai emoji!)")
+    st.subheader("Masukkan Saran/Kritik")
     saran = st.text_area("📝 Tulis saran atau masukan di sini:")
 
     if st.button("Kirim Saran"):
