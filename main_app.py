@@ -7,12 +7,12 @@ st.set_page_config(
     page_icon="🧪",
     layout="wide",
     initial_sidebar_state="expanded",
-    st.image("logo_O-KimiaKu.jpg", width=180)
 )
     
 # ------------- FUNGSI --------------
 def show_home():
     st.title("Selamat Datang di O-KimiaKu 👩‍🔬🧪")
+    st.image("logo_O-KimiaKu.jpg", width=180)
 
     st.markdown("""
     **O-KimiaKu** adalah aplikasi pembelajaran interaktif kimia yang memberikan informasi penting tentang senyawa kimia, seperti:
