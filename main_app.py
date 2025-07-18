@@ -1125,9 +1125,20 @@ def show_rating():
     if rating == "five":
         st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
         st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
-    elif rating <= 3:
+    elif rating == "four":
+        st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
+        st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
+    elif rating == "three":
         st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
         st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
+    elif rating == "two":
+        st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
+        st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
+    elif rating == "one":
+        st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
+        st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
+
+
 
     # Area saran di bawahnya
     st.subheader("Masukkan Saran/Kritik")
