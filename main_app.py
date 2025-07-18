@@ -1231,17 +1231,17 @@ st.sidebar.title("📚 Navigasi")
 if st.sidebar.button("🏠 Beranda"):
     st.session_state.page = 'home'
 
-if st.sidebar.button("👥 About Us"):
-    st.session_state.page = 'about'
+if st.sidebar.button("📝 Quiz"):
+    st.session_state.page = 'quiz'
 
 if st.sidebar.button("💬 Chatbot"):
     st.session_state.page = 'chatbot'
+
+if st.sidebar.button("👥 About Us"):
+    st.session_state.page = 'about'
     
 if st.sidebar.button(" ⭐ Rating"):
     st.session_state.page = 'rating'
-    
-if st.sidebar.button("📝 Quiz"):
-    st.session_state.page = 'quiz'
     
 # Routing
 if st.session_state.page == 'home':
