@@ -6,7 +6,7 @@ st.set_page_config(
     page_title="O-Kimiaku",
     page_icon="🧪",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
     st.image("logo_O-KimiaKu.jpg", width=180)
 )
     
