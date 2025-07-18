@@ -11,6 +11,17 @@ st.set_page_config(
     
 # ------------- FUNGSI --------------
 def show_home():
+    col1, col2 = st.columns([1, 3])  
+
+    with col1:
+        st.image("logo_O-KimiaKu.jpg", width=120)  # logo di kiri
+
+    with col2:
+        st.markdown("<h1 style='margin-bottom:0;'>Selamat Datang di O-KimiaKu 👩‍🔬🧪</h1>", unsafe_allow_html=True)
+        st.markdown("""
+        <p style='font-size:18px; margin-top:0;'>Aplikasi pembelajaran interaktif kimia yang memberikan informasi penting tentang senyawa kimia.</p>
+        """, unsafe_allow_html=True)
+
     st.title("Selamat Datang di O-KimiaKu 👩‍🔬🧪")
     st.image("logo_O-KimiaKu.jpg", width=180)
 
