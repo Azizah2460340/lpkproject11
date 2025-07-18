@@ -1112,7 +1112,6 @@ KELOMPOK 11 KELAS 1C
    
 Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang interaktif.
 """)
-    
 def show_rating():
     st.title("Sebelum Keluar, Beri Rating Aplikasi Ini ⭐")
     st.markdown("Kami ingin mendengar pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
@@ -1122,23 +1121,21 @@ def show_rating():
     selected = st.feedback("stars")
 
     # Pesan apresiasi/mohon maaf langsung di bawah rating
-    if rating == "five":
+    if selected == "five":
         st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
         st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
-    elif rating == "four":
+    elif selected == "four":
         st.success("Terima kasih atas rating tinggi kamu! Kamu luar biasa! 🥰⭐️")
         st.info("Dukunganmu sangat berarti! Semoga O-KimiaKu makin bermanfaat 🎉")
-    elif rating == "three":
+    elif selected == "three":
         st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
         st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
-    elif rating == "two":
+    elif selected == "two":
         st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
         st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
-    elif rating == "one":
+    elif selected == "one":
         st.error("Kami mohon maaf atas ketidaknyamananmu 😔🙏")
         st.info("Tolong isi saran agar web ini bisa lebih baik🙏")
-
-
 
     # Area saran di bawahnya
     st.subheader("Masukkan Saran/Kritik")
@@ -1149,7 +1146,7 @@ def show_rating():
             st.success("Terima kasih atas saran dan masukanmu! 💌✨")
             st.balloons()
         else:
-            st.warning("Saran tidak boleh kosong!")
+            st.warning("Saran tidak boleh kosong!")    
 
 # ------------- UI & PAGE CONTROL --------------
 if 'page' not in st.session_state:
