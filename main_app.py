@@ -3,11 +3,11 @@ import time
 
 # Konfigurasi halaman
 st.set_page_config(
-    st.image("logo_O-KimiaKu.jpg", width=180),
     page_title="O-Kimiaku",
     page_icon="🧪",
     layout="wide",
     initial_sidebar_state="expanded"
+    st.image("logo_O-KimiaKu.jpg", width=180),
 )
     
 # ------------- FUNGSI --------------
