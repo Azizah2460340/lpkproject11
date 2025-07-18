@@ -1122,7 +1122,7 @@ def show_rating():
         st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
     
     # Area saran (emoji di placeholder)
-    def saran_area():
+def saran_area():
         st.subheader("Masukkan Saran/Kritik")
         saran = st.text_area("Tulis saran atau masukan di sini", key="saran_area")
         if st.button("Kirim Saran"):
