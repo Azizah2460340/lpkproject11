@@ -1,17 +1,22 @@
 import streamlit as st
 import time
-import pandas as pd
-from streamlit_gsheets import GSheetsConnection
-from datetime import datetime
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
 
-# Konfigurasi halaman
+# Tampilan nama website
 st.set_page_config(
     page_title="O-Kimiaku",
     page_icon="🧪",
     layout="wide",
     initial_sidebar_state="expanded",
 )
-    
+
+scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
+creds = ServiceAccountCredentials.from_json_keyfile_name('path/to/credentials.json', scope)
+gc = gspread.authorize(creds)
+ws = gc.open("NamaSheet").worksheet("Feedback")
+ws.append_row([timestamp, row["Rating"], row["Saran"]])
+
 # ------------- FUNGSI --------------
 def show_home():
     st.title("Selamat Datang di O-KimiaKu 👩‍🔬🧪")
@@ -1218,7 +1223,6 @@ if st.button("Kirim Saran"):
             "Rating": int(rating) + 1 if rating is not None else None,  # st.feedback memberikan 0–4
             "Saran": saran
         }
-        conn.update(worksheet="Feedback", data=[row])
         st.success("Terima kasih atas saran dan masukanmu! 💌✨")
         st.balloons()
 
