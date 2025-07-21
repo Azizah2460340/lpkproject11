@@ -1213,7 +1213,7 @@ def show_rating():
             # Assuming you have a function to save to Google Sheets
             try:
                 conn = gspread.authorize(creds)  # Ensure creds is defined
-                ws = conn.open("NamaSheet").worksheet("Feedback")
+                ws = conn.open("Rating dan saran o-kimiaku").worksheet("Feedback")
                 timestamp = datetime.now().isoformat()
                 row = [timestamp, rating, saran]
                 ws.append_row(row)
