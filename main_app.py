@@ -11,12 +11,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('path/to/credentials.json', scope)
-gc = gspread.authorize(creds)
-ws = gc.open("NamaSheet").worksheet("Feedback")
-ws.append_row([timestamp, row["Rating"], row["Saran"]])
-
 # ------------- FUNGSI --------------
 def show_home():
     st.title("Selamat Datang di O-KimiaKu 👩‍🔬🧪")
@@ -1208,23 +1202,25 @@ def show_rating():
 
     selected = st.feedback("stars")
 
-    # Area saran di bawahnya
     st.subheader("Masukkan Saran/Kritik")
     saran = st.text_area("📝 Tulis saran atau masukan di sini:")
     
-if st.button("Kirim Saran"):
-    if not saran.strip():
-        st.warning("Saran tidak boleh kosong!")
-    else:
-        conn = st.connection("gsheets", type=GSheetsConnection)
-        timestamp = datetime.now().isoformat()
-        row = {
-            "Timestamp": timestamp,
-            "Rating": int(rating) + 1 if rating is not None else None,  # st.feedback memberikan 0–4
-            "Saran": saran
-        }
-        st.success("Terima kasih atas saran dan masukanmu! 💌✨")
-        st.balloons()
+    if st.button("Kirim Saran"):
+        if not saran.strip():
+            st.warning("Saran tidak boleh kosong!")
+        else:
+            # Assuming you have a function to save to Google Sheets
+            try:
+                conn = gspread.authorize(creds)  # Ensure creds is defined
+                ws = conn.open("NamaSheet").worksheet("Feedback")
+                timestamp = datetime.now().isoformat()
+                row = [timestamp, rating, saran]
+                ws.append_row(row)
+                st.success("Terima kasih atas saran dan masukanmu! 💌✨")
+                st.balloons()
+            except Exception as e:
+                st.error(f"Terjadi kesalahan saat mengirim saran: {e}")
+
 
 # ------------- UI & PAGE CONTROL --------------
 if 'page' not in st.session_state:
