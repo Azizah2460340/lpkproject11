@@ -1206,14 +1206,21 @@ def show_rating():
     # Area saran di bawahnya
     st.subheader("Masukkan Saran/Kritik")
     saran = st.text_area("📝 Tulis saran atau masukan di sini:")
-
-    if st.button("Kirim Saran"):
-        if saran.strip():
-            st.success("Terima kasih atas saran dan masukanmu! 💌✨")
-            st.balloons()
-        else:
-            st.warning("Saran tidak boleh kosong!")
-            
+    
+if st.button("Kirim Saran"):
+    if not saran.strip():
+        st.warning("Saran tidak boleh kosong!")
+    else:
+        conn = st.connection("gsheets", type=GSheetsConnection)
+        timestamp = datetime.now().isoformat()
+        row = {
+            "Timestamp": timestamp,
+            "Rating": int(rating) + 1 if rating is not None else None,  # st.feedback memberikan 0–4
+            "Saran": saran
+        }
+        conn.update(worksheet="Feedback", data=[row])
+        st.success("Terima kasih atas saran dan masukanmu! 💌✨")
+        st.balloons()
 
 # ------------- UI & PAGE CONTROL --------------
 if 'page' not in st.session_state:
