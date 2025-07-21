@@ -1210,10 +1210,14 @@ def show_rating():
         if not saran.strip():
             st.warning("Saran tidak boleh kosong!")
         else:
-            # Assuming you have a function to save to Google Sheets
             try:
-                conn = gspread.authorize(creds)  # Ensure creds is defined
+
+                scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+                creds = ServiceAccountCredentials.from_json_keyfile_name('path/to/credentials.json', scope)
+                gc = gspread.authorize(creds)
                 ws = conn.open("Rating dan saran o-kimiaku").worksheet("Feedback")
+
+                conn = gspread.authorize(creds)
                 timestamp = datetime.now().isoformat()
                 row = [timestamp, rating, saran]
                 ws.append_row(row)
