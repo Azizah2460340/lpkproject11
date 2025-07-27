@@ -742,7 +742,6 @@ def show_ester():
 
     st.markdown("""
     **Deskripsi:** Ester adalah senyawa turunan asam karboksilat di mana gugus –OH diganti dengan gugus alkoksi (–OR). Rumus umum: R–COOR′. Ester sering ditemukan dalam aroma buah, minyak esensial, dan sebagai pelarut organik atau bahan pembuatan plastik (poliester).
-
     **Titik Didih:**
     - Titik didih lebih rendah daripada asam karboksilat dan alkohol, karena ester tidak membentuk ikatan hidrogen antar molekulnya.
     - Namun, lebih tinggi dari eter atau alkana seukuran karena ada interaksi dipol-dipol.
