@@ -1349,7 +1349,7 @@ elif st.session_state.page == 'about':
 elif st.session_state.page == 'chatbot':
     show_chatbot()
 elif st.session_state.page == 'rating':
-    show_rating(rating)
+    show_rating()
 elif st.session_state.page == 'amina':
     show_amina()
 elif st.session_state.page == 'alkil_halida':
