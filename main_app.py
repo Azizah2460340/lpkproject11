@@ -1,10 +1,5 @@
 import streamlit as st
 import time
-import json
-import requests
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
-from datetime import datetime
 
 # Tampilan nama website
 st.set_page_config(
@@ -14,7 +9,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ------------- FUNGSI --------------
+# tampilan beranda
 def show_home():
     st.title("Selamat Datang di O-KimiaKu 👩‍🔬🧪")
     col1, col2 = st.columns([1, 3])  
@@ -85,7 +80,8 @@ def show_home():
             st.session_state.page = 'alkil_halida'
          if st.button("🛢️ Lemak dan Minyak"):
             st.session_state.page = 'lemak_dan_minyak'
-
+             
+# tampilan alkana
 def show_alkana():
     st.title("Detail Senyawa: Alkana")
 
@@ -115,10 +111,15 @@ def show_alkana():
     - CH₃–CH₃ → Etana
     - CH₃–CH₂–CH₃ → Propana
     - CH₃–CH(CH₃)–CH₃ → 2-Metilpropana (bentuk bercabang)
+    
+    **Video Penjelasan:**
+    - [Video 1](https://youtu.be/Vzp-PAMsz7M?si=1Cv0gbxOMEWuQfMj)
+    - [Video 2](https://youtu.be/HXzUk70i0wU?si=n7QFVZj9mMkc9twR)
     """)
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
-        
+
+# tampilan alkena
 def show_alkena():
     st.title("Detail Senyawa: Alkena")
 
@@ -154,7 +155,8 @@ def show_alkena():
     """)
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
-        
+
+# tampilan alkuna
 def show_alkuna():
     st.title("Detail Senyawa: Alkuna")
 
@@ -852,7 +854,8 @@ def show_karbohidrat():
     """)
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
-        
+
+# tampilan chatbot
 def show_chatbot():
     st.title("💬 Chatbot O-KIMIAKU")
     question = st.text_input("Tanyakan sesuatu tentang senyawa kimia (misal: kepolaran ester):", key="chat_input")
@@ -1152,6 +1155,7 @@ def show_chatbot():
         if not ditemukan:
             st.warning("Maaf, hal yang kamu tanyakan bukan lingkup senyawa organik")
 
+# tampilan quiz
 def show_quiz():
     st.title("🔬 Quiz Kimia Organik – 15 Soal")
 
@@ -1222,7 +1226,8 @@ def show_quiz():
             st.info("Bagus! Terus belajar dan tingkatkan pemahaman 💪")
         else:
             st.warning("Yuk belajar lagi. Jangan menyerah! 📘")
-        
+
+# tampilan about us
 def show_about():
     st.title("Tentang Kami 👨‍💻")
     st.markdown("""
@@ -1237,8 +1242,9 @@ KELOMPOK 11 KELAS 1C
 Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang interaktif.
 """)
 
+# tampilan rating
 def show_rating():
-    st.title("Sebelum Keluar, Beri Rating Aplikasi Ini ⭐")
+    st.title("Terimakasih sudah menggunakan O-KimiaKu, tolong beri rating aplikasi ini ⭐")
     st.markdown("Kami ingin mendengar pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
 
     selected = st.feedback("stars")
@@ -1249,22 +1255,6 @@ def show_rating():
     if st.button("Kirim Saran"):
         if not saran.strip():
             st.warning("Saran tidak boleh kosong!")
-        else:
-            try:
-
-                scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-                creds = ServiceAccountCredentials.from_json_keyfile_name('rating-o-kimiaku-54d1d2708b27.json', scope)
-                gc = gspread.authorize(creds)
-                ws = gc.open("Rating dan saran o-kimiaku").worksheet("Feedback")
-
-                gc = gspread.authorize(creds)
-                timestamp = datetime.now().isoformat()
-                row = [timestamp, rating, saran]
-                ws.append_row(row)
-                st.success("Terima kasih atas saran dan masukanmu! 💌✨")
-                st.balloons()
-            except Exception as e:
-                st.error(f"Terjadi kesalahan saat mengirim saran: {e}")
 
 
 # ------------- UI & PAGE CONTROL --------------
