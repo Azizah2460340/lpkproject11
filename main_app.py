@@ -888,10 +888,6 @@ def show_chatbot():
     st.title("💬 Chatbot O-KIMIAKU")
     question = st.text_input("Tanyakan sesuatu tentang senyawa kimia (misal: kepolaran ester):", key="chat_input")
     if st.button("Kirim"):  
-        if question:
-            q = question.lower()
-            ditemukan = False 
-
     if question:
         q = question.lower()
         ditemukan= True
