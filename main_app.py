@@ -1175,7 +1175,7 @@ def show_chatbot():
                     st.success("🔗 [Tonton Penjelasan Eter di YouTube](https://www.youtube.com/watch?v=example)")
                 else:
                     st.info("Eter adalah senyawa organik yang mengandung gugus eter (–O–) antara dua gugus alkil.")
-            if not q:
+            if not ditemukan:
                 st.warning("Maaf, hal yang kamu tanyakan bukan lingkup senyawa organik")
             
     if st.button("🔙 Kembali ke Beranda"):
