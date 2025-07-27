@@ -2,6 +2,9 @@ import streamlit as st
 import time
 
 # Tampilan nama website
+if 'page' not in st.session_state:
+    st.session_state.page = 'home'
+
 st.set_page_config(
     page_title="O-Kimiaku",
     page_icon="🧪",
