@@ -1326,15 +1326,6 @@ def show_rating():
 # ------------- UI & PAGE CONTROL --------------
 if 'page' not in st.session_state:
     st.session_state.page = 'home'
-if 'page' in st.session_state:
-    if st.session_state.page == 'alkohol':
-        show_alkohol()
-    elif st.session_state.page == 'benzena':
-        show_benzena()
-    elif st.session_state.page == 'fenol':
-        show_fenol()
-    elif st.session_state.page == 'amina':
-        show_amina()
         
 # Sidebar Navigasi TANPA LINGKARAN
 st.sidebar.title("📚 Navigasi")
