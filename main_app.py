@@ -1313,6 +1313,7 @@ def show_rating():
     
     Kirimkan pendapat kamu melalui link dibawah ini:
     [link rating O-KimiaKu⭐]('https://forms.gle/KRoCrL1Vmngdv2SR6')
+    
     """)
     if st.button("Kirim Rating"):
         st.success("Rating Anda telah dikirim ke Google Form!")
