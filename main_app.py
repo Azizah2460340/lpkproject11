@@ -890,7 +890,7 @@ def show_chatbot():
     if st.button("Kirim"):  
         if question:
             q = question.lower()
-            ditemukan= True
+            ditemukan= False
             if "benzena" in q:
                 ditemukan = True
                 if "kepolaran" in q:
@@ -1175,7 +1175,7 @@ def show_chatbot():
                     st.success("🔗 [Tonton Penjelasan Eter di YouTube](https://www.youtube.com/watch?v=example)")
                 else:
                     st.info("Eter adalah senyawa organik yang mengandung gugus eter (–O–) antara dua gugus alkil.")
-            if not 'benzena', 'alkana':
+            if not ditemukan:
                 st.warning("Maaf, hal yang kamu tanyakan bukan lingkup senyawa organik")
             
     if st.button("🔙 Kembali ke Beranda"):
