@@ -2,6 +2,7 @@ import streamlit as st
 import time
 import json
 import requests
+import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
 
