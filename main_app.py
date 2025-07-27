@@ -114,7 +114,9 @@ def show_alkana():
     - CH₃–CH₂–CH₃ → Propana
     - CH₃–CH(CH₃)–CH₃ → 2-Metilpropana (bentuk bercabang)
     """)
-
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_alkena():
     st.title("Detail Senyawa: Alkena")
 
@@ -148,7 +150,9 @@ def show_alkena():
     - [Video 3](https://youtu.be/dJmVLfJtqtw?si=Eu1-KVcokh717JkY)
     - [Video 4](https://youtu.be/Utu6uZG_Glk?si=0xjgh6JQT0QjoURW)
     """)
-
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_alkuna():
     st.title("Detail Senyawa: Alkuna")
 
@@ -180,7 +184,9 @@ def show_alkuna():
     - [Video 1](https://youtu.be/pbDiXi3ny1E?si=sWfZ3UswqewTWuzm)
     - [Video 2](https://youtu.be/mGQprCdRZ4s?si=h5ST0P2OYVC0oYWs)
     """)
-
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_alkohol():
     st.title("Detail Senyawa: Alkohol")
 
@@ -215,7 +221,9 @@ def show_alkohol():
     - [Video](https://youtu.be/1nfKdKFOxgw?si=FNi98kksQ-_FV0ki)
     - [Video](https://youtu.be/-GvgmYqdpHA?si=cn2Y7ulIVFOAKKSM)
     """)
-    
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_protein():
     st.title("Detail Senyawa: Protein")
 
@@ -251,7 +259,9 @@ def show_protein():
     - [Video 2](https://youtu.be/DnTwLYWG1fQ?si=9tF5RLdkrA__M3bl)
     - [Video 3](https://youtu.be/tLdCWZvODXg?si=PeFbccfuF7hYveUV)
     """)
-
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_fenol():
     st.title("Detail Senyawa: Fenol")
 
@@ -281,6 +291,9 @@ def show_fenol():
     - [Video 4](https://youtu.be/-xGXGGM909M?si=RrCRHm2SlgTrIM00)
     - [Video 5](https://youtu.be/uQ7IcLkO9uE?si=Ar3XpPtTHi8hTaBD)
     """)
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_eter():
     st.title("Detail Senyawa: Eter")
 
@@ -315,7 +328,9 @@ def show_eter():
     **Video Penjelasan:**
     - [Video](https://youtu.be/YGLRGqprGcQ?si=iDnthU2BN_Ugqvh2)
     """)
-
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_aldehida():
     st.title("Detail Senyawa: Aldehid")
 
@@ -350,7 +365,9 @@ def show_aldehida():
     - [Video 3](https://youtu.be/p3jf_RKbdcI?si=WgZKm_4gXnY3SXQl)
     - [Video 4](https://youtu.be/-_nL-qb0xN4?si=vkFi5jboEEU5u5ov)
     """)
-
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_keton():
     st.title("Detail Senyawa: Keton")
 
@@ -385,7 +402,9 @@ def show_keton():
     - [Video 3](https://youtu.be/p3jf_RKbdcI?si=WgZKm_4gXnY3SXQl)
     - [Video 4](https://youtu.be/-_nL-qb0xN4?si=vkFi5jboEEU5u5ov)
     """)
-
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_amina():
     st.title("Detail Senyawa: Amina")
 
@@ -421,7 +440,9 @@ def show_amina():
      **Video Penjelasan:**
     - [Video](https://youtu.be/0aDWKCzWHuw?si=PEakWNqHfsdPiKK7)      
     """)
-    
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_lemak_dan_minyak():
     st.title("Detail Senyawa: Lemak dan Minyak")
 
@@ -465,7 +486,9 @@ def show_lemak_dan_minyak():
     - [Video 2](https://youtu.be/RVcw6IdUJLo?si=1KdUGjLdsnToKNul)
     - [Video 3](https://youtu.be/aUdP3JJhBRA?si=AA331_st2qhTQi15)
     """)
-
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_benzena():
     st.title("Detail Senyawa: Benzena")
 
@@ -499,7 +522,9 @@ def show_benzena():
     - [Video 2](https://youtu.be/YMHdLlx6WIw?si=3fy86L1X57yMDUiW)
     - [Playlist](https://youtube.com/playlist?list=PLWB5gICYvKUXBVat1VVyDzNhhCcz1Y4Wt&si=Cd5F1txXJxLR8Zg3)
     """)
-
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_asam_karboksilat():
     st.title("Detail Senyawa: Asam Karboksilat")
 
@@ -536,7 +561,9 @@ def show_asam_karboksilat():
     **Video Penjelasan:**
     - [Video](https://youtu.be/6xoYyrJkboI?si=D78Rh0NJCbmykDyg)
     """)
-    
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_amida():
     st.title("Detail Senyawa: Amida")
 
@@ -576,6 +603,9 @@ def show_amida():
     - [Video 1](https://youtu.be/Lz78W5L6bR4?si=eJtoQx5LpYcMfwYv)
     - [Video 2](https://youtu.be/CYYGb1tCTAs?si=upVbkqTxI-3nPTGi)
     """)
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_alkil_halida():
     st.title("Detail Senyawa: Alkil Halida")
 
@@ -656,7 +686,9 @@ def show_nitro():
     - [Video 1](https://youtu.be/LbL3qLDL1ww?si=BXQwimr12FWda-Up)
     - [Video 2](https://youtu.be/LbL3qLDL1ww?si=SyugwAr2P8SWabpU)
     """)
-
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_nitril():
     st.title("Detail Senyawa: Nitril")
 
@@ -695,7 +727,9 @@ def show_nitril():
     **Video Penjelasan:**
     - [Video](https://youtu.be/JktYNjqt4wU?si=nc-IBD-rUnUPYFXU)
     """)
-
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_ester():
     st.title("Detail Senyawa: Ester")
 
@@ -735,7 +769,9 @@ def show_ester():
 **Video Penjelasan:**
     - [Video](https://youtu.be/6BO-ZWmLLSU?si=fMfpCo91cfeRrnOq)
     """)
-
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_asam_halida():
     st.title("Detail Senyawa: Asam Halida")
 
@@ -773,7 +809,9 @@ def show_asam_halida():
     **Video Penjelasan:**
     - [Video](https://youtu.be/w3j3gNN4gSs?si=L7pmPIGBTUhbvh_D)
     """)
-    
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_karbohidrat():
     st.title("Detail Senyawa: Karbohidrat")
 
@@ -810,7 +848,9 @@ def show_karbohidrat():
     - [Playlist](https://youtube.com/playlist?list=PLWB5gICYvKUXj77oa7c6FOtQMAXtmXSVc&si=Y_aCjbigtRXHNUdJ)
     - [Video](https://youtu.be/xynTeSAl4Ts?si=EcQIPYeB5Y5k11Mf)
     """)
-
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_chatbot():
     st.title("💬 Chatbot O-KIMIAKU")
     question = st.text_input("Tanyakan sesuatu tentang senyawa kimia (misal: kepolaran ester):", key="chat_input")
