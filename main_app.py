@@ -1224,25 +1224,55 @@ def show_quiz():
 
     if submitted:
         score = 0
-        # Kunci jawaban
-        if q1 == "-OH": score += 1
-        if q2 == "6": score += 1
-        if q3 == "-OH": score += 1
-        if q4 == "Amonia": score += 1
-        if q5 == "Asam karboksilat": score += 1
-        if q6 == "-CHO": score += 1
-        if q7 == "-NO₂": score += 1
-        if q8 == "-C≡N": score += 1
-        if q9 == "CnH₂n+2": score += 1
-        if q10 == "dua": score += 1
-        if q11 == "Ikatan rangkap tiga": score += 1
-        if q12 == "Glukosa": score += 1
-        if q13 == "Tengah rantai karbon": score += 1
-        if q14 == "Alkohol": score += 1
-        if q15 == "Dua gugus alkil terhubung oleh oksigen": score += 1
+        explanations = []
+
+        # Kunci jawaban dan pembahasan
+        answers = {
+            "q1": "-OH",
+            "q2": "6",
+            "q3": "-OH",
+            "q4": "Amonia",
+            "q5": "Asam karboksilat",
+            "q6": "-CHO",
+            "q7": "-NO₂",
+            "q8": "-C≡N",
+            "q9": "CnH₂n+2",
+            "q10": "dua",
+            "q11": "Ikatan rangkap tiga",
+            "q12": "Glukosa",
+            "q13": "Tengah rantai karbon",
+            "q14": "Alkohol",
+            "q15": "Dua gugus alkil terhubung oleh oksigen"
+        }
+
+        explanations = {
+            "q1": "Gugus fungsi utama pada alkohol adalah -OH, yang memberikan sifat polar dan kemampuan membentuk ikatan hidrogen.",
+            "q2": "Cincin benzena terdiri dari 6 atom karbon yang terikat dalam struktur planar.",
+            "q3": "Fenol memiliki gugus -OH yang membuatnya bersifat asam lemah.",
+            "q4": "Amina adalah turunan dari amonia, di mana satu atau lebih atom hidrogen diganti dengan gugus alkil.",
+            "q5": "Amida adalah turunan dari asam karboksilat, di mana gugus -OH diganti dengan -NH₂.",
+            "q6": "Gugus fungsi khas pada aldehida adalah -CHO, yang terletak di ujung rantai karbon.",
+            "q7": "Gugus fungsi nitro ditulis sebagai -NO₂, yang memberikan sifat polar pada senyawa.",
+            "q8": "Gugus fungsi utama pada nitril adalah -C≡N, yang memberikan sifat polar.",
+            "q9": "Rumus umum alkana adalah CnH₂n+2, yang menunjukkan bahwa alkana adalah hidrokarbon jenuh.",
+            "q10": "Alkena memiliki ikatan rangkap dua, yang membuatnya lebih reaktif dibandingkan alkana.",
+            "q11": "Ciri khas ikatan pada alkuna adalah ikatan rangkap tiga, yang membuatnya sangat reaktif.",
+            "q12": "Glukosa adalah contoh monosakarida, yang merupakan unit dasar karbohidrat.",
+            "q13": "Gugus fungsi keton terletak di tengah rantai karbon, berbeda dengan aldehida yang di ujung.",
+            "q14": "Ester terbentuk dari reaksi antara asam karboksilat dan alkohol, menghasilkan senyawa yang memiliki aroma.",
+            "q15": "Ciri utama eter adalah dua gugus alkil terhubung oleh oksigen, yang membuatnya bersifat nonpolar."
+        }
+
+        # Hitung skor dan tampilkan pembahasan
+        for i in range(1, 16):
+            user_answer = locals()[f'q{i}']
+            correct_answer = answers[f'q{i}']
+            if user_answer == correct_answer:
+                score += 1
+            else:
+                st.warning(f"Jawaban {i} salah! {explanations[f'q{i}']}")
 
         st.success(f"Skor akhir kamu: {score} / 15")
-
         if score == 15:
             st.balloons()
             st.info("Sempurna! Semua jawaban benar 🎉")
