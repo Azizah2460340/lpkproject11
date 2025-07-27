@@ -1255,9 +1255,9 @@ def show_rating():
                 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
                 creds = ServiceAccountCredentials.from_json_keyfile_name('rating-o-kimiaku-54d1d2708b27.json', scope)
                 gc = gspread.authorize(creds)
-                ws = conn.open("Rating dan saran o-kimiaku").worksheet("Feedback")
+                ws = gc.open("Rating dan saran o-kimiaku").worksheet("Feedback")
 
-                conn = gspread.authorize(creds)
+                gc = gspread.authorize(creds)
                 timestamp = datetime.now().isoformat()
                 row = [timestamp, rating, saran]
                 ws.append_row(row)
