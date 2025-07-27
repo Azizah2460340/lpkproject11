@@ -1182,6 +1182,9 @@ def show_chatbot():
                 st.info("Eter adalah senyawa organik yang mengandung gugus eter (–O–) antara dua gugus alkil.")    
         else:
             st.warning("Maaf, hal yang kamu tanyakan bukan lingkup senyawa organik")
+            
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
 
 # tampilan quiz
 def show_quiz():
