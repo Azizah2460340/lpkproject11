@@ -1,8 +1,7 @@
 import streamlit as st
 import time
 import json
-import request
-pip install gspread
+import requests
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
 
