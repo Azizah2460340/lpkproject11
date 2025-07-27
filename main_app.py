@@ -1310,8 +1310,7 @@ Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang 
 def show_rating():
     st.title("Rating aplikasi ini ⭐")
     st.markdown("Terimakasih telah menggunakan O-KimiaKu, tolong beri pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
-
-    selected = st.feedback("stars")
+    form_url = 'https://forms.gle/KRoCrL1Vmngdv2SR6' 
 
     st.subheader("Masukkan Saran/Kritik")
     saran = st.text_area("📝 Tulis saran atau masukan di sini:")
