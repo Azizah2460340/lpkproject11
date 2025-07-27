@@ -1252,6 +1252,9 @@ def show_quiz():
             st.info("Bagus! Terus belajar dan tingkatkan pemahaman 💪")
         else:
             st.warning("Yuk belajar lagi. Jangan menyerah! 📘")
+            
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
 
 # tampilan about us
 def show_about():
@@ -1267,6 +1270,9 @@ KELOMPOK 11 KELAS 1C
    
 Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang interaktif.
 """)
+    
+     if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
 
 # tampilan rating
 def show_rating():
@@ -1282,6 +1288,8 @@ def show_rating():
         if not saran.strip():
             st.warning("Saran tidak boleh kosong!")
 
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
 
 # ------------- UI & PAGE CONTROL --------------
 if 'page' not in st.session_state:
