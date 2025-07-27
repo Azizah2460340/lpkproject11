@@ -1251,7 +1251,7 @@ def show_rating():
             try:
 
                 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-                creds = ServiceAccountCredentials.from_json_keyfile_name('path/to/credentials.json', scope)
+                creds = ServiceAccountCredentials.from_json_keyfile_name('rating-o-kimiaku-54d1d2708b27.json', scope)
                 gc = gspread.authorize(creds)
                 ws = conn.open("Rating dan saran o-kimiaku").worksheet("Feedback")
 
