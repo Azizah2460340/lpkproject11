@@ -50,11 +50,11 @@ def show_home():
     with cols[1]:
          if st.button("🔬 Amida"):
             st.session_state.page = 'amida'
-         if st.button("🧫 Aldehida"):
+         if st.button("🧪 Aldehida"):
             st.session_state.page = 'aldehida'
          if st.button("⚡ Nitro"):
             st.session_state.page = 'nitro'
-         if st.button("🧭 Nitril"):
+         if st.button("🧪 Nitril"):
             st.session_state.page = 'nitril'
     with cols[2]:
          if st.button("🧬 Alkana"):
@@ -66,7 +66,7 @@ def show_home():
          if st.button("🍞 Karbohidrat"):
             st.session_state.page = 'karbohidrat'
     with cols[3]:
-         if st.button("🎯 Keton"):
+         if st.button("🧪 Keton"):
             st.session_state.page = 'keton'
          if st.button("🧴 Ester"):
             st.session_state.page = 'ester'
@@ -75,11 +75,11 @@ def show_home():
          if st.button("🍗 Protein"):
             st.session_state.page = 'protein'
     with cols[4]:
-         if st.button("🧂 Asam Halida"):
+         if st.button("🧪 Asam Halida"):
             st.session_state.page = 'asam_halida'
-         if st.button("🍋 Asam Karboksilat"):
+         if st.button("🧪 Asam Karboksilat"):
             st.session_state.page = 'asam_karboksilat'
-         if st.button("🔌 Alkil Halida"):
+         if st.button("🧪 Alkil Halida"):
             st.session_state.page = 'alkil_halida'
          if st.button("🛢️ Lemak dan Minyak"):
             st.session_state.page = 'lemak_dan_minyak'
@@ -119,6 +119,7 @@ def show_alkana():
     - [Video 1](https://youtu.be/Vzp-PAMsz7M?si=1Cv0gbxOMEWuQfMj)
     - [Video 2](https://youtu.be/HXzUk70i0wU?si=n7QFVZj9mMkc9twR)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
 
@@ -156,6 +157,7 @@ def show_alkena():
     - [Video 3](https://youtu.be/dJmVLfJtqtw?si=Eu1-KVcokh717JkY)
     - [Video 4](https://youtu.be/Utu6uZG_Glk?si=0xjgh6JQT0QjoURW)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
 
@@ -191,6 +193,7 @@ def show_alkuna():
     - [Video 1](https://youtu.be/pbDiXi3ny1E?si=sWfZ3UswqewTWuzm)
     - [Video 2](https://youtu.be/mGQprCdRZ4s?si=h5ST0P2OYVC0oYWs)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -228,6 +231,7 @@ def show_alkohol():
     - [Video](https://youtu.be/1nfKdKFOxgw?si=FNi98kksQ-_FV0ki)
     - [Video](https://youtu.be/-GvgmYqdpHA?si=cn2Y7ulIVFOAKKSM)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -266,6 +270,7 @@ def show_protein():
     - [Video 2](https://youtu.be/DnTwLYWG1fQ?si=9tF5RLdkrA__M3bl)
     - [Video 3](https://youtu.be/tLdCWZvODXg?si=PeFbccfuF7hYveUV)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -298,6 +303,7 @@ def show_fenol():
     - [Video 4](https://youtu.be/-xGXGGM909M?si=RrCRHm2SlgTrIM00)
     - [Video 5](https://youtu.be/uQ7IcLkO9uE?si=Ar3XpPtTHi8hTaBD)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -335,6 +341,7 @@ def show_eter():
     **Video Penjelasan:**
     - [Video](https://youtu.be/YGLRGqprGcQ?si=iDnthU2BN_Ugqvh2)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -372,6 +379,7 @@ def show_aldehida():
     - [Video 3](https://youtu.be/p3jf_RKbdcI?si=WgZKm_4gXnY3SXQl)
     - [Video 4](https://youtu.be/-_nL-qb0xN4?si=vkFi5jboEEU5u5ov)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -409,6 +417,7 @@ def show_keton():
     - [Video 3](https://youtu.be/p3jf_RKbdcI?si=WgZKm_4gXnY3SXQl)
     - [Video 4](https://youtu.be/-_nL-qb0xN4?si=vkFi5jboEEU5u5ov)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -447,6 +456,7 @@ def show_amina():
      **Video Penjelasan:**
     - [Video](https://youtu.be/0aDWKCzWHuw?si=PEakWNqHfsdPiKK7)      
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -493,6 +503,7 @@ def show_lemak_dan_minyak():
     - [Video 2](https://youtu.be/RVcw6IdUJLo?si=1KdUGjLdsnToKNul)
     - [Video 3](https://youtu.be/aUdP3JJhBRA?si=AA331_st2qhTQi15)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -529,6 +540,7 @@ def show_benzena():
     - [Video 2](https://youtu.be/YMHdLlx6WIw?si=3fy86L1X57yMDUiW)
     - [Playlist](https://youtube.com/playlist?list=PLWB5gICYvKUXBVat1VVyDzNhhCcz1Y4Wt&si=Cd5F1txXJxLR8Zg3)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -568,6 +580,7 @@ def show_asam_karboksilat():
     **Video Penjelasan:**
     - [Video](https://youtu.be/6xoYyrJkboI?si=D78Rh0NJCbmykDyg)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -610,6 +623,7 @@ def show_amida():
     - [Video 1](https://youtu.be/Lz78W5L6bR4?si=eJtoQx5LpYcMfwYv)
     - [Video 2](https://youtu.be/CYYGb1tCTAs?si=upVbkqTxI-3nPTGi)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -654,6 +668,10 @@ def show_alkil_halida():
     **Video Penjelasan:**
     - [Video](https://youtu.be/zxUFOd1shr0?si=5IPjGEpazI6zGcDd)
     """)
+
+    if st.button("🔙 Kembali ke Beranda"):
+        st.session_state.page = 'home'
+        
 def show_nitro():
     st.title("Detail Senyawa: Nitro")
 
@@ -693,6 +711,7 @@ def show_nitro():
     - [Video 1](https://youtu.be/LbL3qLDL1ww?si=BXQwimr12FWda-Up)
     - [Video 2](https://youtu.be/LbL3qLDL1ww?si=SyugwAr2P8SWabpU)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -734,6 +753,7 @@ def show_nitril():
     **Video Penjelasan:**
     - [Video](https://youtu.be/JktYNjqt4wU?si=nc-IBD-rUnUPYFXU)
     """)
+
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -817,6 +837,7 @@ def show_asam_halida():
     **Video Penjelasan:**
     - [Video](https://youtu.be/w3j3gNN4gSs?si=L7pmPIGBTUhbvh_D)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
         
@@ -856,6 +877,7 @@ def show_karbohidrat():
     - [Playlist](https://youtube.com/playlist?list=PLWB5gICYvKUXj77oa7c6FOtQMAXtmXSVc&si=Y_aCjbigtRXHNUdJ)
     - [Video](https://youtu.be/xynTeSAl4Ts?si=EcQIPYeB5Y5k11Mf)
     """)
+    
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
 
