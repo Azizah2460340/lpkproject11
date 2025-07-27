@@ -36,7 +36,7 @@ def show_home():
         """)
 
     st.subheader("🔍 Pilih Senyawa:")
-        st.markdown(" Dengan klik tombol senyawa 2 kali")
+    st.markdown(" Dengan klik tombol senyawa 2 kali")
     cols = st.columns(5)
     with cols[0]:
          if st.button("🍷 Alkohol"):
