@@ -1276,7 +1276,7 @@ Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang 
 
 # tampilan rating
 def show_rating():
-    st.title("Terimakasih sudah menggunakan O-KimiaKu, tolong beri rating aplikasi ini ⭐")
+    st.title("Terimakasih sudah menggunakan aplikasi O-KimiaKu, tolong beri rating aplikasi ini ⭐")
     st.markdown("Kami ingin mendengar pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
 
     selected = st.feedback("stars")
