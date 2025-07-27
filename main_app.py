@@ -4,8 +4,6 @@ import json
 import requests
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
-pip install oauth2client
-pip install google-auth google-auth-oauthlib google-auth-httplib2
 
 # Tampilan nama website
 st.set_page_config(
