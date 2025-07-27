@@ -1307,7 +1307,7 @@ Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang 
         st.session_state.page = 'home'
 
 # tampilan rating
-def show_rating(rating):
+def show_rating():
     st.title("Rating aplikasi ini ⭐")
     st.markdown("Terimakasih telah menggunakan O-KimiaKu, tolong beri pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
     form_url = 'https://forms.gle/KRoCrL1Vmngdv2SR6' 
