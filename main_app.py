@@ -47,8 +47,6 @@ def show_home():
             st.session_state.page = 'fenol'
          if st.button("🧪 Amina"):
             st.session_state.page = 'amina'
-            st.experimental_rerun()
-
     with cols[1]:
          if st.button("🔬 Amida"):
             st.session_state.page = 'amida'
@@ -58,8 +56,6 @@ def show_home():
             st.session_state.page = 'nitro'
          if st.button("🧪 Nitril"):
             st.session_state.page = 'nitril'
-            st.experimental_rerun()
-
     with cols[2]:
          if st.button("🧬 Alkana"):
             st.session_state.page = 'alkana'
@@ -69,8 +65,6 @@ def show_home():
             st.session_state.page = 'alkuna'
          if st.button("🍞 Karbohidrat"):
             st.session_state.page = 'karbohidrat'
-            st.experimental_rerun()
-
     with cols[3]:
          if st.button("🧪 Keton"):
             st.session_state.page = 'keton'
@@ -80,8 +74,6 @@ def show_home():
             st.session_state.page = 'eter'
          if st.button("🍗 Protein"):
             st.session_state.page = 'protein'
-            st.experimental_rerun()
-
     with cols[4]:
          if st.button("🧪 Asam Halida"):
             st.session_state.page = 'asam_halida'
@@ -1334,7 +1326,16 @@ def show_rating():
 # ------------- UI & PAGE CONTROL --------------
 if 'page' not in st.session_state:
     st.session_state.page = 'home'
-
+if 'page' in st.session_state:
+    if st.session_state.page == 'alkohol':
+        show_alkohol()
+    elif st.session_state.page == 'benzena':
+        show_benzena()
+    elif st.session_state.page == 'fenol':
+        show_fenol()
+    elif st.session_state.page == 'amina':
+        show_amina()
+        
 # Sidebar Navigasi TANPA LINGKARAN
 st.sidebar.title("📚 Navigasi")
 
