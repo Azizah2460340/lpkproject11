@@ -1307,17 +1307,15 @@ Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang 
         st.session_state.page = 'home'
 
 # tampilan rating
-def show_rating():
+def show_rating(rating):
     st.title("Rating aplikasi ini ⭐")
     st.markdown("Terimakasih telah menggunakan O-KimiaKu, tolong beri pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
     form_url = 'https://forms.gle/KRoCrL1Vmngdv2SR6' 
+    requests.post(form_url, data=data)
 
-    st.subheader("Masukkan Saran/Kritik")
-    saran = st.text_area("📝 Tulis saran atau masukan di sini:")
-    
-    if st.button("Kirim Saran"):
-        if not saran.strip():
-            st.warning("Saran tidak boleh kosong!")
+# Tambahkan ini di bagian bawah fungsi show_home()
+if st.button("Kirim Rating"):
+    st.success("Rating Anda telah dikirim ke Google Form!")
 
     if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
@@ -1354,7 +1352,7 @@ elif st.session_state.page == 'about':
 elif st.session_state.page == 'chatbot':
     show_chatbot()
 elif st.session_state.page == 'rating':
-    show_rating()
+    show_rating(rating)
 elif st.session_state.page == 'amina':
     show_amina()
 elif st.session_state.page == 'alkil_halida':
