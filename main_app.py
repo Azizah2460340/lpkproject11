@@ -1311,8 +1311,8 @@ def show_rating():
     st.title("Rating aplikasi ini ⭐")
     st.markdown("""Terimakasih telah menggunakan O-KimiaKu, tolong beri pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊
     
-    Kirimkan pendapat kamu melalui link dibawah ini:
-    [link rating O-KimiaKu⭐]('https://forms.gle/KRoCrL1Vmngdv2SR6')
+    **Kirimkan pendapat kamu melalui link dibawah ini:**
+    [link rating O-KimiaKu⭐](https://forms.gle/KRoCrL1Vmngdv2SR6)
     """)
     
     if st.button("🔙 Kembali ke Beranda"):
