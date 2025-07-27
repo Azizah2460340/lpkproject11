@@ -1271,7 +1271,7 @@ KELOMPOK 11 KELAS 1C
 Kami membuat aplikasi ini untuk mempermudah pembelajaran kimia dengan cara yang interaktif.
 """)
     
-     if st.button("🔙 Kembali ke Beranda"):
+    if st.button("🔙 Kembali ke Beranda"):
         st.session_state.page = 'home'
 
 # tampilan rating
