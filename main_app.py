@@ -1312,6 +1312,7 @@ def show_rating():
     st.markdown("Terimakasih telah menggunakan O-KimiaKu, tolong beri pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊
     Kirimkan pendapat kamu melalui link dibawah ini
     [link rating O-KimiaKu⭐]:('https://forms.gle/KRoCrL1Vmngdv2SR6')
+    ")
     if st.button("Kirim Rating"):
         st.success("Rating Anda telah dikirim ke Google Form!")
     if st.button("🔙 Kembali ke Beranda"):
