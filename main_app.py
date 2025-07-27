@@ -1311,7 +1311,6 @@ def show_rating():
     st.title("Rating aplikasi ini ⭐")
     st.markdown("Terimakasih telah menggunakan O-KimiaKu, tolong beri pendapat dan masukan kamu agar O-KimiaKu makin berkembang! 😊")
     form_url = 'https://forms.gle/KRoCrL1Vmngdv2SR6' 
-    requests.post(form_url, data=data)
     if st.button("Kirim Rating"):
         st.success("Rating Anda telah dikirim ke Google Form!")
     if st.button("🔙 Kembali ke Beranda"):
