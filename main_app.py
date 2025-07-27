@@ -1108,9 +1108,7 @@ def show_chatbot():
             else:
                 st.info("Eter adalah senyawa organik yang mengandung gugus eter (–O–) antara dua gugus alkil.")    
         if not ditemukan:
-            st.warning("Maaf, senyawa tersebut belum tersedia atau belum dikenali.")
-
-import streamlit as st
+            st.warning("Maaf, hal yang kamu tanyakan bukan lingkup senyawa organik")
 
 def show_quiz():
     st.title("🔬 Quiz Kimia Organik – 15 Soal")
